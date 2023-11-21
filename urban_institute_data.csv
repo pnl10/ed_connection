@@ -1,0 +1,358 @@
+year,leaid,lea_name,state_location,city_location,agency_type,enrollment,agency_level,lowest_grade_offered,highest_grade_offered,number_of_schools,boundary_change_indicator,read_test_num_valid,read_test_pct_prof_midpt,math_test_num_valid,math_test_pct_prof_midpt,cohort_num,grad_rate_midpt,exp_total,exp_current_elsec_total,exp_tech_equipment,exp_tech_supplies_services
+2021,5400030,BARBOUR COUNTY BOARD OF EDUCATION,WV,PHILIPPI,Regular local school district,2144,Other,Pre-K,12,7,No change; operational,,,,,,,,,,
+2021,5400060,BERKELEY COUNTY SCHOOLS,WV,MARTINSBURG,Regular local school district,19722,Other,Pre-K,12,32,No change; operational,,,,,,,,,,
+2021,5400090,BOONE COUNTY  SCHOOLS,WV,MADISON,Regular local school district,3177,Other,Pre-K,12,13,No change; operational,,,,,,,,,,
+2021,5400120,BRAXTON COUNTY SCHOOLS,WV,SUTTON,Regular local school district,1747,Other,Pre-K,12,8,No change; operational,,,,,,,,,,
+2021,5400150,BROOKE COUNTY SCHOOLS,WV,WELLSBURG,Regular local school district,2582,Other,Pre-K,12,7,No change; operational,,,,,,,,,,
+2021,5400180,CABELL COUNTY SCHOOLS,WV,HUNTINGTON,Regular local school district,11667,Other,Pre-K,12,26,No change; operational,,,,,,,,,,
+2021,5400210,CALHOUN COUNTY SCHOOLS,WV,MT. ZION,Regular local school district,861,Other,Pre-K,12,4,No change; operational,,,,,,,,,,
+2021,5400240,CLAY COUNTY SCHOOLS,WV,CLAY,Regular local school district,1669,Other,Pre-K,12,6,No change; operational,,,,,,,,,,
+2021,5400270,DODDRIDGE COUNTY SCHOOLS,WV,WEST UNION,Regular local school district,1082,Other,Pre-K,12,4,No change; operational,,,,,,,,,,
+2021,5400058,Eastern Panhandle Instructional Cooperative,WV,Martinsburg,Regional education service agency,,Not applicable,Not applicable,Not applicable,0,No change; operational,,,,,,,,,,
+2021,5400062,Eastern Panhandle Preparatory Academy,WV,Kearneysville,Charter agency,,Missing/not reported,,,0,Future,,,,,,,,,,
+2021,5400300,FAYETTE COUNTY SCHOOLS,WV,FAYETTEVILLE,Regular local school district,5594,Other,Pre-K,12,13,No change; operational,,,,,,,,,,
+2021,5400330,GILMER COUNTY SCHOOLS,WV,GLENVILLE,Regular local school district,800,Other,Pre-K,12,2,No change; operational,,,,,,,,,,
+2021,5400360,GRANT COUNTY SCHOOLS,WV,PETERSBURG,Regular local school district,1610,Other,Pre-K,12,5,No change; operational,,,,,,,,,,
+2021,5400390,GREENBRIER COUNTY SCHOOLS,WV,LEWISBURG,Regular local school district,4705,Other,Pre-K,12,14,No change; operational,,,,,,,,,,
+2021,5400420,HAMPSHIRE COUNTY SCHOOLS,WV,ROMNEY,Regular local school district,2814,Other,Pre-K,12,9,No change; operational,,,,,,,,,,
+2021,5400450,HANCOCK COUNTY SCHOOLS,WV,NEW CUMBERLAND,Regular local school district,3679,Other,Pre-K,12,9,No change; operational,,,,,,,,,,
+2021,5400480,HARDY COUNTY SCHOOLS,WV,MOOREFIELD,Regular local school district,2139,Other,Pre-K,12,6,No change; operational,,,,,,,,,,
+2021,5400510,HARRISON COUNTY SCHOOLS,WV,CLARKSBURG,Regular local school district,9975,Other,Pre-K,12,27,No change; operational,,,,,,,,,,
+2021,5400540,JACKSON COUNTY SCHOOLS,WV,RIPLEY,Regular local school district,4097,Other,Pre-K,12,13,No change; operational,,,,,,,,,,
+2021,5400570,JEFFERSON COUNTY SCHOOLS,WV,CHARLES TOWN,Regular local school district,8682,Other,Pre-K,12,16,No change; operational,,,,,,,,,,
+2021,5400600,KANAWHA COUNTY SCHOOLS,WV,CHARLESTON,Regular local school district,24392,Other,Pre-K,12,68,No change; operational,,,,,,,,,,
+2021,5400630,LEWIS COUNTY SCHOOLS,WV,WESTON,Regular local school district,2469,Other,Pre-K,12,6,No change; operational,,,,,,,,,,
+2021,5400660,LINCOLN COUNTY SCHOOLS,WV,HAMLIN,Regular local school district,3087,Other,Pre-K,12,8,No change; operational,,,,,,,,,,
+2021,5400690,LOGAN COUNTY SCHOOLS,WV,WEST LOGAN,Regular local school district,5181,Other,Pre-K,12,18,No change; operational,,,,,,,,,,
+2021,5400720,MARION COUNTY SCHOOLS,WV,FAIRMONT,Regular local school district,7411,Other,Pre-K,12,21,No change; operational,,,,,,,,,,
+2021,5400750,MARSHALL COUNTY SCHOOLS,WV,MOUNDSVILLE,Regular local school district,4304,Other,Pre-K,12,13,No change; operational,,,,,,,,,,
+2021,5400780,MASON COUNTY SCHOOLS,WV,POINT PLEASANT,Regular local school district,3890,Other,Pre-K,12,12,No change; operational,,,,,,,,,,
+2021,5400810,MCDOWELL COUNTY SCHOOLS,WV,WELCH,Regular local school district,2622,Other,Pre-K,12,10,No change; operational,,,,,,,,,,
+2021,5400840,MERCER COUNTY SCHOOLS,WV,PRINCETON,Regular local school district,8642,Other,Pre-K,12,25,No change; operational,,,,,,,,,,
+2021,5400870,MINERAL COUNTY SCHOOLS,WV,KEYSER,Regular local school district,4023,Other,Pre-K,12,14,No change; operational,,,,,,,,,,
+2021,5400900,MINGO COUNTY SCHOOLS,WV,WILLIAMSON,Regular local school district,3919,Other,Pre-K,12,10,No change; operational,,,,,,,,,,
+2021,5400930,MONONGALIA COUNTY SCHOOLS,WV,MORGANTOWN,Regular local school district,11309,Other,Pre-K,12,18,No change; operational,,,,,,,,,,
+2021,5400960,MONROE COUNTY SCHOOLS,WV,UNION,Regular local school district,1639,Other,Pre-K,12,5,No change; operational,,,,,,,,,,
+2021,5400990,MORGAN COUNTY SCHOOLS,WV,BERKELEY SPRINGS,Regular local school district,2219,Other,Pre-K,12,7,No change; operational,,,,,,,,,,
+2021,5400061,Mountain State Educational Services Cooperative,WV,Dunbar,Regional education service agency,,Not applicable,Not applicable,Not applicable,0,No change; operational,,,,,,,,,,
+2021,5401020,NICHOLAS COUNTY SCHOOLS,WV,SUMMERSVILLE,Regular local school district,3498,Other,Pre-K,12,14,No change; operational,,,,,,,,,,
+2021,5401050,OHIO COUNTY SCHOOLS,WV,WHEELING,Regular local school district,5027,Other,Pre-K,12,13,No change; operational,,,,,,,,,,
+2021,5401080,PENDLETON COUNTY SCHOOLS,WV,FRANKLIN,Regular local school district,870,Other,Pre-K,12,4,No change; operational,,,,,,,,,,
+2021,5401110,PLEASANTS COUNTY SCHOOLS,WV,ST. MARYS,Regular local school district,1067,Other,Pre-K,12,5,No change; operational,,,,,,,,,,
+2021,5401140,POCAHONTAS COUNTY SCHOOLS,WV,BUCKEYE,Regular local school district,945,Other,Pre-K,12,5,No change; operational,,,,,,,,,,
+2021,5401170,PRESTON COUNTY SCHOOLS,WV,KINGWOOD,Regular local school district,4239,Other,Pre-K,12,10,No change; operational,,,,,,,,,,
+2021,5401200,PUTNAM COUNTY SCHOOLS,WV,WINFIELD,Regular local school district,9136,Other,Pre-K,12,23,No change; operational,,,,,,,,,,
+2021,5401230,RALEIGH COUNTY SCHOOLS,WV,BECKLEY,Regular local school district,10797,Other,Pre-K,12,27,No change; operational,,,,,,,,,,
+2021,5401260,RANDOLPH COUNTY SCHOOLS,WV,ELKINS,Regular local school district,3623,Other,Pre-K,12,14,No change; operational,,,,,,,,,,
+2021,5401290,RITCHIE COUNTY SCHOOLS,WV,HARRISVILLE,Regular local school district,1251,Other,Pre-K,12,5,No change; operational,,,,,,,,,,
+2021,5401320,ROANE COUNTY SCHOOLS,WV,SPENCER,Regular local school district,1802,Other,Pre-K,12,5,No change; operational,,,,,,,,,,
+2021,5400059,Southern Educational Services Cooperative,WV,Beckley,Regional education service agency,,Not applicable,Not applicable,Not applicable,0,No change; operational,,,,,,,,,,
+2021,5401350,SUMMERS COUNTY SCHOOLS,WV,HINTON,Regular local school district,1361,Other,Pre-K,12,4,No change; operational,,,,,,,,,,
+2021,5401380,TAYLOR COUNTY SCHOOLS,WV,GRAFTON,Regular local school district,2290,Other,Pre-K,12,5,No change; operational,,,,,,,,,,
+2021,5401410,TUCKER COUNTY SCHOOLS,WV,PARSONS,Regular local school district,957,Other,Pre-K,12,3,No change; operational,,,,,,,,,,
+2021,5401440,TYLER COUNTY SCHOOLS,WV,MIDDLEBOURNE,Regular local school district,1230,Other,Pre-K,12,4,No change; operational,,,,,,,,,,
+2021,5401470,UPSHUR COUNTY SCHOOLS,WV,BUCKHANNON,Regular local school district,3952,Other,Pre-K,12,10,No change; operational,,,,,,,,,,
+2021,5400063,Virtual Preparatory Academy of West Virginia,WV,Kearneysville,Charter agency,,Missing/not reported,,,0,Future,,,,,,,,,,
+2021,5401500,WAYNE COUNTY SCHOOLS,WV,WAYNE,Regular local school district,6348,Other,Pre-K,12,18,No change; operational,,,,,,,,,,
+2021,5401530,WEBSTER COUNTY SCHOOLS,WV,WEBSTER SPRINGS,Regular local school district,1208,Other,Pre-K,12,4,No change; operational,,,,,,,,,,
+2021,5400064,West Virginia Virtual Academy,WV,Charleston,Charter agency,,Missing/not reported,,,0,Future,,,,,,,,,,
+2021,5401560,WETZEL COUNTY SCHOOLS,WV,NEW MARTINSVILLE,Regular local school district,2305,Other,Pre-K,12,9,No change; operational,,,,,,,,,,
+2021,5401590,WIRT COUNTY SCHOOLS,WV,ELIZABETH,Regular local school district,923,Other,Pre-K,12,3,No change; operational,,,,,,,,,,
+2021,5401620,WOOD COUNTY SCHOOLS,WV,PARKERSBURG,Regular local school district,11893,Other,Pre-K,12,27,No change; operational,,,,,,,,,,
+2021,5401621,WV SCHOOLS FOR THE DEAF AND THE BLIND,WV,ROMNEY,State-operated agency,78,Other,Kindergarten,12,1,No change; operational,,,,,,,,,,
+2021,5400511,WV SCHOOLS OF DIVERSION AND TRANSITION,WV,CHARLESTON,State-operated agency,435,Other,Kindergarten,12,11,No change; operational,,,,,,,,,,
+2021,5401650,WYOMING COUNTY SCHOOLS,WV,PINEVILLE,Regular local school district,3632,Other,Pre-K,12,14,No change; operational,,,,,,,,,,
+2020,5400030,BARBOUR COUNTY BOARD OF EDUCATION,WV,PHILIPPI,Regular local school district,2146,Other,Pre-K,12,7,No change; operational,Suppressed data,Suppressed data,979,24,,,,,,
+2020,5400060,BERKELEY COUNTY SCHOOLS,WV,MARTINSBURG,Regular local school district,19278,Other,Pre-K,12,32,No change; operational,Suppressed data,Suppressed data,7881,21,,,,,,
+2020,5400090,BOONE COUNTY  SCHOOLS,WV,MADISON,Regular local school district,3346,Other,Pre-K,12,13,No change; operational,Suppressed data,Suppressed data,1525,26,,,,,,
+2020,5400120,BRAXTON COUNTY SCHOOLS,WV,SUTTON,Regular local school district,1771,Other,Pre-K,12,8,No change; operational,Suppressed data,Suppressed data,822,16,,,,,,
+2020,5400150,BROOKE COUNTY SCHOOLS,WV,WELLSBURG,Regular local school district,2591,Other,Pre-K,12,7,No change; operational,Suppressed data,Suppressed data,1257,26,,,,,,
+2020,5400180,CABELL COUNTY SCHOOLS,WV,HUNTINGTON,Regular local school district,11875,Other,Pre-K,12,26,No change; operational,Suppressed data,Suppressed data,5503,31,,,,,,
+2020,5400210,CALHOUN COUNTY SCHOOLS,WV,MT. ZION,Regular local school district,888,Other,Pre-K,12,4,No change; operational,Suppressed data,Suppressed data,386,18,,,,,,
+2020,5400240,CLAY COUNTY SCHOOLS,WV,CLAY,Regular local school district,1750,Other,Pre-K,12,6,No change; operational,Suppressed data,Suppressed data,812,21,,,,,,
+2020,5400270,DODDRIDGE COUNTY SCHOOLS,WV,WEST UNION,Regular local school district,1102,Other,Pre-K,12,4,No change; operational,Suppressed data,Suppressed data,541,26,,,,,,
+2020,5400058,Eastern Panhandle Instructional Cooperative,WV,Martinsburg,Regional education service agency,,Not applicable,Not applicable,Not applicable,0,No change; operational,,,,,,,,,,
+2020,5400300,FAYETTE COUNTY SCHOOLS,WV,FAYETTEVILLE,Regular local school district,5688,Other,Pre-K,12,13,No change; operational,Suppressed data,Suppressed data,2672,17,,,,,,
+2020,5400330,GILMER COUNTY SCHOOLS,WV,GLENVILLE,Regular local school district,776,Other,Pre-K,12,2,No change; operational,Suppressed data,Suppressed data,427,25,,,,,,
+2020,5400360,GRANT COUNTY SCHOOLS,WV,PETERSBURG,Regular local school district,1602,Other,Pre-K,12,5,No change; operational,Suppressed data,Suppressed data,731,31,,,,,,
+2020,5400390,GREENBRIER COUNTY SCHOOLS,WV,LEWISBURG,Regular local school district,4719,Other,Pre-K,12,14,No change; operational,Suppressed data,Suppressed data,2152,24,,,,,,
+2020,5400420,HAMPSHIRE COUNTY SCHOOLS,WV,ROMNEY,Regular local school district,2885,Other,Pre-K,12,9,No change; operational,Suppressed data,Suppressed data,1277,25,,,,,,
+2020,5400450,HANCOCK COUNTY SCHOOLS,WV,NEW CUMBERLAND,Regular local school district,3787,Other,Pre-K,12,9,No change; operational,Suppressed data,Suppressed data,1857,37,,,,,,
+2020,5400480,HARDY COUNTY SCHOOLS,WV,MOOREFIELD,Regular local school district,2245,Other,Pre-K,12,6,No change; operational,Suppressed data,Suppressed data,1096,22,,,,,,
+2020,5400510,HARRISON COUNTY SCHOOLS,WV,CLARKSBURG,Regular local school district,10111,Other,Pre-K,12,27,No change; operational,Suppressed data,Suppressed data,4746,29,,,,,,
+2020,5400511,INSTITUTIONAL EDUCATIONAL PROGRAMS,WV,CHARLESTON,State-operated agency,393,Other,Pre-K,12,23,No change; operational,Suppressed data,Suppressed data,209,0.5,,,,,,
+2020,5400540,JACKSON COUNTY SCHOOLS,WV,RIPLEY,Regular local school district,4266,Other,Pre-K,12,13,No change; operational,Suppressed data,Suppressed data,1993,38,,,,,,
+2020,5400570,JEFFERSON COUNTY SCHOOLS,WV,CHARLES TOWN,Regular local school district,8506,Other,Pre-K,12,16,No change; operational,Suppressed data,Suppressed data,3388,29,,,,,,
+2020,5400600,KANAWHA COUNTY SCHOOLS,WV,CHARLESTON,Regular local school district,24721,Other,Pre-K,12,69,No change; operational,Suppressed data,Suppressed data,11126,29,,,,,,
+2020,5400630,LEWIS COUNTY SCHOOLS,WV,WESTON,Regular local school district,2483,Other,Pre-K,12,6,No change; operational,Suppressed data,Suppressed data,1091,19,,,,,,
+2020,5400660,LINCOLN COUNTY SCHOOLS,WV,HAMLIN,Regular local school district,3114,Other,Pre-K,12,8,No change; operational,Suppressed data,Suppressed data,1458,17,,,,,,
+2020,5400690,LOGAN COUNTY SCHOOLS,WV,WEST LOGAN,Regular local school district,5229,Other,Pre-K,12,18,No change; operational,Suppressed data,Suppressed data,2424,18,,,,,,
+2020,5400720,MARION COUNTY SCHOOLS,WV,FAIRMONT,Regular local school district,7658,Other,Pre-K,12,22,No change; operational,Suppressed data,Suppressed data,3439,30,,,,,,
+2020,5400750,MARSHALL COUNTY SCHOOLS,WV,MOUNDSVILLE,Regular local school district,4320,Other,Pre-K,12,14,No change; operational,Suppressed data,Suppressed data,2170,28,,,,,,
+2020,5400780,MASON COUNTY SCHOOLS,WV,POINT PLEASANT,Regular local school district,3853,Other,Pre-K,12,12,No change; operational,Suppressed data,Suppressed data,1842,20,,,,,,
+2020,5400810,MCDOWELL COUNTY SCHOOLS,WV,WELCH,Regular local school district,2706,Other,Pre-K,12,10,No change; operational,Suppressed data,Suppressed data,1302,14,,,,,,
+2020,5400840,MERCER COUNTY SCHOOLS,WV,PRINCETON,Regular local school district,8465,Other,Pre-K,12,25,No change; operational,Suppressed data,Suppressed data,4056,26,,,,,,
+2020,5400870,MINERAL COUNTY SCHOOLS,WV,KEYSER,Regular local school district,4001,Other,Pre-K,12,14,No change; operational,Suppressed data,Suppressed data,1998,26,,,,,,
+2020,5400900,MINGO COUNTY SCHOOLS,WV,WILLIAMSON,Regular local school district,3945,Other,Pre-K,12,10,No change; operational,Suppressed data,Suppressed data,1726,21,,,,,,
+2020,5400930,MONONGALIA COUNTY SCHOOLS,WV,MORGANTOWN,Regular local school district,11113,Other,Pre-K,12,18,No change; operational,Suppressed data,Suppressed data,4962,45,,,,,,
+2020,5400960,MONROE COUNTY SCHOOLS,WV,UNION,Regular local school district,1663,Other,Pre-K,12,5,No change; operational,Suppressed data,Suppressed data,846,27,,,,,,
+2020,5400990,MORGAN COUNTY SCHOOLS,WV,BERKELEY SPRINGS,Regular local school district,2181,Other,Pre-K,12,7,No change; operational,Suppressed data,Suppressed data,1033,22,,,,,,
+2020,5400061,Mountain State Educational Services Cooperative,WV,Dunbar,Regional education service agency,,Not applicable,Not applicable,Not applicable,0,No change; operational,,,,,,,,,,
+2020,5401020,NICHOLAS COUNTY SCHOOLS,WV,SUMMERSVILLE,Regular local school district,3471,Other,Pre-K,12,14,No change; operational,Suppressed data,Suppressed data,1650,23,,,,,,
+2020,5401050,OHIO COUNTY SCHOOLS,WV,WHEELING,Regular local school district,5064,Other,Pre-K,12,13,No change; operational,Suppressed data,Suppressed data,2362,34,,,,,,
+2020,5401080,PENDLETON COUNTY SCHOOLS,WV,FRANKLIN,Regular local school district,870,Other,Pre-K,12,4,No change; operational,Suppressed data,Suppressed data,454,33,,,,,,
+2020,5401110,PLEASANTS COUNTY SCHOOLS,WV,ST. MARYS,Regular local school district,1052,Other,Pre-K,12,5,No change; operational,Suppressed data,Suppressed data,541,30,,,,,,
+2020,5401140,POCAHONTAS COUNTY SCHOOLS,WV,BUCKEYE,Regular local school district,961,Other,Pre-K,12,5,No change; operational,Suppressed data,Suppressed data,485,31,,,,,,
+2020,5401170,PRESTON COUNTY SCHOOLS,WV,KINGWOOD,Regular local school district,4210,Other,Pre-K,12,10,No change; operational,Suppressed data,Suppressed data,2055,22,,,,,,
+2020,5401200,PUTNAM COUNTY SCHOOLS,WV,WINFIELD,Regular local school district,9147,Other,Pre-K,12,23,No change; operational,Suppressed data,Suppressed data,4277,40,,,,,,
+2020,5401230,RALEIGH COUNTY SCHOOLS,WV,BECKLEY,Regular local school district,10869,Other,Pre-K,12,27,No change; operational,Suppressed data,Suppressed data,5020,29,,,,,,
+2020,5401260,RANDOLPH COUNTY SCHOOLS,WV,ELKINS,Regular local school district,3790,Other,Pre-K,12,14,No change; operational,Suppressed data,Suppressed data,1794,24,,,,,,
+2020,5401290,RITCHIE COUNTY SCHOOLS,WV,HARRISVILLE,Regular local school district,1296,Other,Pre-K,12,5,No change; operational,Suppressed data,Suppressed data,594,31,,,,,,
+2020,5401320,ROANE COUNTY SCHOOLS,WV,SPENCER,Regular local school district,1903,Other,Pre-K,12,5,No change; operational,Suppressed data,Suppressed data,877,18,,,,,,
+2020,5400059,Southern Educational Services Cooperative,WV,Beckley,Regional education service agency,,Not applicable,Not applicable,Not applicable,0,No change; operational,,,,,,,,,,
+2020,5401350,SUMMERS COUNTY SCHOOLS,WV,HINTON,Regular local school district,1393,Other,Pre-K,12,5,No change; operational,Suppressed data,Suppressed data,669,18,,,,,,
+2020,5401380,TAYLOR COUNTY SCHOOLS,WV,GRAFTON,Regular local school district,2297,Other,Pre-K,12,5,No change; operational,Suppressed data,Suppressed data,1127,27,,,,,,
+2020,5401410,TUCKER COUNTY SCHOOLS,WV,PARSONS,Regular local school district,929,Other,Pre-K,12,3,No change; operational,Suppressed data,Suppressed data,473,20,,,,,,
+2020,5401440,TYLER COUNTY SCHOOLS,WV,MIDDLEBOURNE,Regular local school district,1188,Other,Pre-K,12,4,No change; operational,Suppressed data,Suppressed data,609,31,,,,,,
+2020,5401470,UPSHUR COUNTY SCHOOLS,WV,BUCKHANNON,Regular local school district,3705,Other,Pre-K,12,10,No change; operational,Suppressed data,Suppressed data,1674,19,,,,,,
+2020,5401500,WAYNE COUNTY SCHOOLS,WV,WAYNE,Regular local school district,6461,Other,Pre-K,12,18,No change; operational,Suppressed data,Suppressed data,2955,25,,,,,,
+2020,5401530,WEBSTER COUNTY SCHOOLS,WV,WEBSTER SPRINGS,Regular local school district,1194,Other,Pre-K,12,4,No change; operational,Suppressed data,Suppressed data,631,23,,,,,,
+2020,5401560,WETZEL COUNTY SCHOOLS,WV,NEW MARTINSVILLE,Regular local school district,2370,Other,Pre-K,12,9,No change; operational,Suppressed data,Suppressed data,1074,25,,,,,,
+2020,5401590,WIRT COUNTY SCHOOLS,WV,ELIZABETH,Regular local school district,948,Other,Pre-K,12,3,No change; operational,Suppressed data,Suppressed data,473,35,,,,,,
+2020,5401620,WOOD COUNTY SCHOOLS,WV,PARKERSBURG,Regular local school district,11864,Other,Pre-K,12,26,No change; operational,Suppressed data,Suppressed data,5553,38,,,,,,
+2020,5401621,WV SCHOOLS FOR THE DEAF AND THE BLIND,WV,ROMNEY,State-operated agency,90,Other,Pre-K,12,2,No change; operational,Suppressed data,Suppressed data,49,5,,,,,,
+2020,5401650,WYOMING COUNTY SCHOOLS,WV,PINEVILLE,Regular local school district,3681,Other,Pre-K,12,14,No change; operational,Suppressed data,Suppressed data,1757,20,,,,,,
+2019,5400030,BARBOUR COUNTY BOARD OF EDUCATION,WV,PHILIPPI,Regular local school district,2266,Other,Pre-K,12,7,No change; operational,,,,,156,97,,,,
+2019,5400060,BERKELEY COUNTY SCHOOLS,WV,MARTINSBURG,Regular local school district,19700,Other,Pre-K,12,33,No change; operational,,,,,1377,95,,,,
+2019,5400090,BOONE COUNTY  SCHOOLS,WV,MADISON,Regular local school district,3674,Other,Pre-K,12,13,No change; operational,,,,,279,92,,,,
+2019,5400120,BRAXTON COUNTY SCHOOLS,WV,SUTTON,Regular local school district,1935,Other,Pre-K,12,8,No change; operational,,,,,141,97,,,,
+2019,5400150,BROOKE COUNTY SCHOOLS,WV,WELLSBURG,Regular local school district,2691,Other,Pre-K,12,7,No change; operational,,,,,193,97,,,,
+2019,5400180,CABELL COUNTY SCHOOLS,WV,HUNTINGTON,Regular local school district,12189,Other,Pre-K,12,26,No change; operational,,,,,869,90,,,,
+2019,5400210,CALHOUN COUNTY SCHOOLS,WV,MT. ZION,Regular local school district,937,Other,Pre-K,12,4,No change; operational,,,,,93,97,,,,
+2019,5400240,CLAY COUNTY SCHOOLS,WV,CLAY,Regular local school district,1813,Other,Pre-K,12,6,No change; operational,,,,,109,97,,,,
+2019,5400270,DODDRIDGE COUNTY SCHOOLS,WV,WEST UNION,Regular local school district,1121,Other,Pre-K,12,4,No change; operational,,,,,78,97,,,,
+2019,5400058,Eastern Panhandle Instructional Cooperative,WV,Martinsburg,Regional education service agency,,Missing/not reported,,,0,New,,,,,,,,,,
+2019,5400300,FAYETTE COUNTY SCHOOLS,WV,FAYETTEVILLE,Regular local school district,6064,Other,Pre-K,12,21,No change; operational,,,,,444,90,,,,
+2019,5400330,GILMER COUNTY SCHOOLS,WV,GLENVILLE,Regular local school district,806,Other,Pre-K,12,2,No change; operational,,,,,52,95,,,,
+2019,5400360,GRANT COUNTY SCHOOLS,WV,PETERSBURG,Regular local school district,1619,Other,Pre-K,12,5,No change; operational,,,,,115,92,,,,
+2019,5400390,GREENBRIER COUNTY SCHOOLS,WV,LEWISBURG,Regular local school district,4807,Other,Pre-K,12,14,No change; operational,,,,,348,95,,,,
+2019,5400420,HAMPSHIRE COUNTY SCHOOLS,WV,ROMNEY,Regular local school district,2968,Other,Pre-K,12,9,No change; operational,,,,,234,86,,,,
+2019,5400450,HANCOCK COUNTY SCHOOLS,WV,NEW CUMBERLAND,Regular local school district,3985,Other,Pre-K,12,9,No change; operational,,,,,297,95,,,,
+2019,5400480,HARDY COUNTY SCHOOLS,WV,MOOREFIELD,Regular local school district,2272,Other,Pre-K,12,6,No change; operational,,,,,146,97,,,,
+2019,5400510,HARRISON COUNTY SCHOOLS,WV,CLARKSBURG,Regular local school district,10593,Other,Pre-K,12,28,No change; operational,,,,,679,98,,,,
+2019,5400511,INSTITUTIONAL EDUCATIONAL PROGRAMS,WV,CHARLESTON,State-operated agency,,Other,Pre-K,12,22,No change; operational,,,,,,,,,,
+2019,5400540,JACKSON COUNTY SCHOOLS,WV,RIPLEY,Regular local school district,4489,Other,Pre-K,12,13,No change; operational,,,,,320,92,,,,
+2019,5400570,JEFFERSON COUNTY SCHOOLS,WV,CHARLES TOWN,Regular local school district,8954,Other,Pre-K,12,16,No change; operational,,,,,678,91,,,,
+2019,5400600,KANAWHA COUNTY SCHOOLS,WV,CHARLESTON,Regular local school district,25429,Other,Pre-K,12,69,No change; operational,,,,,1930,88,,,,
+2019,5400630,LEWIS COUNTY SCHOOLS,WV,WESTON,Regular local school district,2578,Other,Pre-K,12,6,No change; operational,,,,,168,87,,,,
+2019,5400660,LINCOLN COUNTY SCHOOLS,WV,HAMLIN,Regular local school district,3312,Other,Pre-K,12,8,No change; operational,,,,,211,92,,,,
+2019,5400690,LOGAN COUNTY SCHOOLS,WV,WEST LOGAN  WV,Regular local school district,5507,Other,Pre-K,12,18,No change; operational,,,,,454,88,,,,
+2019,5400720,MARION COUNTY SCHOOLS,WV,FAIRMONT,Regular local school district,7965,Other,Pre-K,12,22,No change; operational,,,,,550,97,,,,
+2019,5400750,MARSHALL COUNTY SCHOOLS,WV,MOUNDSVILLE,Regular local school district,4460,Other,Pre-K,12,14,No change; operational,,,,,315,97,,,,
+2019,5400780,MASON COUNTY SCHOOLS,WV,POINT PLEASANT,Regular local school district,3935,Other,Pre-K,12,12,No change; operational,,,,,280,94,,,,
+2019,5400810,MCDOWELL COUNTY SCHOOLS,WV,WELCH,Regular local school district,2901,Other,Pre-K,12,11,No change; operational,,,,,211,82,,,,
+2019,5400840,MERCER COUNTY SCHOOLS,WV,PRINCETON,Regular local school district,8785,Other,Pre-K,12,26,No change; operational,,,,,629,92,,,,
+2019,5400870,MINERAL COUNTY SCHOOLS,WV,KEYSER,Regular local school district,4094,Other,Pre-K,12,14,No change; operational,,,,,292,96,,,,
+2019,5400900,MINGO COUNTY SCHOOLS,WV,WILLIAMSON,Regular local school district,4130,Other,Pre-K,12,10,No change; operational,,,,,241,94,,,,
+2019,5400930,MONONGALIA COUNTY SCHOOLS,WV,MORGANTOWN,Regular local school district,11739,Other,Pre-K,12,19,No change; operational,,,,,799,92,,,,
+2019,5400960,MONROE COUNTY SCHOOLS,WV,UNION,Regular local school district,1702,Other,Pre-K,12,5,No change; operational,,,,,127,97,,,,
+2019,5400990,MORGAN COUNTY SCHOOLS,WV,BERKELEY SPRINGS,Regular local school district,2245,Other,Pre-K,12,7,No change; operational,,,,,174,87,,,,
+2019,5400061,Mountain State Educational Services Cooperative,WV,Dunbar,Regional education service agency,,Missing/not reported,,,0,New,,,,,,,,,,
+2019,5401020,NICHOLAS COUNTY SCHOOLS,WV,SUMMERSVILLE,Regular local school district,3634,Other,Pre-K,12,14,No change; operational,,,,,253,96,,,,
+2019,5401050,OHIO COUNTY SCHOOLS,WV,WHEELING,Regular local school district,5269,Other,Pre-K,12,13,No change; operational,,,,,356,98,,,,
+2019,5401080,PENDLETON COUNTY SCHOOLS,WV,FRANKLIN,Regular local school district,864,Other,Pre-K,12,4,No change; operational,,,,,66,97,,,,
+2019,5401110,PLEASANTS COUNTY SCHOOLS,WV,ST. MARYS,Regular local school district,1094,Other,Pre-K,12,5,No change; operational,,,,,88,97,,,,
+2019,5401140,POCAHONTAS COUNTY SCHOOLS,WV,BUCKEYE,Regular local school district,982,Other,Pre-K,12,5,No change; operational,,,,,80,87,,,,
+2019,5401170,PRESTON COUNTY SCHOOLS,WV,KINGWOOD,Regular local school district,4384,Other,Pre-K,12,10,No change; operational,,,,,307,90,,,,
+2019,5401200,PUTNAM COUNTY SCHOOLS,WV,WINFIELD,Regular local school district,9482,Other,Pre-K,12,23,No change; operational,,,,,730,98,,,,
+2019,5401230,RALEIGH COUNTY SCHOOLS,WV,BECKLEY,Regular local school district,11461,Other,Pre-K,12,27,No change; operational,,,,,792,88,,,,
+2019,5401260,RANDOLPH COUNTY SCHOOLS,WV,ELKINS,Regular local school district,3870,Other,Pre-K,12,14,No change; operational,,,,,265,95,,,,
+2019,5401290,RITCHIE COUNTY SCHOOLS,WV,HARRISVILLE,Regular local school district,1341,Other,Pre-K,12,5,No change; operational,,,,,104,87,,,,
+2019,5401320,ROANE COUNTY SCHOOLS,WV,SPENCER,Regular local school district,2013,Other,Pre-K,12,5,No change; operational,,,,,135,97,,,,
+2019,5400059,Southern Educational Services Cooperative,WV,Beckley,Regional education service agency,,Missing/not reported,,,0,New,,,,,,,,,,
+2019,5401350,SUMMERS COUNTY SCHOOLS,WV,HINTON,Regular local school district,1451,Other,Pre-K,12,5,No change; operational,,,,,105,92,,,,
+2019,5401380,TAYLOR COUNTY SCHOOLS,WV,GRAFTON,Regular local school district,2414,Other,Pre-K,12,5,No change; operational,,,,,156,92,,,,
+2019,5401410,TUCKER COUNTY SCHOOLS,WV,PARSONS,Regular local school district,976,Other,Pre-K,12,3,No change; operational,,,,,67,87,,,,
+2019,5401440,TYLER COUNTY SCHOOLS,WV,MIDDLEBOURNE,Regular local school district,1237,Other,Pre-K,12,4,No change; operational,,,,,93,92,,,,
+2019,5401470,UPSHUR COUNTY SCHOOLS,WV,BUCKHANNON,Regular local school district,3825,Other,Pre-K,12,10,No change; operational,,,,,283,93,,,,
+2019,5401500,WAYNE COUNTY SCHOOLS,WV,WAYNE,Regular local school district,6702,Other,Pre-K,12,18,No change; operational,,,,,552,85,,,,
+2019,5401530,WEBSTER COUNTY SCHOOLS,WV,WEBSTER SPRINGS,Regular local school district,1276,Other,Pre-K,12,4,No change; operational,,,,,85,97,,,,
+2019,5401560,WETZEL COUNTY SCHOOLS,WV,NEW MARTINSVILLE,Regular local school district,2459,Other,Pre-K,12,9,No change; operational,,,,,202,94,,,,
+2019,5401590,WIRT COUNTY SCHOOLS,WV,ELIZABETH,Regular local school district,997,Other,Pre-K,12,3,No change; operational,,,,,79,87,,,,
+2019,5401620,WOOD COUNTY SCHOOLS,WV,PARKERSBURG,Regular local school district,12238,Other,Pre-K,12,29,No change; operational,,,,,884,89,,,,
+2019,5401621,WV SCHOOLS FOR THE DEAF AND THE BLIND,WV,ROMNEY,State-operated agency,,Other,Pre-K,12,2,No change; operational,,,,,,,,,,
+2019,5401650,WYOMING COUNTY SCHOOLS,WV,PINEVILLE,Regular local school district,3852,Other,Pre-K,12,14,No change; operational,,,,,275,94,,,,
+2018,5400061,,,,,,,,,,,,,,,,,9744000,4408000,23000,750000
+2018,5400059,,,,,,,,,,,,,,,,,5090000,2997000,0,143000
+2018,5400058,,,,,,,,,,,,,,,,,11501000,10156000,6000,245000
+2018,5400030,BARBOUR COUNTY SCHOOLS,WV,PHILIPPI,Regular local school district,2346,Other,Pre-K,12,7,No change; operational,1151,36,1151,32,147,97,25233000,24185000,659000,462000
+2018,5400060,BERKELEY COUNTY SCHOOLS,WV,MARTINSBURG,Regular local school district,19530,Other,Pre-K,12,33,No change; operational,9793,44,9790,33,1337,96,225888000,218968000,761000,2110000
+2018,5400090,BOONE COUNTY  SCHOOLS,WV,MADISON,Regular local school district,3840,Other,Pre-K,12,13,No change; operational,1916,43,1914,36,311,90,47886000,46698000,0,1232000
+2018,5400120,BRAXTON COUNTY SCHOOLS,WV,SUTTON,Regular local school district,2013,Other,Pre-K,12,8,No change; operational,964,36,966,26,120,97,23310000,22458000,0,677000
+2018,5400150,BROOKE COUNTY SCHOOLS,WV,WELLSBURG,Regular local school district,2833,Other,Pre-K,12,7,No change; operational,1443,34,1442,32,201,96,39813000,37752000,0,949000
+2018,5400180,CABELL COUNTY SCHOOLS,WV,HUNTINGTON,Regular local school district,12517,Other,Pre-K,12,26,No change; operational,6093,48,6090,38,917,89,159834000,151383000,9000,5162000
+2018,5400210,CALHOUN COUNTY SCHOOLS,WV,MT. ZION,Regular local school district,971,Other,Pre-K,12,4,No change; operational,470,46,470,31,80,97,12539000,11904000,0,160000
+2018,5400240,CLAY COUNTY SCHOOLS,WV,CLAY,Regular local school district,1880,Other,Pre-K,12,6,No change; operational,919,46,918,35,129,87,24043000,23698000,7000,179000
+2018,5400270,DODDRIDGE COUNTY SCHOOLS,WV,WEST UNION,Regular local school district,1124,Other,Pre-K,12,4,No change; operational,582,48,582,41,72,97,34044000,22613000,172000,1394000
+2018,5400300,FAYETTE COUNTY SCHOOLS,WV,FAYETTEVILLE,Regular local school district,6268,Other,Pre-K,12,17,No change; operational,3044,35,3039,29,508,88,102190000,74070000,166000,2504000
+2018,5400330,GILMER COUNTY SCHOOLS,WV,GLENVILLE,Regular local school district,814,Other,Pre-K,12,2,No change; operational,424,38,424,33,62,92,11343000,11126000,35000,272000
+2018,5400360,GRANT COUNTY SCHOOLS,WV,PETERSBURG,Regular local school district,1653,Other,Pre-K,12,5,No change; operational,792,51,792,38,123,92,19553000,16833000,11000,314000
+2018,5400390,GREENBRIER COUNTY SCHOOLS,WV,LEWISBURG,Regular local school district,4868,Other,Pre-K,12,14,No change; operational,2412,47,2409,38,376,92,66968000,60029000,394000,635000
+2018,5400420,HAMPSHIRE COUNTY SCHOOLS,WV,ROMNEY,Regular local school district,3024,Other,Pre-K,12,9,No change; operational,1537,46,1538,41,236,85,34213000,33351000,0,328000
+2018,5400450,HANCOCK COUNTY SCHOOLS,WV,NEW CUMBERLAND,Regular local school district,4041,Other,Pre-K,12,9,No change; operational,2005,48,2004,48,291,97,50954000,47077000,0,886000
+2018,5400480,HARDY COUNTY SCHOOLS,WV,MOOREFIELD,Regular local school district,2370,Other,Pre-K,12,6,No change; operational,1170,42,1168,31,161,92,24739000,23936000,0,455000
+2018,5400510,HARRISON COUNTY SCHOOLS,WV,CLARKSBURG,Regular local school district,10805,Other,Pre-K,12,28,No change; operational,5358,46,5354,39,763,93,140038000,130960000,0,4307000
+2018,5400511,INSTITUTIONAL EDUCATIONAL PROGRAMS,WV,CHARLESTON,State-operated agency,,Other,Pre-K,12,22,No change; operational,218,14,219,5,,,16930000,16727000,203000,331000
+2018,5400540,JACKSON COUNTY SCHOOLS,WV,RIPLEY,Regular local school district,4589,Other,Pre-K,12,13,No change; operational,2298,51,2277,44,315,92,61361000,53946000,0,1185000
+2018,5400570,JEFFERSON COUNTY SCHOOLS,WV,CHARLES TOWN,Regular local school district,9055,Other,Pre-K,12,16,No change; operational,4650,53,4643,42,675,90,111458000,107020000,10000,2568000
+2018,5400600,KANAWHA COUNTY SCHOOLS,WV,CHARLESTON,Regular local school district,25764,Other,Pre-K,12,69,No change; operational,12593,47,12595,42,1918,86,328584000,308215000,64000,10301000
+2018,5400630,LEWIS COUNTY SCHOOLS,WV,WESTON,Regular local school district,2581,Other,Pre-K,12,6,No change; operational,1299,35,1299,31,169,92,29396000,28580000,0,769000
+2018,5400660,LINCOLN COUNTY SCHOOLS,WV,HAMLIN,Regular local school district,3413,Other,Pre-K,12,8,No change; operational,1718,38,1721,27,188,92,43915000,41748000,22000,429000
+2018,5400690,LOGAN COUNTY SCHOOLS,WV,WEST LOGAN  WV,Regular local school district,5644,Other,Pre-K,12,18,No change; operational,2682,41,2682,33,444,91,73256000,68543000,0,804000
+2018,5400720,MARION COUNTY SCHOOLS,WV,MANNINGTON,Regular local school district,7959,Other,Pre-K,12,22,No change; operational,3922,51,3920,44,560,91,101522000,98866000,115000,3787000
+2018,5400750,MARSHALL COUNTY SCHOOLS,WV,MOUNDSVILLE,Regular local school district,4647,Other,Pre-K,12,14,No change; operational,2277,40,2279,34,329,94,78955000,68078000,318000,1271000
+2018,5400780,MASON COUNTY SCHOOLS,WV,POINT PLEASANT,Regular local school district,4084,Other,Pre-K,12,12,No change; operational,2022,43,2020,33,307,93,50207000,48566000,34000,1223000
+2018,5400810,MCDOWELL COUNTY SCHOOLS,WV,WELCH,Regular local school district,3063,Other,Pre-K,12,11,No change; operational,1423,34,1423,22,222,87,41563000,40032000,69000,757000
+2018,5400840,MERCER COUNTY SCHOOLS,WV,PRINCETON,Regular local school district,9004,Other,Pre-K,12,26,No change; operational,4412,43,4413,39,608,90,113055000,101038000,83000,1094000
+2018,5400870,MINERAL COUNTY SCHOOLS,WV,KEYSER,Regular local school district,4165,Other,Pre-K,12,14,No change; operational,2017,41,2016,38,282,97,53617000,48353000,432000,628000
+2018,5400900,MINGO COUNTY SCHOOLS,WV,WILLIAMSON,Regular local school district,4212,Other,Pre-K,12,10,No change; operational,2055,42,2053,35,222,98,51114000,47832000,0,894000
+2018,5400930,MONONGALIA COUNTY SCHOOLS,WV,MORGANTOWN,Regular local school district,11679,Other,Pre-K,12,19,No change; operational,5551,55,5552,50,832,91,156929000,140549000,1005000,2199000
+2018,5400960,MONROE COUNTY SCHOOLS,WV,UNION,Regular local school district,1762,Other,Pre-K,12,5,No change; operational,889,43,889,36,126,97,24436000,22625000,5000,390000
+2018,5400990,MORGAN COUNTY SCHOOLS,WV,BERKELEY SPRINGS,Regular local school district,2329,Other,Pre-K,12,7,No change; operational,1147,37,1145,29,186,87,31654000,26609000,36000,860000
+2018,5401020,NICHOLAS COUNTY SCHOOLS,WV,SUMMERSVILLE,Regular local school district,3735,Other,Pre-K,12,14,No change; operational,1864,41,1863,35,274,94,44061000,43262000,7000,768000
+2018,5401050,OHIO COUNTY SCHOOLS,WV,WHEELING,Regular local school district,5278,Other,Pre-K,12,13,No change; operational,2618,55,2618,43,368,98,82750000,72920000,3000,2067000
+2018,5401080,PENDLETON COUNTY SCHOOLS,WV,FRANKLIN,Regular local school district,931,Other,Pre-K,12,4,No change; operational,453,45,453,38,60,95,13969000,13345000,0,118000
+2018,5401110,PLEASANTS COUNTY SCHOOLS,WV,ST. MARYS,Regular local school district,1102,Other,Pre-K,12,5,No change; operational,560,46,560,39,89,97,17295000,15864000,0,429000
+2018,5401140,POCAHONTAS COUNTY SCHOOLS,WV,BUCKEYE,Regular local school district,1014,Other,Pre-K,12,5,No change; operational,491,40,491,35,80,92,16320000,15103000,95000,273000
+2018,5401170,PRESTON COUNTY SCHOOLS,WV,KINGWOOD,Regular local school district,4415,Other,Pre-K,12,10,No change; operational,2230,39,2231,30,273,91,47335000,44842000,0,1065000
+2018,5401200,PUTNAM COUNTY SCHOOLS,WV,WINFIELD,Regular local school district,9543,Other,Pre-K,12,23,No change; operational,4788,56,4791,53,725,97,114884000,111156000,35000,1429000
+2018,5401230,RALEIGH COUNTY SCHOOLS,WV,BECKLEY,Regular local school district,11701,Other,Pre-K,12,27,No change; operational,5921,45,5919,37,781,87,143044000,134350000,0,2066000
+2018,5401260,RANDOLPH COUNTY SCHOOLS,WV,ELKINS,Regular local school district,3955,Other,Pre-K,12,14,No change; operational,1931,37,1931,29,287,97,49809000,42234000,0,769000
+2018,5401290,RITCHIE COUNTY SCHOOLS,WV,HARRISVILLE,Regular local school district,1357,Other,Pre-K,12,5,No change; operational,664,46,665,42,94,92,20004000,17770000,201000,421000
+2018,5401320,ROANE COUNTY SCHOOLS,WV,SPENCER,Regular local school district,2093,Other,Pre-K,12,5,No change; operational,1033,38,1033,25,128,92,23446000,22663000,0,344000
+2018,5401350,SUMMERS COUNTY SCHOOLS,WV,HINTON,Regular local school district,1510,Other,Pre-K,12,5,No change; operational,770,36,770,26,106,92,16349000,15895000,0,165000
+2018,5401380,TAYLOR COUNTY SCHOOLS,WV,GRAFTON,Regular local school district,2435,Other,Pre-K,12,5,No change; operational,1181,47,1179,41,138,92,28240000,27171000,0,764000
+2018,5401410,TUCKER COUNTY SCHOOLS,WV,PARSONS,Regular local school district,1013,Other,Pre-K,12,3,No change; operational,476,42,475,31,72,92,13380000,12242000,0,385000
+2018,5401440,TYLER COUNTY SCHOOLS,WV,MIDDLEBOURNE,Regular local school district,1268,Other,Pre-K,12,4,No change; operational,632,47,631,42,87,92,23948000,19769000,0,1337000
+2018,5401470,UPSHUR COUNTY SCHOOLS,WV,BUCKHANNON,Regular local school district,3807,Other,Pre-K,12,10,No change; operational,1870,37,1870,27,269,90,42432000,41120000,0,776000
+2018,5401500,WAYNE COUNTY SCHOOLS,WV,WAYNE,Regular local school district,6766,Other,Pre-K,12,18,No change; operational,3345,48,3343,40,525,86,82702000,76830000,8000,735000
+2018,5401530,WEBSTER COUNTY SCHOOLS,WV,WEBSTER SPRINGS,Regular local school district,1315,Other,Pre-K,12,4,No change; operational,656,34,656,24,110,92,15827000,15552000,0,622000
+2018,5401560,WETZEL COUNTY SCHOOLS,WV,NEW MARTINSVILLE,Regular local school district,2511,Other,Pre-K,12,9,No change; operational,1213,41,1213,36,186,92,45595000,43765000,0,977000
+2018,5401590,WIRT COUNTY SCHOOLS,WV,ELIZABETH,Regular local school district,1010,Other,Pre-K,12,3,No change; operational,530,38,530,37,52,84,13957000,12712000,0,244000
+2018,5401620,WOOD COUNTY SCHOOLS,WV,PARKERSBURG,Regular local school district,12423,Other,Pre-K,12,29,No change; operational,6088,52,6085,48,835,91,168640000,149089000,32000,5330000
+2018,5401621,WV SCHOOLS FOR THE DEAF AND THE BLIND,WV,ROMNEY,State-operated agency,,Other,Pre-K,12,2,No change; operational,58,15,58,5,,,16942000,15304000,212000,74000
+2018,5401650,WYOMING COUNTY SCHOOLS,WV,PINEVILLE,Regular local school district,3947,Other,Pre-K,12,14,No change; operational,1896,46,1896,31,275,93,49897000,45495000,778000,617000
+2017,5400030,BARBOUR COUNTY SCHOOLS,WV,PHILIPPI,Regular local school district,2317,Other,Pre-K,12,7,No change; operational,1165,34,1164,31,133,92,26044000,23484000,86000,600000
+2017,5400060,BERKELEY COUNTY SCHOOLS,WV,MARTINSBURG,Regular local school district,19320,Other,Pre-K,12,32,No change; operational,9658,45,9666,33,1306,94,225104000,205858000,1089000,2436000
+2017,5400090,BOONE COUNTY  SCHOOLS,WV,MADISON,Regular local school district,4010,Other,Pre-K,12,13,No change; operational,2005,41,2006,32,299,88,41734000,40505000,7000,556000
+2017,5400120,BRAXTON COUNTY SCHOOLS,WV,SUTTON,Regular local school district,2022,Other,Pre-K,12,8,No change; operational,986,40,986,30,141,87,22247000,21560000,0,474000
+2017,5400150,BROOKE COUNTY SCHOOLS,WV,WELLSBURG,Regular local school district,2940,Other,Pre-K,12,10,No change; operational,1497,38,1495,29,229,94,48335000,36819000,0,693000
+2017,5400180,CABELL COUNTY SCHOOLS,WV,HUNTINGTON,Regular local school district,12806,Other,Pre-K,12,26,No change; operational,6215,47,6215,36,929,83,152373000,143613000,0,3320000
+2017,5400210,CALHOUN COUNTY SCHOOLS,WV,MT ZION,Regular local school district,1029,Other,Pre-K,12,4,No change; operational,479,42,478,35,81,92,12212000,11360000,70000,346000
+2017,5400240,CLAY COUNTY SCHOOLS,WV,CLAY,Regular local school district,1939,Other,Pre-K,12,6,No change; operational,957,49,957,35,133,97,22504000,22250000,0,229000
+2017,5400270,DODDRIDGE COUNTY SCHOOLS,WV,WEST UNION,Regular local school district,1118,Other,Pre-K,12,4,No change; operational,584,51,584,43,77,97,24476000,19988000,18000,1076000
+2017,5400300,FAYETTE COUNTY SCHOOLS,WV,FAYETTEVILLE,Regular local school district,6471,Other,Pre-K,12,18,No change; operational,3167,36,3166,27,466,86,76889000,71421000,47000,1926000
+2017,5400330,GILMER COUNTY SCHOOLS,WV,GLENVILLE,Regular local school district,798,Other,Pre-K,12,2,No change; operational,402,37,402,36,68,92,10999000,10766000,0,236000
+2017,5400360,GRANT COUNTY SCHOOLS,WV,PETERSBURG,Regular local school district,1679,Other,Pre-K,12,5,No change; operational,829,46,829,37,140,92,17770000,16627000,0,330000
+2017,5400390,GREENBRIER COUNTY SCHOOLS,WV,LEWISBURG,Regular local school district,4946,Other,Pre-K,12,14,No change; operational,2445,48,2447,39,373,91,61188000,57578000,505000,488000
+2017,5400420,HAMPSHIRE COUNTY SCHOOLS,WV,ROMNEY,Regular local school district,3188,Other,Pre-K,12,9,No change; operational,1510,44,1510,42,297,87,33293000,32478000,0,392000
+2017,5400450,HANCOCK COUNTY SCHOOLS,WV,NEW CUMBERLAND,Regular local school district,4113,Other,Pre-K,12,8,No change; operational,2059,48,2056,46,294,90,47876000,43834000,109000,1118000
+2017,5400480,HARDY COUNTY SCHOOLS,WV,MOOREFIELD,Regular local school district,2380,Other,Pre-K,12,6,No change; operational,1200,42,1200,36,144,87,26002000,22698000,7000,499000
+2017,5400510,HARRISON COUNTY SCHOOLS,WV,CLARKSBURG,Regular local school district,10788,Other,Pre-K,12,27,No change; operational,5378,45,5384,37,769,90,147506000,125465000,17000,3649000
+2017,5400511,INSTITUTIONAL EDUCATIONAL PROGRAMS,WV,CHARLESTON,State-operated agency,,Other,Pre-K,12,21,No change; operational,242,13,241,4,,,16495000,16440000,55000,207000
+2017,5400540,JACKSON COUNTY SCHOOLS,WV,RIPLEY,Regular local school district,4656,Other,Pre-K,12,13,No change; operational,2298,51,2295,39,303,94,57303000,51541000,0,1293000
+2017,5400570,JEFFERSON COUNTY SCHOOLS,WV,CHARLES TOWN,Regular local school district,9180,Other,Pre-K,12,16,No change; operational,4672,49,4673,41,651,91,110504000,103447000,8000,2920000
+2017,5400600,KANAWHA COUNTY SCHOOLS,WV,CHARLESTON,Regular local school district,26272,Other,Pre-K,12,69,No change; operational,12901,46,12897,41,1942,83,317860000,298365000,0,11906000
+2017,5400630,LEWIS COUNTY SCHOOLS,WV,WESTON,Regular local school district,2587,Other,Pre-K,12,6,No change; operational,1261,31,1260,30,182,97,29341000,28309000,11000,613000
+2017,5400660,LINCOLN COUNTY SCHOOLS,WV,HAMLIN,Regular local school district,3477,Other,Pre-K,12,8,No change; operational,1756,35,1749,25,226,87,41458000,40480000,41000,518000
+2017,5400690,LOGAN COUNTY SCHOOLS,WV,LOGAN,Regular local school district,5872,Other,Pre-K,12,18,No change; operational,2801,40,2801,30,455,91,75391000,65623000,0,1299000
+2017,5400720,MARION COUNTY SCHOOLS,WV,FAIRMONT,Regular local school district,8081,Other,Pre-K,12,22,No change; operational,3864,49,3865,43,593,94,96428000,94050000,0,3649000
+2017,5400750,MARSHALL COUNTY SCHOOLS,WV,MOUNDSVILLE,Regular local school district,4698,Other,Pre-K,12,14,No change; operational,2317,40,2317,33,352,96,72756000,65147000,1000,1510000
+2017,5400780,MASON COUNTY SCHOOLS,WV,POINT PLEASANT,Regular local school district,4171,Other,Pre-K,12,12,No change; operational,2087,39,2088,29,302,92,48597000,46866000,6000,1238000
+2017,5400810,MCDOWELL COUNTY SCHOOLS,WV,WELCH,Regular local school district,3096,Other,Pre-K,12,11,No change; operational,1499,31,1499,23,215,92,40782000,39212000,12000,789000
+2017,5400840,MERCER COUNTY SCHOOLS,WV,PRINCETON,Regular local school district,9051,Other,Pre-K,12,28,No change; operational,4425,41,4426,33,672,90,103049000,96692000,120000,860000
+2017,5400870,MINERAL COUNTY SCHOOLS,WV,KEYSER,Regular local school district,4150,Other,Pre-K,12,14,No change; operational,1986,39,1986,39,285,95,50056000,48857000,107000,943000
+2017,5400900,MINGO COUNTY SCHOOLS,WV,WILLIAMSON,Regular local school district,4314,Other,Pre-K,12,11,No change; operational,1999,45,1997,36,253,97,48074000,46867000,25000,1451000
+2017,5400930,MONONGALIA COUNTY SCHOOLS,WV,MORGANTOWN,Regular local school district,11758,Other,Pre-K,12,19,No change; operational,5710,54,5713,50,811,90,152425000,133276000,1283000,2228000
+2017,5400960,MONROE COUNTY SCHOOLS,WV,UNION,Regular local school district,1804,Other,Pre-K,12,5,No change; operational,873,42,873,35,125,97,20738000,20217000,0,457000
+2017,5400990,MORGAN COUNTY SCHOOLS,WV,BERKELEY SPRINGS,Regular local school district,2362,Other,Pre-K,12,7,No change; operational,1175,38,1174,31,185,97,30548000,25728000,16000,844000
+2017,5401020,NICHOLAS COUNTY SCHOOLS,WV,SUMMERSVILLE,Regular local school district,3771,Other,Pre-K,12,14,No change; operational,1873,42,1873,34,285,93,44539000,42711000,6000,816000
+2017,5401050,OHIO COUNTY SCHOOLS,WV,WHEELING,Regular local school district,5278,Other,Pre-K,12,13,No change; operational,2681,54,2682,44,338,96,70012000,67009000,7000,1166000
+2017,5401080,PENDLETON COUNTY SCHOOLS,WV,FRANKLIN,Regular local school district,935,Other,Pre-K,12,4,No change; operational,445,48,446,38,65,92,13118000,12766000,0,76000
+2017,5401110,PLEASANTS COUNTY SCHOOLS,WV,ST MARYS,Regular local school district,1149,Other,Pre-K,12,5,No change; operational,559,48,559,36,112,92,16939000,15688000,0,420000
+2017,5401140,POCAHONTAS COUNTY SCHOOLS,WV,MARLINTON,Regular local school district,1029,Other,Pre-K,12,5,No change; operational,510,41,510,42,79,87,14846000,14526000,0,262000
+2017,5401170,PRESTON COUNTY SCHOOLS,WV,KINGWOOD,Regular local school district,4521,Other,Pre-K,12,10,No change; operational,2260,38,2260,31,298,86,44654000,42416000,0,886000
+2017,5401200,PUTNAM COUNTY SCHOOLS,WV,WINFIELD,Regular local school district,9654,Other,Pre-K,12,23,No change; operational,4926,56,4927,54,752,97,115860000,107395000,8000,1921000
+2017,5401230,RALEIGH COUNTY SCHOOLS,WV,BECKLEY,Regular local school district,12068,Other,Pre-K,12,29,No change; operational,5941,44,5940,37,833,85,157984000,129335000,5000,1910000
+2017,5401260,RANDOLPH COUNTY SCHOOLS,WV,ELKINS,Regular local school district,4040,Other,Pre-K,12,15,No change; operational,2026,36,2027,28,286,93,42838000,40613000,0,636000
+2017,5401290,RITCHIE COUNTY SCHOOLS,WV,HARRISVILLE,Regular local school district,1459,Other,Pre-K,12,6,No change; operational,715,45,718,40,94,92,17587000,17231000,19000,324000
+2017,5401320,ROANE COUNTY SCHOOLS,WV,SPENCER,Regular local school district,2243,Other,Pre-K,12,5,No change; operational,1089,43,1089,29,174,87,22900000,22068000,250000,506000
+2017,5401350,SUMMERS COUNTY SCHOOLS,WV,HINTON,Regular local school district,1539,Other,Pre-K,12,5,No change; operational,769,36,770,23,103,87,15858000,15303000,0,235000
+2017,5401380,TAYLOR COUNTY SCHOOLS,WV,GRAFTON,Regular local school district,2439,Other,Pre-K,12,6,No change; operational,1192,42,1192,38,147,92,28614000,25613000,19000,821000
+2017,5401410,TUCKER COUNTY SCHOOLS,WV,PARSONS,Regular local school district,1011,Other,Pre-K,12,3,No change; operational,498,38,499,29,84,97,11867000,11693000,0,214000
+2017,5401440,TYLER COUNTY SCHOOLS,WV,SISTERSVILLE,Regular local school district,1292,Other,Pre-K,12,4,No change; operational,645,47,644,41,102,97,19007000,17507000,0,1040000
+2017,5401470,UPSHUR COUNTY SCHOOLS,WV,BUCKHANNON,Regular local school district,3776,Other,Pre-K,12,10,No change; operational,1876,36,1876,28,240,86,40494000,38504000,0,606000
+2017,5401500,WAYNE COUNTY SCHOOLS,WV,WAYNE,Regular local school district,7020,Other,Pre-K,12,18,No change; operational,3461,47,3461,40,544,88,80631000,74343000,27000,893000
+2017,5401530,WEBSTER COUNTY SCHOOLS,WV,WEBSTER SPRINGS,Regular local school district,1366,Other,Pre-K,12,4,No change; operational,701,31,702,20,102,97,15038000,14875000,0,351000
+2017,5401560,WETZEL COUNTY SCHOOLS,WV,NEW MARTINSVILLE,Regular local school district,2567,Other,Pre-K,12,9,No change; operational,1241,36,1239,29,190,97,43275000,40282000,0,1179000
+2017,5401590,WIRT COUNTY SCHOOLS,WV,ELIZABETH,Regular local school district,1035,Other,Pre-K,12,3,No change; operational,497,42,497,38,81,87,12029000,11751000,0,241000
+2017,5401620,WOOD COUNTY SCHOOLS,WV,PARKERSBURG,Regular local school district,12676,Other,Pre-K,12,29,No change; operational,6203,49,6197,41,882,89,147351000,137512000,86000,2683000
+2017,5401621,WV SCHOOLS FOR THE DEAF AND THE BLIND,WV,ROMNEY,State-operated agency,,Other,Pre-K,12,3,No change; operational,66,17,66,7.5,,,13550000,13056000,100000,71000
+2017,5401650,WYOMING COUNTY SCHOOLS,WV,PINEVILLE,Regular local school district,4005,Other,Pre-K,12,14,No change; operational,1927,44,1927,27,288,92,46075000,44814000,298000,574000
+2016,5400030,BARBOUR COUNTY SCHOOLS,WV,PHILIPPI,Regular local school district,2324,Other,Pre-K,12,9,No change; operational,1127,36,1127,27,172,92,29894000,24136000,0,666000
+2016,5400060,BERKELEY COUNTY SCHOOLS,WV,MARTINSBURG,Regular local school district,19000,Other,Pre-K,12,32,No change; operational,9158,51,9149,34,1286,94,225055000,201116000,2848000,2641000
+2016,5400090,BOONE COUNTY  SCHOOLS,WV,MADISON,Regular local school district,4178,Other,Pre-K,12,13,No change; operational,1960,41,1968,32,297,88,44495000,43874000,0,493000
+2016,5400120,BRAXTON COUNTY SCHOOLS,WV,SUTTON,Regular local school district,2039,Other,Pre-K,12,8,No change; operational,946,45,946,30,151,92,23139000,22298000,16000,732000
+2016,5400150,BROOKE COUNTY SCHOOLS,WV,WELLSBURG,Regular local school district,2965,Other,Pre-K,12,10,No change; operational,1511,46,1516,30,223,92,53548000,37344000,0,503000
+2016,5400180,CABELL COUNTY SCHOOLS,WV,HUNTINGTON,Regular local school district,12868,Other,Pre-K,12,26,No change; operational,5935,48,5929,33,892,82,152476000,143963000,15000,3467000
+2016,5400210,CALHOUN COUNTY SCHOOLS,WV,MT ZION,Regular local school district,1051,Other,Pre-K,12,4,No change; operational,471,46,471,32,63,92,11388000,11210000,28000,239000
+2016,5400240,CLAY COUNTY SCHOOLS,WV,CLAY,Regular local school district,1938,Other,Pre-K,12,6,No change; operational,933,53,933,34,131,87,22215000,21842000,0,326000
+2016,5400270,DODDRIDGE COUNTY SCHOOLS,WV,WEST UNION,Regular local school district,1180,Other,Pre-K,12,4,No change; operational,561,52,560,44,100,97,22878000,19411000,95000,810000
+2016,5400300,FAYETTE COUNTY SCHOOLS,WV,FAYETTEVILLE,Regular local school district,6487,Other,Pre-K,12,18,No change; operational,3085,37,3082,27,490,84,76402000,74013000,8000,2412000
+2016,5400330,GILMER COUNTY SCHOOLS,WV,GLENVILLE,Regular local school district,839,Other,Pre-K,12,3,No change; operational,387,50,387,36,68,97,13497000,10834000,0,532000
+2016,5400360,GRANT COUNTY SCHOOLS,WV,PETERSBURG,Regular local school district,1681,Other,Pre-K,12,5,No change; operational,846,53,839,33,123,97,17206000,16975000,84000,319000
+2016,5400390,GREENBRIER COUNTY SCHOOLS,WV,LEWISBURG,Regular local school district,4962,Other,Pre-K,12,14,No change; operational,2355,44,2356,31,399,90,61186000,58084000,462000,387000
+2016,5400420,HAMPSHIRE COUNTY SCHOOLS,WV,ROMNEY,Regular local school district,3255,Other,Pre-K,12,10,No change; operational,1567,45,1562,35,260,84,34173000,33796000,0,414000
+2016,5400450,HANCOCK COUNTY SCHOOLS,WV,NEW CUMBERLAND,Regular local school district,4064,Other,Pre-K,12,8,No change; operational,1961,53,1961,44,289,90,47716000,44671000,156000,1025000
+2016,5400480,HARDY COUNTY SCHOOLS,WV,MOOREFIELD,Regular local school district,2381,Other,Pre-K,12,6,No change; operational,1171,45,1171,28,156,92,24367000,23491000,0,541000
+2016,5400510,HARRISON COUNTY SCHOOLS,WV,CLARKSBURG,Regular local school district,10708,Other,Pre-K,12,27,No change; operational,5156,51,5157,39,755,88,132408000,128258000,58000,4636000
+2016,5400511,INSTITUTIONAL EDUCATIONAL PROGRAMS,WV,CHARLESTON,State-operated agency,565,Not applicable,Not applicable,Not applicable,23,No change; operational,,,,,,,14877000,14877000,0,310000
+2016,5400540,JACKSON COUNTY SCHOOLS,WV,RIPLEY,Regular local school district,4727,Other,Pre-K,12,13,No change; operational,2279,49,2278,35,328,96,52559000,51977000,0,1064000
+2016,5400570,JEFFERSON COUNTY SCHOOLS,WV,CHARLES TOWN,Regular local school district,9202,Other,Pre-K,12,16,No change; operational,4572,53,4571,39,644,89,106529000,102556000,0,2781000
+2016,5400600,KANAWHA COUNTY SCHOOLS,WV,CHARLESTON,Regular local school district,26625,Other,Pre-K,12,69,No change; operational,12482,47,12481,37,1914,83,336151000,313523000,60000,19939000
+2016,5400630,LEWIS COUNTY SCHOOLS,WV,WESTON,Regular local school district,2561,Other,Pre-K,12,6,No change; operational,1241,36,1241,26,182,87,30950000,29637000,0,802000
+2016,5400660,LINCOLN COUNTY SCHOOLS,WV,HAMLIN,Regular local school district,3540,Other,Pre-K,12,8,No change; operational,1749,39,1748,24,211,93,41923000,41253000,17000,525000
+2016,5400690,LOGAN COUNTY SCHOOLS,WV,LOGAN,Regular local school district,5846,Other,Pre-K,12,18,No change; operational,2760,40,2768,28,457,91,73635000,67628000,24000,703000
+2016,5400720,MARION COUNTY SCHOOLS,WV,FAIRMONT,Regular local school district,8105,Other,Pre-K,12,22,No change; operational,3855,55,3853,42,565,93,96797000,94819000,0,3121000
+2016,5400750,MARSHALL COUNTY SCHOOLS,WV,MOUNDSVILLE,Regular local school district,4607,Other,Pre-K,12,14,No change; operational,2189,42,2190,32,318,91,72423000,62177000,6000,1332000
+2016,5400780,MASON COUNTY SCHOOLS,WV,POINT PLEASANT,Regular local school district,4152,Other,Pre-K,12,12,No change; operational,2008,42,2009,26,297,91,49921000,46730000,9000,1124000
+2016,5400810,MCDOWELL COUNTY SCHOOLS,WV,WELCH,Regular local school district,3200,Other,Pre-K,12,11,No change; operational,1484,34,1480,21,238,83,43410000,42014000,23000,1128000
+2016,5400840,MERCER COUNTY SCHOOLS,WV,PRINCETON,Regular local school district,9216,Other,Pre-K,12,28,No change; operational,4289,47,4288,36,616,89,108395000,99237000,173000,710000
+2016,5400870,MINERAL COUNTY SCHOOLS,WV,KEYSER,Regular local school district,4165,Other,Pre-K,12,14,No change; operational,1973,41,1974,37,319,97,49540000,48325000,73000,883000
+2016,5400900,MINGO COUNTY SCHOOLS,WV,WILLIAMSON,Regular local school district,4200,Other,Pre-K,12,11,No change; operational,1980,51,1976,34,231,94,49821000,47452000,6000,1061000
+2016,5400930,MONONGALIA COUNTY SCHOOLS,WV,MORGANTOWN,Regular local school district,11454,Other,Pre-K,12,19,No change; operational,5466,57,5465,47,802,90,153158000,130082000,3055000,1952000
+2016,5400960,MONROE COUNTY SCHOOLS,WV,UNION,Regular local school district,1829,Other,Pre-K,12,5,No change; operational,860,46,859,33,138,97,21165000,20353000,9000,445000
+2016,5400990,MORGAN COUNTY SCHOOLS,WV,BERKELEY SPRINGS,Regular local school district,2323,Other,Pre-K,12,7,No change; operational,1133,43,1132,29,189,92,26563000,26375000,19000,1034000
+2016,5401020,NICHOLAS COUNTY SCHOOLS,WV,SUMMERSVILLE,Regular local school district,3795,Other,Pre-K,12,14,No change; operational,1842,44,1843,31,271,93,60516000,55967000,36000,1019000
+2016,5401050,OHIO COUNTY SCHOOLS,WV,WHEELING,Regular local school district,5367,Other,Pre-K,12,13,No change; operational,2525,58,2525,43,355,97,72551000,66888000,35000,636000
+2016,5401080,PENDLETON COUNTY SCHOOLS,WV,FRANKLIN,Regular local school district,931,Other,Pre-K,12,4,No change; operational,436,50,437,37,81,97,13028000,13007000,0,166000
+2016,5401110,PLEASANTS COUNTY SCHOOLS,WV,ST MARYS,Regular local school district,1137,Other,Pre-K,12,5,No change; operational,557,50,557,34,95,92,18225000,16305000,50000,506000
+2016,5401140,POCAHONTAS COUNTY SCHOOLS,WV,MARLINTON,Regular local school district,1061,Other,Pre-K,12,5,No change; operational,504,44,504,43,85,87,15415000,15151000,89000,902000
+2016,5401170,PRESTON COUNTY SCHOOLS,WV,KINGWOOD,Regular local school district,4513,Other,Pre-K,12,10,No change; operational,2208,40,2210,28,305,83,47054000,43340000,57000,1069000
+2016,5401200,PUTNAM COUNTY SCHOOLS,WV,WINFIELD,Regular local school district,9715,Other,Pre-K,12,23,No change; operational,4817,56,4820,45,761,93,112570000,107373000,24000,1325000
+2016,5401230,RALEIGH COUNTY SCHOOLS,WV,BECKLEY,Regular local school district,12149,Other,Pre-K,12,29,No change; operational,5744,48,5745,36,784,87,150660000,132303000,6074000,2049000
+2016,5401260,RANDOLPH COUNTY SCHOOLS,WV,ELKINS,Regular local school district,4048,Other,Pre-K,12,16,No change; operational,1935,40,1937,26,253,90,42149000,41693000,0,524000
+2016,5401290,RITCHIE COUNTY SCHOOLS,WV,HARRISVILLE,Regular local school district,1444,Other,Pre-K,12,6,No change; operational,710,45,710,33,94,87,17787000,17348000,19000,386000
+2016,5401320,ROANE COUNTY SCHOOLS,WV,SPENCER,Regular local school district,2304,Other,Pre-K,12,5,No change; operational,1150,44,1150,24,163,92,23527000,22165000,0,292000
+2016,5401350,SUMMERS COUNTY SCHOOLS,WV,HINTON,Regular local school district,1559,Other,Pre-K,12,5,No change; operational,755,41,755,26,98,87,16266000,15753000,0,264000
+2016,5401380,TAYLOR COUNTY SCHOOLS,WV,GRAFTON,Regular local school district,2456,Other,Pre-K,12,6,No change; operational,1159,45,1159,36,170,87,26671000,25985000,6000,902000
+2016,5401410,TUCKER COUNTY SCHOOLS,WV,PARSONS,Regular local school district,978,Other,Pre-K,12,3,No change; operational,478,46,478,27,83,97,14855000,12415000,0,319000
+2016,5401440,TYLER COUNTY SCHOOLS,WV,SISTERSVILLE,Regular local school district,1309,Other,Pre-K,12,4,No change; operational,615,48,615,35,116,92,18708000,18038000,16000,1049000
+2016,5401470,UPSHUR COUNTY SCHOOLS,WV,BUCKHANNON,Regular local school district,3785,Other,Pre-K,12,10,No change; operational,1820,39,1816,26,256,91,40435000,39330000,0,574000
+2016,5401500,WAYNE COUNTY SCHOOLS,WV,WAYNE,Regular local school district,7135,Other,Pre-K,12,20,No change; operational,3414,49,3415,37,580,87,98425000,76725000,6000,802000
+2016,5401530,WEBSTER COUNTY SCHOOLS,WV,WEBSTER SPRINGS,Regular local school district,1396,Other,Pre-K,12,4,No change; operational,660,36,660,24,91,97,15930000,15059000,0,278000
+2016,5401560,WETZEL COUNTY SCHOOLS,WV,NEW MARTINSVILLE,Regular local school district,2554,Other,Pre-K,12,9,No change; operational,1258,40,1259,28,217,93,46212000,40941000,7000,2297000
+2016,5401590,WIRT COUNTY SCHOOLS,WV,ELIZABETH,Regular local school district,1025,Other,Pre-K,12,3,No change; operational,501,48,501,35,76,87,13929000,11626000,0,189000
+2016,5401620,WOOD COUNTY SCHOOLS,WV,PARKERSBURG,Regular local school district,12860,Other,Pre-K,12,29,No change; operational,6095,50,6096,38,902,90,146176000,140886000,14000,2513000
+2016,5401621,WV SCHOOLS FOR THE DEAF AND THE BLIND,WV,ROMNEY,State-operated agency,120,Not applicable,Not applicable,Not applicable,3,No change; operational,,,,,,,15233000,14713000,0,21000
+2016,5401650,WYOMING COUNTY SCHOOLS,WV,PINEVILLE,Regular local school district,3977,Other,Pre-K,12,14,No change; operational,1893,45,1893,27,311,89,47441000,46514000,60000,303000
