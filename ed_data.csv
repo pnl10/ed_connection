@@ -1,0 +1,541 @@
+GEO_ID,Area_Name,Pop_18-24,Pop_18-24_MoE,less_than_hs,less_than_hs_moe,hs,hs_moe,some_college,some_college_moe,bachelors,bachelors_moe
+0400000US54,West Virginia,163597,667,19994,940,59524,1608,70912,1717,13167,1053
+0500000US54001,"Barbour County, West Virginia",2055,52,151,85,895,167,900,172,109,99
+0500000US54003,"Berkeley County, West Virginia",8808,265,1398,347,3358,354,3375,476,677,225
+0500000US54005,"Boone County, West Virginia",1613,21,236,90,671,124,633,142,73,63
+0500000US54007,"Braxton County, West Virginia",1053,81,257,86,342,134,362,147,92,94
+0500000US54009,"Brooke County, West Virginia",2259,79,248,131,673,171,1277,177,61,42
+0500000US54011,"Cabell County, West Virginia",12865,125,1111,306,3700,409,6251,476,1803,291
+0500000US54013,"Calhoun County, West Virginia",441,16,76,47,239,82,122,74,4,9
+0500000US54015,"Clay County, West Virginia",622,*****,106,69,323,71,107,56,86,62
+0500000US54017,"Doddridge County, West Virginia",768,19,139,81,358,126,196,97,75,57
+0500000US54019,"Fayette County, West Virginia",3166,84,406,127,1311,203,1194,174,255,121
+0500000US54021,"Gilmer County, West Virginia",1279,72,81,72,460,111,672,110,66,40
+0500000US54023,"Grant County, West Virginia",891,88,68,49,421,78,332,129,70,54
+0500000US54025,"Greenbrier County, West Virginia",2328,51,352,125,1107,216,610,201,259,159
+0500000US54027,"Hampshire County, West Virginia",1786,171,251,112,874,213,586,228,75,58
+0500000US54029,"Hancock County, West Virginia",1989,83,318,110,671,141,751,154,249,114
+0500000US54031,"Hardy County, West Virginia",897,60,273,106,383,104,235,94,6,10
+0500000US54033,"Harrison County, West Virginia",5186,144,764,211,2096,222,1821,259,505,141
+0500000US54035,"Jackson County, West Virginia",2117,92,364,124,825,210,743,197,185,130
+0500000US54037,"Jefferson County, West Virginia",4853,85,499,129,1372,205,2489,220,493,158
+0500000US54039,"Kanawha County, West Virginia",14141,130,2720,345,5195,516,5236,442,990,233
+0500000US54041,"Lewis County, West Virginia",1202,52,163,76,530,133,413,112,96,54
+0500000US54043,"Lincoln County, West Virginia",1447,24,146,87,848,143,402,139,51,71
+0500000US54045,"Logan County, West Virginia",2409,50,496,132,866,170,996,173,51,43
+0500000US54047,"McDowell County, West Virginia",1261,46,383,116,651,114,213,83,14,17
+0500000US54049,"Marion County, West Virginia",6369,116,595,137,2057,309,3164,385,553,193
+0500000US54051,"Marshall County, West Virginia",2232,29,237,90,1038,178,753,177,204,109
+0500000US54053,"Mason County, West Virginia",1862,47,164,90,954,172,676,167,68,76
+0500000US54055,"Mercer County, West Virginia",5138,149,678,225,1850,258,2257,295,353,114
+0500000US54057,"Mineral County, West Virginia",2457,86,161,94,811,140,1271,198,214,124
+0500000US54059,"Mingo County, West Virginia",1688,54,412,109,729,126,543,130,4,7
+0500000US54061,"Monongalia County, West Virginia",23190,186,814,241,4570,725,14762,853,3044,506
+0500000US54063,"Monroe County, West Virginia",822,5,63,56,415,102,344,109,0,18
+0500000US54065,"Morgan County, West Virginia",1201,35,188,164,438,172,487,176,88,84
+0500000US54067,"Nicholas County, West Virginia",1722,70,107,67,754,164,778,168,83,68
+0500000US54069,"Ohio County, West Virginia",4412,51,361,124,1193,237,2584,235,274,73
+0500000US54071,"Pendleton County, West Virginia",472,40,84,43,204,60,170,75,14,19
+0500000US54073,"Pleasants County, West Virginia",622,*****,54,38,284,83,255,82,29,29
+0500000US54075,"Pocahontas County, West Virginia",537,*****,80,44,275,75,161,60,21,17
+0500000US54077,"Preston County, West Virginia",2420,*****,475,130,1229,157,556,148,160,87
+0500000US54079,"Putnam County, West Virginia",3862,152,266,96,1698,209,1557,225,341,142
+0500000US54081,"Raleigh County, West Virginia",5803,161,672,189,2602,339,2206,336,323,143
+0500000US54083,"Randolph County, West Virginia",2496,96,451,120,1057,185,853,148,135,88
+0500000US54085,"Ritchie County, West Virginia",684,*****,178,80,254,76,252,82,0,16
+0500000US54087,"Roane County, West Virginia",932,31,217,87,412,106,201,86,102,81
+0500000US54089,"Summers County, West Virginia",752,35,110,49,358,76,268,82,16,19
+0500000US54091,"Taylor County, West Virginia",1140,55,129,103,537,166,420,142,54,57
+0500000US54093,"Tucker County, West Virginia",512,29,87,51,257,60,158,65,10,12
+0500000US54095,"Tyler County, West Virginia",643,30,45,29,341,82,191,69,66,42
+0500000US54097,"Upshur County, West Virginia",2833,108,306,114,1419,159,1052,159,56,38
+0500000US54099,"Wayne County, West Virginia",3047,61,467,146,1328,260,1147,235,105,71
+0500000US54101,"Webster County, West Virginia",582,*****,89,40,261,78,220,79,12,12
+0500000US54103,"Wetzel County, West Virginia",1190,54,96,52,625,109,399,116,70,48
+0500000US54105,"Wirt County, West Virginia",389,20,94,57,86,53,161,71,48,39
+0500000US54107,"Wood County, West Virginia",6620,99,945,200,2572,267,2783,291,320,114
+0500000US54109,"Wyoming County, West Virginia",1532,49,363,99,747,134,367,135,55,49
+1400000US54001965500,"Census Tract 9655, Barbour County, West Virginia",265,127,50,45,86,59,122,82,7,13
+1400000US54001965600,"Census Tract 9656, Barbour County, West Virginia",785,196,46,44,240,137,428,148,71,88
+1400000US54001965700,"Census Tract 9657, Barbour County, West Virginia",610,219,0,16,268,126,325,158,17,32
+1400000US54001965800,"Census Tract 9658, Barbour County, West Virginia",395,130,55,52,301,115,25,25,14,18
+1400000US54003971101,"Census Tract 9711.01, Berkeley County, West Virginia",462,181,35,39,246,140,181,121,0,16
+1400000US54003971102,"Census Tract 9711.02, Berkeley County, West Virginia",656,206,118,99,276,119,197,101,65,60
+1400000US54003971201,"Census Tract 9712.01, Berkeley County, West Virginia",767,238,67,60,395,195,256,136,49,71
+1400000US54003971202,"Census Tract 9712.02, Berkeley County, West Virginia",381,166,17,28,174,108,148,133,42,50
+1400000US54003971300,"Census Tract 9713, Berkeley County, West Virginia",1009,268,188,125,258,143,477,178,86,60
+1400000US54003971400,"Census Tract 9714, Berkeley County, West Virginia",569,241,92,96,124,82,292,181,61,48
+1400000US54003971500,"Census Tract 9715, Berkeley County, West Virginia",352,132,70,59,192,97,82,75,8,13
+1400000US54003971600,"Census Tract 9716, Berkeley County, West Virginia",657,223,114,69,320,158,181,106,42,39
+1400000US54003971700,"Census Tract 9717, Berkeley County, West Virginia",348,200,104,128,53,51,91,79,100,76
+1400000US54003971800,"Census Tract 9718, Berkeley County, West Virginia",518,148,95,69,181,91,210,92,32,35
+1400000US54003971900,"Census Tract 9719, Berkeley County, West Virginia",944,210,188,114,275,125,446,161,35,32
+1400000US54003972000,"Census Tract 9720, Berkeley County, West Virginia",1012,233,133,134,256,148,537,267,86,146
+1400000US54003972101,"Census Tract 9721.01, Berkeley County, West Virginia",295,144,12,19,189,110,79,71,15,24
+1400000US54003972102,"Census Tract 9721.02, Berkeley County, West Virginia",838,234,165,117,419,165,198,97,56,52
+1400000US54005958200,"Census Tract 9582, Boone County, West Virginia",219,117,6,9,126,67,87,89,0,11
+1400000US54005958300,"Census Tract 9583, Boone County, West Virginia",227,107,45,45,66,50,93,52,23,37
+1400000US54005958400,"Census Tract 9584, Boone County, West Virginia",260,92,6,8,150,84,68,44,36,39
+1400000US54005958501,"Census Tract 9585.01, Boone County, West Virginia",190,76,5,8,117,51,68,41,0,11
+1400000US54005958502,"Census Tract 9585.02, Boone County, West Virginia",329,136,37,41,86,59,206,129,0,11
+1400000US54005958600,"Census Tract 9586, Boone County, West Virginia",186,78,66,47,66,44,54,40,0,11
+1400000US54005958700,"Census Tract 9587, Boone County, West Virginia",75,47,26,31,32,35,3,6,14,22
+1400000US54005958800,"Census Tract 9588, Boone County, West Virginia",127,91,45,48,28,27,54,65,0,11
+1400000US54007967900,"Census Tract 9679, Braxton County, West Virginia",490,147,181,53,150,112,143,107,16,24
+1400000US54007968000,"Census Tract 9680, Braxton County, West Virginia",217,105,7,9,98,84,36,34,76,85
+1400000US54007968100,"Census Tract 9681, Braxton County, West Virginia",346,154,69,77,94,61,183,130,0,11
+1400000US54009031101,"Census Tract 311.01, Brooke County, West Virginia",416,117,62,59,122,77,232,104,0,11
+1400000US54009031102,"Census Tract 311.02, Brooke County, West Virginia",274,89,8,12,43,35,182,77,41,33
+1400000US54009031200,"Census Tract 312, Brooke County, West Virginia",243,104,95,64,83,49,65,60,0,11
+1400000US54009031400,"Census Tract 314, Brooke County, West Virginia",277,95,66,74,74,77,137,79,0,11
+1400000US54009031600,"Census Tract 316, Brooke County, West Virginia",925,137,9,13,287,112,629,137,0,11
+1400000US54009031700,"Census Tract 317, Brooke County, West Virginia",124,51,8,13,64,33,32,30,20,26
+1400000US54011000101,"Census Tract 1.01, Cabell County, West Virginia",298,147,19,22,69,51,195,124,15,23
+1400000US54011000102,"Census Tract 1.02, Cabell County, West Virginia",296,101,71,47,88,49,112,52,25,26
+1400000US54011000200,"Census Tract 2, Cabell County, West Virginia",173,131,44,67,59,67,58,88,12,19
+1400000US54011000300,"Census Tract 3, Cabell County, West Virginia",329,164,32,44,122,97,92,64,83,73
+1400000US54011000400,"Census Tract 4, Cabell County, West Virginia",1188,304,8,15,116,74,830,287,234,150
+1400000US54011000500,"Census Tract 5, Cabell County, West Virginia",2632,262,6,8,839,155,1626,206,161,67
+1400000US54011000600,"Census Tract 6, Cabell County, West Virginia",796,176,31,35,121,58,494,133,150,78
+1400000US54011000900,"Census Tract 9, Cabell County, West Virginia",113,58,16,19,26,23,51,37,20,24
+1400000US54011001000,"Census Tract 10, Cabell County, West Virginia",165,105,46,71,74,69,7,12,38,37
+1400000US54011001100,"Census Tract 11, Cabell County, West Virginia",160,69,21,32,116,61,23,22,0,11
+1400000US54011001200,"Census Tract 12, Cabell County, West Virginia",225,122,24,39,54,64,106,81,41,46
+1400000US54011001300,"Census Tract 13, Cabell County, West Virginia",479,196,42,49,122,83,194,112,121,110
+1400000US54011001400,"Census Tract 14, Cabell County, West Virginia",387,149,34,36,66,55,198,127,89,48
+1400000US54011001500,"Census Tract 15, Cabell County, West Virginia",148,99,54,68,19,22,49,45,26,33
+1400000US54011001600,"Census Tract 16, Cabell County, West Virginia",221,79,52,64,62,34,90,70,17,24
+1400000US54011001800,"Census Tract 18, Cabell County, West Virginia",427,220,181,172,132,77,90,54,24,25
+1400000US54011001900,"Census Tract 19, Cabell County, West Virginia",133,50,30,25,32,25,51,30,20,25
+1400000US54011002000,"Census Tract 20, Cabell County, West Virginia",166,104,11,19,94,90,26,28,35,43
+1400000US54011002100,"Census Tract 21, Cabell County, West Virginia",299,116,11,20,83,64,150,82,55,55
+1400000US54011010102,"Census Tract 101.02, Cabell County, West Virginia",640,300,87,104,151,122,254,160,148,199
+1400000US54011010201,"Census Tract 102.01, Cabell County, West Virginia",564,220,15,22,81,72,302,207,166,111
+1400000US54011010202,"Census Tract 102.02, Cabell County, West Virginia",318,101,28,26,93,75,126,76,71,64
+1400000US54011010300,"Census Tract 103, Cabell County, West Virginia",200,110,14,22,125,74,61,53,0,11
+1400000US54011010400,"Census Tract 104, Cabell County, West Virginia",697,357,134,136,243,172,279,181,41,50
+1400000US54011010500,"Census Tract 105, Cabell County, West Virginia",385,178,61,72,218,154,59,68,47,55
+1400000US54011010600,"Census Tract 106, Cabell County, West Virginia",253,154,0,11,77,56,166,146,10,15
+1400000US54011010700,"Census Tract 107, Cabell County, West Virginia",427,180,17,23,92,73,269,118,49,57
+1400000US54011010800,"Census Tract 108, Cabell County, West Virginia",481,144,15,24,284,126,141,79,41,39
+1400000US54011010900,"Census Tract 109, Cabell County, West Virginia",265,112,7,11,42,33,152,91,64,67
+1400000US54013962600,"Census Tract 9626, Calhoun County, West Virginia",195,85,39,32,71,54,85,65,0,11
+1400000US54013962700,"Census Tract 9627, Calhoun County, West Virginia",246,85,37,38,168,87,37,38,4,9
+1400000US54015957900,"Census Tract 9579, Clay County, West Virginia",147,75,26,28,72,43,18,27,31,38
+1400000US54015958000,"Census Tract 9580, Clay County, West Virginia",157,100,29,42,118,76,10,17,0,11
+1400000US54015958100,"Census Tract 9581, Clay County, West Virginia",318,99,51,52,133,71,79,49,55,46
+1400000US54017965000,"Census Tract 9650, Doddridge County, West Virginia",398,114,88,67,216,129,41,45,53,50
+1400000US54017965100,"Census Tract 9651, Doddridge County, West Virginia",370,112,51,44,142,79,155,87,22,21
+1400000US54019020100,"Census Tract 201, Fayette County, West Virginia",303,147,8,15,103,75,111,84,81,79
+1400000US54019020201,"Census Tract 202.01, Fayette County, West Virginia",340,94,0,11,200,91,63,48,77,84
+1400000US54019020202,"Census Tract 202.02, Fayette County, West Virginia",325,123,79,67,124,80,122,85,0,11
+1400000US54019020300,"Census Tract 203, Fayette County, West Virginia",94,60,8,12,35,34,37,42,14,23
+1400000US54019020400,"Census Tract 204, Fayette County, West Virginia",259,108,36,37,133,94,61,51,29,33
+1400000US54019020500,"Census Tract 205, Fayette County, West Virginia",150,72,40,30,59,50,51,50,0,11
+1400000US54019020600,"Census Tract 206, Fayette County, West Virginia",132,64,25,24,61,50,46,44,0,11
+1400000US54019020700,"Census Tract 207, Fayette County, West Virginia",606,150,28,30,177,78,383,119,18,21
+1400000US54019020800,"Census Tract 208, Fayette County, West Virginia",271,115,38,26,74,76,149,80,10,19
+1400000US54019020900,"Census Tract 209, Fayette County, West Virginia",277,101,39,36,143,90,81,50,14,22
+1400000US54019021000,"Census Tract 210, Fayette County, West Virginia",188,79,66,45,102,56,20,31,0,11
+1400000US54019021100,"Census Tract 211, Fayette County, West Virginia",221,87,39,37,100,74,70,62,12,21
+1400000US54021967700,"Census Tract 9677, Gilmer County, West Virginia",443,108,81,72,304,102,44,33,14,21
+1400000US54021967800,"Census Tract 9678, Gilmer County, West Virginia",836,123,0,11,156,84,628,107,52,37
+1400000US54023969400,"Census Tract 9694, Grant County, West Virginia",191,90,6,9,142,66,17,25,26,38
+1400000US54023969500,"Census Tract 9695, Grant County, West Virginia",315,109,25,27,106,74,184,120,0,11
+1400000US54023969600,"Census Tract 9696, Grant County, West Virginia",385,136,37,42,173,83,131,78,44,40
+1400000US54025950100,"Census Tract 9501, Greenbrier County, West Virginia",498,166,178,133,244,124,65,43,11,15
+1400000US54025950200,"Census Tract 9502, Greenbrier County, West Virginia",180,65,28,22,99,60,42,28,11,21
+1400000US54025950300,"Census Tract 9503, Greenbrier County, West Virginia",210,95,6,7,127,70,69,64,8,14
+1400000US54025950400,"Census Tract 9504, Greenbrier County, West Virginia",565,216,72,73,220,142,252,181,21,33
+1400000US54025950500,"Census Tract 9505, Greenbrier County, West Virginia",264,120,20,25,161,102,71,43,12,20
+1400000US54025950600,"Census Tract 9506, Greenbrier County, West Virginia",290,163,0,16,62,63,49,53,179,155
+1400000US54025950700,"Census Tract 9507, Greenbrier County, West Virginia",321,114,48,34,194,95,62,43,17,28
+1400000US54027968200,"Census Tract 9682, Hampshire County, West Virginia",333,169,109,105,108,84,88,83,28,38
+1400000US54027968300,"Census Tract 9683, Hampshire County, West Virginia",653,226,86,54,287,134,280,203,0,16
+1400000US54027968400,"Census Tract 9684, Hampshire County, West Virginia",310,117,45,31,173,80,92,65,0,11
+1400000US54027968500,"Census Tract 9685, Hampshire County, West Virginia",294,112,4,7,152,78,91,56,47,44
+1400000US54027968600,"Census Tract 9686, Hampshire County, West Virginia",196,86,7,10,154,84,35,32,0,16
+1400000US54029020600,"Census Tract 206, Hancock County, West Virginia",250,128,31,33,92,67,100,67,27,32
+1400000US54029020700,"Census Tract 207, Hancock County, West Virginia",268,141,27,44,80,71,68,71,93,100
+1400000US54029020900,"Census Tract 209, Hancock County, West Virginia",90,97,40,60,38,51,12,19,0,11
+1400000US54029021100,"Census Tract 211, Hancock County, West Virginia",193,73,15,23,28,44,130,56,20,32
+1400000US54029021200,"Census Tract 212, Hancock County, West Virginia",421,119,81,49,56,48,204,82,80,66
+1400000US54029021300,"Census Tract 213, Hancock County, West Virginia",312,121,67,51,101,71,115,106,29,43
+1400000US54029021400,"Census Tract 214, Hancock County, West Virginia",258,133,57,42,125,55,76,63,0,11
+1400000US54029021500,"Census Tract 215, Hancock County, West Virginia",197,147,0,11,151,136,46,77,0,11
+1400000US54031970100,"Census Tract 9701, Hardy County, West Virginia",213,100,83,90,66,48,64,59,0,11
+1400000US54031970200,"Census Tract 9702, Hardy County, West Virginia",523,122,143,91,242,86,138,85,0,16
+1400000US54031970300,"Census Tract 9703, Hardy County, West Virginia",161,78,47,34,75,53,33,35,6,10
+1400000US54033030100,"Census Tract 301, Harrison County, West Virginia",225,89,77,75,134,81,14,20,0,11
+1400000US54033030200,"Census Tract 302, Harrison County, West Virginia",175,73,18,21,93,52,56,44,8,14
+1400000US54033030300,"Census Tract 303, Harrison County, West Virginia",219,140,46,47,74,71,99,80,0,11
+1400000US54033030400,"Census Tract 304, Harrison County, West Virginia",249,108,29,33,67,48,86,82,67,58
+1400000US54033030500,"Census Tract 305, Harrison County, West Virginia",349,167,69,74,157,104,94,53,29,24
+1400000US54033030601,"Census Tract 306.01, Harrison County, West Virginia",243,123,82,107,88,58,49,41,24,40
+1400000US54033030602,"Census Tract 306.02, Harrison County, West Virginia",348,120,25,40,182,102,123,109,18,29
+1400000US54033030700,"Census Tract 307, Harrison County, West Virginia",181,88,42,39,48,39,91,65,0,11
+1400000US54033030800,"Census Tract 308, Harrison County, West Virginia",495,184,66,55,146,88,182,95,101,76
+1400000US54033031000,"Census Tract 310, Harrison County, West Virginia",297,87,74,55,131,58,65,40,27,25
+1400000US54033031100,"Census Tract 311, Harrison County, West Virginia",134,64,9,11,78,45,47,49,0,11
+1400000US54033031200,"Census Tract 312, Harrison County, West Virginia",135,45,11,14,28,30,78,31,18,19
+1400000US54033031300,"Census Tract 313, Harrison County, West Virginia",145,72,9,13,100,60,30,24,6,10
+1400000US54033031400,"Census Tract 314, Harrison County, West Virginia",143,60,9,15,71,37,52,40,11,20
+1400000US54033031500,"Census Tract 315, Harrison County, West Virginia",98,69,0,11,44,35,41,31,13,21
+1400000US54033031600,"Census Tract 316, Harrison County, West Virginia",476,140,78,40,173,99,200,130,25,21
+1400000US54033031700,"Census Tract 317, Harrison County, West Virginia",175,93,53,44,54,40,58,55,10,17
+1400000US54033031800,"Census Tract 318, Harrison County, West Virginia",111,63,8,12,53,36,24,29,26,30
+1400000US54033031900,"Census Tract 319, Harrison County, West Virginia",241,88,7,11,164,72,49,41,21,18
+1400000US54033032000,"Census Tract 320, Harrison County, West Virginia",114,81,17,27,52,48,45,57,0,11
+1400000US54033032101,"Census Tract 321.01, Harrison County, West Virginia",295,112,18,28,40,35,176,124,61,55
+1400000US54033032102,"Census Tract 321.02, Harrison County, West Virginia",338,123,17,27,119,75,162,94,40,38
+1400000US54035963200,"Census Tract 9632, Jackson County, West Virginia",170,101,11,17,77,77,61,60,21,34
+1400000US54035963300,"Census Tract 9633, Jackson County, West Virginia",381,149,114,82,94,104,143,82,30,35
+1400000US54035963400,"Census Tract 9634, Jackson County, West Virginia",349,117,68,64,154,79,127,81,0,11
+1400000US54035963500,"Census Tract 9635, Jackson County, West Virginia",199,81,59,48,80,55,40,38,20,25
+1400000US54035963600,"Census Tract 9636, Jackson County, West Virginia",463,196,25,39,183,141,141,108,114,119
+1400000US54035963700,"Census Tract 9637, Jackson County, West Virginia",555,184,87,53,237,160,231,137,0,16
+1400000US54037972201,"Census Tract 9722.01, Jefferson County, West Virginia",1115,239,34,23,132,84,926,232,23,26
+1400000US54037972203,"Census Tract 9722.03, Jefferson County, West Virginia",243,126,28,30,72,51,95,58,48,34
+1400000US54037972204,"Census Tract 9722.04, Jefferson County, West Virginia",565,139,38,36,80,69,398,91,49,43
+1400000US54037972300,"Census Tract 9723, Jefferson County, West Virginia",269,100,16,22,137,68,100,59,16,21
+1400000US54037972401,"Census Tract 9724.01, Jefferson County, West Virginia",92,59,0,11,58,40,34,40,0,11
+1400000US54037972402,"Census Tract 9724.02, Jefferson County, West Virginia",403,158,71,54,126,85,140,87,66,63
+1400000US54037972501,"Census Tract 9725.01, Jefferson County, West Virginia",278,68,44,27,92,47,102,48,40,33
+1400000US54037972503,"Census Tract 9725.03, Jefferson County, West Virginia",130,50,41,33,6,9,29,24,54,44
+1400000US54037972505,"Census Tract 9725.05, Jefferson County, West Virginia",215,89,61,70,54,40,58,54,42,45
+1400000US54037972506,"Census Tract 9725.06, Jefferson County, West Virginia",234,116,11,18,31,27,143,73,49,62
+1400000US54037972601,"Census Tract 9726.01, Jefferson County, West Virginia",123,50,16,14,62,34,25,16,20,17
+1400000US54037972602,"Census Tract 9726.02, Jefferson County, West Virginia",328,105,8,12,73,43,189,86,58,41
+1400000US54037972701,"Census Tract 9727.01, Jefferson County, West Virginia",275,144,36,38,162,97,77,55,0,11
+1400000US54037972702,"Census Tract 9727.02, Jefferson County, West Virginia",403,122,84,48,175,98,116,51,28,27
+1400000US54037972800,"Census Tract 9728, Jefferson County, West Virginia",180,95,11,19,112,85,57,54,0,16
+1400000US54039000100,"Census Tract 1, Kanawha County, West Virginia",128,74,0,11,78,63,50,38,0,11
+1400000US54039000200,"Census Tract 2, Kanawha County, West Virginia",171,96,63,50,63,50,45,56,0,11
+1400000US54039000300,"Census Tract 3, Kanawha County, West Virginia",141,118,44,72,20,22,77,96,0,11
+1400000US54039000500,"Census Tract 5, Kanawha County, West Virginia",187,114,0,11,64,63,104,95,19,23
+1400000US54039000600,"Census Tract 6, Kanawha County, West Virginia",326,152,51,61,165,99,68,55,42,55
+1400000US54039000700,"Census Tract 7, Kanawha County, West Virginia",428,200,190,142,207,136,31,26,0,11
+1400000US54039000800,"Census Tract 8, Kanawha County, West Virginia",145,126,22,34,40,61,78,68,5,9
+1400000US54039000900,"Census Tract 9, Kanawha County, West Virginia",53,40,12,19,29,33,5,5,7,10
+1400000US54039001100,"Census Tract 11, Kanawha County, West Virginia",640,273,48,47,245,160,223,140,124,113
+1400000US54039001200,"Census Tract 12, Kanawha County, West Virginia",204,107,54,48,72,46,46,37,32,33
+1400000US54039001300,"Census Tract 13, Kanawha County, West Virginia",162,136,34,49,4,6,115,130,9,14
+1400000US54039001500,"Census Tract 15, Kanawha County, West Virginia",1011,300,0,11,339,189,606,212,66,57
+1400000US54039001700,"Census Tract 17, Kanawha County, West Virginia",131,69,84,72,40,28,7,11,0,11
+1400000US54039001800,"Census Tract 18, Kanawha County, West Virginia",82,61,12,19,55,51,11,26,4,8
+1400000US54039001901,"Census Tract 19.01, Kanawha County, West Virginia",164,79,0,11,31,33,45,42,88,69
+1400000US54039001902,"Census Tract 19.02, Kanawha County, West Virginia",246,85,30,25,45,38,112,71,59,55
+1400000US54039002000,"Census Tract 20, Kanawha County, West Virginia",164,94,54,48,20,30,58,47,32,30
+1400000US54039002100,"Census Tract 21, Kanawha County, West Virginia",278,129,44,46,125,124,73,66,36,42
+1400000US54039010100,"Census Tract 101, Kanawha County, West Virginia",197,103,0,11,75,66,83,70,39,36
+1400000US54039010200,"Census Tract 102, Kanawha County, West Virginia",84,84,7,15,19,36,54,77,4,7
+1400000US54039010300,"Census Tract 103, Kanawha County, West Virginia",107,86,8,16,34,39,65,63,0,11
+1400000US54039010400,"Census Tract 104, Kanawha County, West Virginia",320,161,55,78,64,51,193,111,8,18
+1400000US54039010500,"Census Tract 105, Kanawha County, West Virginia",389,204,14,23,43,40,288,197,44,56
+1400000US54039010600,"Census Tract 106, Kanawha County, West Virginia",243,115,63,91,79,65,81,76,20,34
+1400000US54039010701,"Census Tract 107.01, Kanawha County, West Virginia",349,180,68,95,104,84,145,99,32,34
+1400000US54039010702,"Census Tract 107.02, Kanawha County, West Virginia",219,115,0,16,114,62,94,79,11,21
+1400000US54039010801,"Census Tract 108.01, Kanawha County, West Virginia",518,213,73,71,326,195,66,46,53,44
+1400000US54039010802,"Census Tract 108.02, Kanawha County, West Virginia",167,85,73,61,94,77,0,11,0,11
+1400000US54039010900,"Census Tract 109, Kanawha County, West Virginia",128,75,13,20,97,69,18,21,0,11
+1400000US54039011000,"Census Tract 110, Kanawha County, West Virginia",261,129,33,39,99,74,70,69,59,77
+1400000US54039011100,"Census Tract 111, Kanawha County, West Virginia",425,201,39,47,189,115,197,112,0,11
+1400000US54039011200,"Census Tract 112, Kanawha County, West Virginia",297,135,63,75,142,76,74,74,18,29
+1400000US54039011301,"Census Tract 113.01, Kanawha County, West Virginia",171,95,0,11,111,79,60,57,0,11
+1400000US54039011302,"Census Tract 113.02, Kanawha County, West Virginia",130,89,72,74,0,16,58,50,0,16
+1400000US54039011401,"Census Tract 114.01, Kanawha County, West Virginia",147,64,33,32,53,42,37,34,24,27
+1400000US54039011402,"Census Tract 114.02, Kanawha County, West Virginia",475,151,40,33,219,89,195,127,21,24
+1400000US54039011500,"Census Tract 115, Kanawha County, West Virginia",195,77,42,42,93,46,60,44,0,11
+1400000US54039011800,"Census Tract 118, Kanawha County, West Virginia",335,138,150,87,11,10,169,76,5,8
+1400000US54039012100,"Census Tract 121, Kanawha County, West Virginia",490,169,55,39,253,155,176,77,6,8
+1400000US54039012200,"Census Tract 122, Kanawha County, West Virginia",577,232,201,162,172,79,204,122,0,16
+1400000US54039012300,"Census Tract 123, Kanawha County, West Virginia",583,195,295,175,112,65,176,100,0,16
+1400000US54039012800,"Census Tract 128, Kanawha County, West Virginia",218,86,44,39,68,62,89,50,17,19
+1400000US54039012900,"Census Tract 129, Kanawha County, West Virginia",92,53,0,11,28,25,48,36,16,26
+1400000US54039013000,"Census Tract 130, Kanawha County, West Virginia",385,148,132,76,158,129,83,78,12,22
+1400000US54039013100,"Census Tract 131, Kanawha County, West Virginia",309,148,14,23,146,125,133,73,16,24
+1400000US54039013200,"Census Tract 132, Kanawha County, West Virginia",265,119,70,46,116,86,79,47,0,11
+1400000US54039013300,"Census Tract 133, Kanawha County, West Virginia",188,73,32,31,82,62,46,39,28,22
+1400000US54039013400,"Census Tract 134, Kanawha County, West Virginia",192,87,108,67,46,34,38,41,0,11
+1400000US54039013500,"Census Tract 135, Kanawha County, West Virginia",174,88,73,73,36,36,56,55,9,15
+1400000US54039013600,"Census Tract 136, Kanawha County, West Virginia",293,136,0,11,173,95,120,81,0,11
+1400000US54039013701,"Census Tract 137.01, Kanawha County, West Virginia",120,50,18,20,28,26,74,43,0,11
+1400000US54039013702,"Census Tract 137.02, Kanawha County, West Virginia",156,90,44,51,52,57,48,45,12,21
+1400000US54039013800,"Census Tract 138, Kanawha County, West Virginia",281,74,46,36,117,70,105,60,13,17
+1400000US54041967200,"Census Tract 9672, Lewis County, West Virginia",328,116,44,38,120,58,125,87,39,39
+1400000US54041967300,"Census Tract 9673, Lewis County, West Virginia",176,81,11,16,56,49,81,48,28,24
+1400000US54041967400,"Census Tract 9674, Lewis County, West Virginia",267,109,27,31,170,104,70,76,0,11
+1400000US54041967500,"Census Tract 9675, Lewis County, West Virginia",166,83,40,35,103,61,23,32,0,11
+1400000US54041967600,"Census Tract 9676, Lewis County, West Virginia",265,67,41,38,81,42,114,71,29,28
+1400000US54043955400,"Census Tract 9554, Lincoln County, West Virginia",335,126,8,13,157,93,122,98,48,71
+1400000US54043955500,"Census Tract 9555, Lincoln County, West Virginia",238,96,56,64,121,85,61,48,0,11
+1400000US54043955600,"Census Tract 9556, Lincoln County, West Virginia",324,111,14,25,240,113,67,68,3,5
+1400000US54043955700,"Census Tract 9557, Lincoln County, West Virginia",168,76,19,32,113,60,36,42,0,11
+1400000US54043955800,"Census Tract 9558, Lincoln County, West Virginia",382,117,49,39,217,111,116,94,0,11
+1400000US54045956101,"Census Tract 9561.01, Logan County, West Virginia",369,121,40,44,100,70,229,107,0,16
+1400000US54045956102,"Census Tract 9561.02, Logan County, West Virginia",183,115,28,25,89,67,59,52,7,12
+1400000US54045956200,"Census Tract 9562, Logan County, West Virginia",190,83,5,6,86,59,94,68,5,8
+1400000US54045956400,"Census Tract 9564, Logan County, West Virginia",212,77,61,54,105,59,46,29,0,11
+1400000US54045956500,"Census Tract 9565, Logan County, West Virginia",146,90,15,24,103,82,28,25,0,11
+1400000US54045956600,"Census Tract 9566, Logan County, West Virginia",615,181,99,96,203,118,309,124,4,6
+1400000US54045956700,"Census Tract 9567, Logan County, West Virginia",252,102,84,68,55,46,87,48,26,39
+1400000US54045956800,"Census Tract 9568, Logan County, West Virginia",278,139,114,82,97,83,67,65,0,11
+1400000US54045956900,"Census Tract 9569, Logan County, West Virginia",164,65,50,23,28,32,77,42,9,10
+1400000US54047953600,"Census Tract 9536, McDowell County, West Virginia",32,30,9,13,19,18,4,5,0,11
+1400000US54047953800,"Census Tract 9538, McDowell County, West Virginia",177,93,63,50,82,62,26,27,6,11
+1400000US54047953900,"Census Tract 9539, McDowell County, West Virginia",50,35,16,18,10,16,24,30,0,11
+1400000US54047954000,"Census Tract 9540, McDowell County, West Virginia",231,102,0,11,152,86,79,70,0,11
+1400000US54047954200,"Census Tract 9542, McDowell County, West Virginia",120,56,44,40,76,45,0,11,0,11
+1400000US54047954501,"Census Tract 9545.01, McDowell County, West Virginia",109,62,22,24,53,37,34,36,0,11
+1400000US54047954503,"Census Tract 9545.03, McDowell County, West Virginia",320,123,153,100,113,59,46,32,8,14
+1400000US54047954504,"Census Tract 9545.04, McDowell County, West Virginia",222,98,76,58,146,89,0,11,0,11
+1400000US54049020100,"Census Tract 201, Marion County, West Virginia",208,102,20,31,61,49,122,83,5,8
+1400000US54049020200,"Census Tract 202, Marion County, West Virginia",1436,333,0,11,310,188,1095,363,31,21
+1400000US54049020300,"Census Tract 203, Marion County, West Virginia",593,167,0,11,85,51,453,155,55,41
+1400000US54049020400,"Census Tract 204, Marion County, West Virginia",189,79,0,11,52,29,122,76,15,17
+1400000US54049020500,"Census Tract 205, Marion County, West Virginia",181,72,33,36,92,66,51,42,5,8
+1400000US54049020600,"Census Tract 206, Marion County, West Virginia",125,56,7,11,76,41,34,27,8,14
+1400000US54049020700,"Census Tract 207, Marion County, West Virginia",328,142,94,67,103,105,65,54,66,72
+1400000US54049020800,"Census Tract 208, Marion County, West Virginia",210,88,14,21,69,47,119,68,8,14
+1400000US54049020900,"Census Tract 209, Marion County, West Virginia",322,136,22,36,56,51,225,125,19,26
+1400000US54049021000,"Census Tract 210, Marion County, West Virginia",465,157,92,50,252,116,78,81,43,58
+1400000US54049021100,"Census Tract 211, Marion County, West Virginia",216,110,0,11,115,103,55,42,46,35
+1400000US54049021200,"Census Tract 212, Marion County, West Virginia",639,212,90,76,96,69,244,112,209,159
+1400000US54049021300,"Census Tract 213, Marion County, West Virginia",215,87,41,33,111,75,63,37,0,11
+1400000US54049021400,"Census Tract 214, Marion County, West Virginia",132,64,33,26,85,55,14,12,0,11
+1400000US54049021500,"Census Tract 215, Marion County, West Virginia",344,139,93,68,147,79,85,65,19,26
+1400000US54049021600,"Census Tract 216, Marion County, West Virginia",395,141,19,18,142,72,234,112,0,11
+1400000US54049021700,"Census Tract 217, Marion County, West Virginia",105,54,6,10,48,34,45,42,6,10
+1400000US54049021800,"Census Tract 218, Marion County, West Virginia",266,90,31,34,157,69,60,49,18,28
+1400000US54051020200,"Census Tract 202, Marshall County, West Virginia",179,107,12,20,137,101,13,20,17,27
+1400000US54051020500,"Census Tract 205, Marshall County, West Virginia",96,51,36,28,24,19,36,33,0,11
+1400000US54051020601,"Census Tract 206.01, Marshall County, West Virginia",205,84,30,26,68,44,107,63,0,11
+1400000US54051020702,"Census Tract 207.02, Marshall County, West Virginia",76,40,10,11,53,35,0,11,13,18
+1400000US54051020800,"Census Tract 208, Marshall County, West Virginia",209,107,32,49,129,86,23,20,25,31
+1400000US54051020900,"Census Tract 209, Marshall County, West Virginia",350,236,87,74,110,76,97,104,56,79
+1400000US54051021000,"Census Tract 210, Marshall County, West Virginia",258,139,15,25,150,102,93,91,0,16
+1400000US54051021100,"Census Tract 211, Marshall County, West Virginia",414,237,0,16,214,172,136,131,64,83
+1400000US54051021300,"Census Tract 213, Marshall County, West Virginia",445,212,15,21,153,109,248,144,29,33
+1400000US54053954801,"Census Tract 9548.01, Mason County, West Virginia",184,70,24,23,91,56,69,38,0,11
+1400000US54053954802,"Census Tract 9548.02, Mason County, West Virginia",355,89,22,26,149,76,176,89,8,14
+1400000US54053954900,"Census Tract 9549, Mason County, West Virginia",656,185,61,58,268,177,327,131,0,16
+1400000US54053955000,"Census Tract 9550, Mason County, West Virginia",263,108,43,67,169,81,50,55,1,2
+1400000US54053955101,"Census Tract 9551.01, Mason County, West Virginia",114,74,14,20,58,60,42,39,0,11
+1400000US54053955102,"Census Tract 9551.02, Mason County, West Virginia",290,169,0,16,219,159,12,24,59,74
+1400000US54055000900,"Census Tract 9, Mercer County, West Virginia",143,89,17,29,74,50,43,33,9,15
+1400000US54055001000,"Census Tract 10, Mercer County, West Virginia",535,280,218,198,207,112,110,75,0,11
+1400000US54055001100,"Census Tract 11, Mercer County, West Virginia",954,293,17,29,257,123,637,203,43,36
+1400000US54055001200,"Census Tract 12, Mercer County, West Virginia",153,84,34,35,45,35,74,59,0,11
+1400000US54055001300,"Census Tract 13, Mercer County, West Virginia",331,94,52,47,90,68,170,69,19,26
+1400000US54055001400,"Census Tract 14, Mercer County, West Virginia",138,64,6,7,96,56,28,24,8,10
+1400000US54055001500,"Census Tract 15, Mercer County, West Virginia",490,194,129,101,126,87,180,124,55,57
+1400000US54055001600,"Census Tract 16, Mercer County, West Virginia",100,70,27,33,35,30,26,24,12,20
+1400000US54055001700,"Census Tract 17, Mercer County, West Virginia",358,165,0,11,209,134,99,90,50,56
+1400000US54055001800,"Census Tract 18, Mercer County, West Virginia",630,211,55,53,259,135,297,165,19,25
+1400000US54055001900,"Census Tract 19, Mercer County, West Virginia",61,47,0,11,13,17,48,39,0,11
+1400000US54055002000,"Census Tract 20, Mercer County, West Virginia",223,100,28,24,107,73,88,64,0,11
+1400000US54055002100,"Census Tract 21, Mercer County, West Virginia",314,147,39,39,56,54,133,105,86,70
+1400000US54055002200,"Census Tract 22, Mercer County, West Virginia",193,131,3,11,41,41,149,129,0,11
+1400000US54055002300,"Census Tract 23, Mercer County, West Virginia",365,157,37,38,173,118,137,113,18,35
+1400000US54055002400,"Census Tract 24, Mercer County, West Virginia",150,117,16,26,62,47,38,42,34,54
+1400000US54057010100,"Census Tract 101, Mineral County, West Virginia",211,92,10,15,75,42,115,74,11,18
+1400000US54057010200,"Census Tract 102, Mineral County, West Virginia",349,131,38,52,134,71,153,102,24,41
+1400000US54057010300,"Census Tract 103, Mineral County, West Virginia",115,92,18,31,0,16,55,55,42,66
+1400000US54057010400,"Census Tract 104, Mineral County, West Virginia",300,118,22,25,146,87,110,69,22,34
+1400000US54057010500,"Census Tract 105, Mineral County, West Virginia",319,154,59,76,46,55,196,141,18,34
+1400000US54057010600,"Census Tract 106, Mineral County, West Virginia",1026,211,0,16,349,149,580,187,97,97
+1400000US54057010700,"Census Tract 107, Mineral County, West Virginia",137,62,14,12,61,45,62,45,0,11
+1400000US54059957100,"Census Tract 9571, Mingo County, West Virginia",377,157,33,32,200,125,144,76,0,11
+1400000US54059957200,"Census Tract 9572, Mingo County, West Virginia",103,58,52,43,24,35,27,28,0,11
+1400000US54059957300,"Census Tract 9573, Mingo County, West Virginia",268,94,93,49,84,61,91,54,0,11
+1400000US54059957400,"Census Tract 9574, Mingo County, West Virginia",234,109,38,41,108,72,88,70,0,11
+1400000US54059957500,"Census Tract 9575, Mingo County, West Virginia",243,98,59,48,105,72,75,58,4,7
+1400000US54059957600,"Census Tract 9576, Mingo County, West Virginia",201,99,45,49,145,90,11,17,0,11
+1400000US54059957700,"Census Tract 9577, Mingo County, West Virginia",262,101,92,58,63,47,107,61,0,11
+1400000US54061010101,"Census Tract 101.01, Monongalia County, West Virginia",849,368,16,35,198,205,631,294,4,8
+1400000US54061010102,"Census Tract 101.02, Monongalia County, West Virginia",4129,522,82,92,771,371,2981,520,295,184
+1400000US54061010201,"Census Tract 102.01, Monongalia County, West Virginia",1600,416,6,9,223,119,939,400,432,192
+1400000US54061010202,"Census Tract 102.02, Monongalia County, West Virginia",2455,578,32,52,157,122,1974,514,292,184
+1400000US54061010400,"Census Tract 104, Monongalia County, West Virginia",605,199,76,68,118,71,317,153,94,48
+1400000US54061010600,"Census Tract 106, Monongalia County, West Virginia",1809,521,0,16,175,150,1395,474,239,101
+1400000US54061010700,"Census Tract 107, Monongalia County, West Virginia",1511,472,18,29,269,169,1144,456,80,58
+1400000US54061010800,"Census Tract 108, Monongalia County, West Virginia",927,269,113,88,223,126,476,165,115,89
+1400000US54061010901,"Census Tract 109.01, Monongalia County, West Virginia",1074,387,53,62,104,55,599,285,318,187
+1400000US54061010902,"Census Tract 109.02, Monongalia County, West Virginia",249,118,14,30,74,52,143,106,18,23
+1400000US54061011000,"Census Tract 110, Monongalia County, West Virginia",324,133,4,7,119,90,156,102,45,42
+1400000US54061011100,"Census Tract 111, Monongalia County, West Virginia",312,153,30,32,41,40,137,122,104,94
+1400000US54061011200,"Census Tract 112, Monongalia County, West Virginia",275,144,30,39,155,105,90,80,0,11
+1400000US54061011300,"Census Tract 113, Monongalia County, West Virginia",321,152,30,38,133,74,115,98,43,55
+1400000US54061011400,"Census Tract 114, Monongalia County, West Virginia",276,108,14,16,121,63,119,76,22,26
+1400000US54061011500,"Census Tract 115, Monongalia County, West Virginia",1086,470,47,65,56,53,877,465,106,84
+1400000US54061011600,"Census Tract 116, Monongalia County, West Virginia",1013,282,82,79,251,130,395,263,285,123
+1400000US54061011700,"Census Tract 117, Monongalia County, West Virginia",269,135,12,15,76,54,169,124,12,19
+1400000US54061011803,"Census Tract 118.03, Monongalia County, West Virginia",341,134,25,36,209,102,56,44,51,82
+1400000US54061011804,"Census Tract 118.04, Monongalia County, West Virginia",201,99,20,16,80,64,75,55,26,30
+1400000US54061011805,"Census Tract 118.05, Monongalia County, West Virginia",404,132,65,63,104,54,126,73,109,66
+1400000US54061011806,"Census Tract 118.06, Monongalia County, West Virginia",399,172,15,23,168,118,186,117,30,30
+1400000US54061011900,"Census Tract 119, Monongalia County, West Virginia",383,158,16,18,104,72,205,131,58,54
+1400000US54061012000,"Census Tract 120, Monongalia County, West Virginia",2378,276,14,21,641,295,1457,305,266,160
+1400000US54063950100,"Census Tract 9501, Monroe County, West Virginia",290,95,59,57,87,63,144,81,0,11
+1400000US54063950200,"Census Tract 9502, Monroe County, West Virginia",234,107,4,7,90,57,140,77,0,11
+1400000US54063950300,"Census Tract 9503, Monroe County, West Virginia",298,107,0,16,238,107,60,48,0,16
+1400000US54065970700,"Census Tract 9707, Morgan County, West Virginia",522,168,0,16,159,133,280,140,83,84
+1400000US54065970800,"Census Tract 9708, Morgan County, West Virginia",367,156,184,165,99,74,79,66,5,6
+1400000US54065970900,"Census Tract 9709, Morgan County, West Virginia",134,63,4,6,124,61,6,9,0,11
+1400000US54065971000,"Census Tract 9710, Morgan County, West Virginia",178,110,0,11,56,86,122,77,0,11
+1400000US54067950100,"Census Tract 9501, Nicholas County, West Virginia",81,62,19,25,40,39,22,25,0,11
+1400000US54067950200,"Census Tract 9502, Nicholas County, West Virginia",583,151,0,16,151,96,421,164,11,18
+1400000US54067950300,"Census Tract 9503, Nicholas County, West Virginia",79,52,6,9,48,41,25,30,0,11
+1400000US54067950400,"Census Tract 9504, Nicholas County, West Virginia",375,153,15,23,242,121,89,66,29,48
+1400000US54067950500,"Census Tract 9505, Nicholas County, West Virginia",159,80,4,7,28,21,101,64,26,40
+1400000US54067950600,"Census Tract 9506, Nicholas County, West Virginia",277,140,43,49,147,91,87,72,0,16
+1400000US54067950700,"Census Tract 9507, Nicholas County, West Virginia",168,86,20,24,98,75,33,36,17,28
+1400000US54069000200,"Census Tract 2, Ohio County, West Virginia",208,92,45,56,84,59,70,75,9,14
+1400000US54069000300,"Census Tract 3, Ohio County, West Virginia",85,48,0,11,17,19,53,41,15,16
+1400000US54069000400,"Census Tract 4, Ohio County, West Virginia",87,51,7,13,50,39,25,21,5,7
+1400000US54069000500,"Census Tract 5, Ohio County, West Virginia",64,42,28,32,0,11,36,27,0,11
+1400000US54069000600,"Census Tract 6, Ohio County, West Virginia",143,53,11,17,87,57,28,37,17,18
+1400000US54069000700,"Census Tract 7, Ohio County, West Virginia",96,63,23,22,49,32,24,22,0,11
+1400000US54069001300,"Census Tract 13, Ohio County, West Virginia",86,44,14,19,42,31,30,24,0,11
+1400000US54069001400,"Census Tract 14, Ohio County, West Virginia",738,154,19,23,72,50,615,153,32,36
+1400000US54069001500,"Census Tract 15, Ohio County, West Virginia",196,87,5,16,71,65,100,66,20,25
+1400000US54069001600,"Census Tract 16, Ohio County, West Virginia",137,97,54,50,16,16,67,79,0,11
+1400000US54069001700,"Census Tract 17, Ohio County, West Virginia",110,48,18,20,18,18,46,37,28,27
+1400000US54069001800,"Census Tract 18, Ohio County, West Virginia",232,125,14,29,95,75,123,99,0,16
+1400000US54069001901,"Census Tract 19.01, Ohio County, West Virginia",139,49,2,6,66,36,29,22,42,29
+1400000US54069002000,"Census Tract 20, Ohio County, West Virginia",286,109,42,40,177,96,47,38,20,29
+1400000US54069002100,"Census Tract 21, Ohio County, West Virginia",1486,180,28,26,263,126,1149,183,46,32
+1400000US54069002200,"Census Tract 22, Ohio County, West Virginia",139,75,28,33,28,26,68,57,15,19
+1400000US54069002600,"Census Tract 26, Ohio County, West Virginia",142,78,23,27,49,48,70,60,0,11
+1400000US54069002700,"Census Tract 27, Ohio County, West Virginia",38,21,0,11,9,8,4,8,25,18
+1400000US54071970400,"Census Tract 9704, Pendleton County, West Virginia",202,69,45,30,48,32,99,62,10,16
+1400000US54071970500,"Census Tract 9705, Pendleton County, West Virginia",132,53,39,32,58,33,31,27,4,13
+1400000US54071970600,"Census Tract 9706, Pendleton County, West Virginia",138,56,0,11,98,60,40,29,0,11
+1400000US54073962100,"Census Tract 9621, Pleasants County, West Virginia",250,88,32,32,136,76,75,59,7,13
+1400000US54073962200,"Census Tract 9622, Pleasants County, West Virginia",372,88,22,21,148,52,180,62,22,25
+1400000US54075960101,"Census Tract 9601.01, Pocahontas County, West Virginia",35,17,0,11,27,18,8,13,0,11
+1400000US54075960102,"Census Tract 9601.02, Pocahontas County, West Virginia",32,25,2,3,14,12,14,16,2,4
+1400000US54075960200,"Census Tract 9602, Pocahontas County, West Virginia",344,70,69,39,156,67,103,51,16,18
+1400000US54075960300,"Census Tract 9603, Pocahontas County, West Virginia",126,76,9,14,78,67,36,35,3,7
+1400000US54077963800,"Census Tract 9638, Preston County, West Virginia",408,157,40,38,145,72,137,80,86,76
+1400000US54077963900,"Census Tract 9639, Preston County, West Virginia",221,112,110,94,49,33,52,42,10,18
+1400000US54077964000,"Census Tract 9640, Preston County, West Virginia",265,99,42,36,173,96,40,35,10,18
+1400000US54077964100,"Census Tract 9641, Preston County, West Virginia",235,70,51,32,170,62,14,19,0,11
+1400000US54077964200,"Census Tract 9642, Preston County, West Virginia",270,72,48,28,140,63,67,47,15,20
+1400000US54077964300,"Census Tract 9643, Preston County, West Virginia",396,119,66,56,221,101,100,80,9,12
+1400000US54077964400,"Census Tract 9644, Preston County, West Virginia",321,112,83,59,128,56,80,64,30,31
+1400000US54077964500,"Census Tract 9645, Preston County, West Virginia",304,103,35,29,203,78,66,49,0,11
+1400000US54079020100,"Census Tract 201, Putnam County, West Virginia",485,157,14,21,262,111,177,123,32,40
+1400000US54079020200,"Census Tract 202, Putnam County, West Virginia",376,148,50,39,144,93,182,120,0,11
+1400000US54079020300,"Census Tract 203, Putnam County, West Virginia",503,192,62,48,297,160,122,98,22,35
+1400000US54079020400,"Census Tract 204, Putnam County, West Virginia",539,181,16,21,173,117,267,91,83,69
+1400000US54079020500,"Census Tract 205, Putnam County, West Virginia",211,107,39,43,44,41,128,79,0,16
+1400000US54079020601,"Census Tract 206.01, Putnam County, West Virginia",549,284,0,16,182,152,273,147,94,77
+1400000US54079020603,"Census Tract 206.03, Putnam County, West Virginia",395,141,0,16,235,131,95,76,65,68
+1400000US54079020604,"Census Tract 206.04, Putnam County, West Virginia",184,92,15,27,131,77,38,41,0,11
+1400000US54079020605,"Census Tract 206.05, Putnam County, West Virginia",464,174,70,66,125,66,224,137,45,51
+1400000US54079020700,"Census Tract 207, Putnam County, West Virginia",156,91,0,11,105,79,51,47,0,11
+1400000US54081000200,"Census Tract 2, Raleigh County, West Virginia",266,104,37,48,100,55,100,51,29,30
+1400000US54081000300,"Census Tract 3, Raleigh County, West Virginia",189,94,13,20,21,27,155,89,0,11
+1400000US54081000400,"Census Tract 4, Raleigh County, West Virginia",342,152,8,14,116,65,208,108,10,13
+1400000US54081000500,"Census Tract 5, Raleigh County, West Virginia",114,113,1,3,103,111,0,11,10,17
+1400000US54081000600,"Census Tract 6, Raleigh County, West Virginia",221,133,38,45,147,123,24,29,12,19
+1400000US54081000700,"Census Tract 7, Raleigh County, West Virginia",148,87,35,48,81,63,26,20,6,10
+1400000US54081000802,"Census Tract 8.02, Raleigh County, West Virginia",720,195,213,75,164,68,299,161,44,41
+1400000US54081000803,"Census Tract 8.03, Raleigh County, West Virginia",218,86,37,34,80,51,94,64,7,14
+1400000US54081000804,"Census Tract 8.04, Raleigh County, West Virginia",109,116,0,16,81,101,28,47,0,16
+1400000US54081000900,"Census Tract 9, Raleigh County, West Virginia",403,193,20,32,140,101,243,177,0,11
+1400000US54081001001,"Census Tract 10.01, Raleigh County, West Virginia",339,175,55,89,56,51,169,138,59,88
+1400000US54081001002,"Census Tract 10.02, Raleigh County, West Virginia",322,132,82,60,143,100,97,50,0,11
+1400000US54081001100,"Census Tract 11, Raleigh County, West Virginia",422,173,26,41,307,171,53,58,36,52
+1400000US54081001200,"Census Tract 12, Raleigh County, West Virginia",463,204,33,29,360,171,70,56,0,11
+1400000US54081001300,"Census Tract 13, Raleigh County, West Virginia",575,314,0,16,347,197,209,158,19,29
+1400000US54081001400,"Census Tract 14, Raleigh County, West Virginia",634,226,63,61,192,128,365,189,14,22
+1400000US54081001500,"Census Tract 15, Raleigh County, West Virginia",318,142,11,17,164,94,66,63,77,63
+1400000US54083965900,"Census Tract 9659, Randolph County, West Virginia",291,129,43,30,143,63,105,89,0,11
+1400000US54083966000,"Census Tract 9660, Randolph County, West Virginia",333,161,24,28,159,110,98,66,52,53
+1400000US54083966100,"Census Tract 9661, Randolph County, West Virginia",742,152,38,39,179,102,489,138,36,43
+1400000US54083966200,"Census Tract 9662, Randolph County, West Virginia",213,87,67,50,85,73,61,49,0,11
+1400000US54083966300,"Census Tract 9663, Randolph County, West Virginia",74,47,2,4,35,37,37,26,0,11
+1400000US54083966400,"Census Tract 9664, Randolph County, West Virginia",461,156,138,90,246,140,54,50,23,40
+1400000US54083966500,"Census Tract 9665, Randolph County, West Virginia",382,117,139,73,210,73,9,12,24,23
+1400000US54085962300,"Census Tract 9623, Ritchie County, West Virginia",311,93,61,49,87,47,163,78,0,11
+1400000US54085962400,"Census Tract 9624, Ritchie County, West Virginia",181,86,83,72,98,49,0,11,0,11
+1400000US54085962500,"Census Tract 9625, Ritchie County, West Virginia",192,72,34,25,69,56,89,50,0,11
+1400000US54087962800,"Census Tract 9628, Roane County, West Virginia",160,77,48,53,50,39,46,34,16,23
+1400000US54087962900,"Census Tract 9629, Roane County, West Virginia",296,98,47,44,126,80,54,49,69,70
+1400000US54087963000,"Census Tract 9630, Roane County, West Virginia",181,101,67,65,96,64,11,12,7,13
+1400000US54087963100,"Census Tract 9631, Roane County, West Virginia",295,114,55,55,140,80,90,72,10,16
+1400000US54089000500,"Census Tract 5, Summers County, West Virginia",181,88,50,38,74,55,51,37,6,12
+1400000US54089000600,"Census Tract 6, Summers County, West Virginia",297,123,15,17,166,89,116,72,0,11
+1400000US54089000700,"Census Tract 7, Summers County, West Virginia",75,52,20,24,32,31,23,24,0,11
+1400000US54089000800,"Census Tract 8, Summers County, West Virginia",199,96,25,24,86,72,78,65,10,16
+1400000US54091964600,"Census Tract 9646, Taylor County, West Virginia",285,138,1,3,80,73,204,130,0,11
+1400000US54091964700,"Census Tract 9647, Taylor County, West Virginia",166,103,37,44,54,50,56,61,19,27
+1400000US54091964800,"Census Tract 9648, Taylor County, West Virginia",475,151,51,57,264,116,160,117,0,16
+1400000US54091964900,"Census Tract 9649, Taylor County, West Virginia",214,113,40,63,139,99,0,11,35,53
+1400000US54093965200,"Census Tract 9652, Tucker County, West Virginia",144,56,29,42,70,39,39,31,6,9
+1400000US54093965300,"Census Tract 9653, Tucker County, West Virginia",133,47,18,21,64,31,51,38,0,11
+1400000US54093965400,"Census Tract 9654, Tucker County, West Virginia",235,72,40,28,123,52,68,63,4,7
+1400000US54095961800,"Census Tract 9618, Tyler County, West Virginia",285,69,18,14,181,65,63,32,23,17
+1400000US54095961900,"Census Tract 9619, Tyler County, West Virginia",206,80,27,25,56,55,80,55,43,37
+1400000US54095962000,"Census Tract 9620, Tyler County, West Virginia",152,58,0,11,104,63,48,33,0,11
+1400000US54097966600,"Census Tract 9666, Upshur County, West Virginia",370,122,51,54,253,104,49,38,17,22
+1400000US54097966700,"Census Tract 9667, Upshur County, West Virginia",1274,173,13,33,475,140,772,155,14,13
+1400000US54097966800,"Census Tract 9668, Upshur County, West Virginia",294,123,73,54,146,83,75,49,0,11
+1400000US54097966900,"Census Tract 9669, Upshur County, West Virginia",242,68,40,36,122,63,70,40,10,15
+1400000US54097967000,"Census Tract 9670, Upshur County, West Virginia",206,96,106,74,87,59,7,15,6,12
+1400000US54097967100,"Census Tract 9671, Upshur County, West Virginia",447,143,23,27,336,120,79,77,9,15
+1400000US54099005100,"Census Tract 51, Wayne County, West Virginia",133,66,10,11,56,35,23,22,44,56
+1400000US54099005200,"Census Tract 52, Wayne County, West Virginia",201,62,18,23,100,49,72,38,11,12
+1400000US54099020100,"Census Tract 201, Wayne County, West Virginia",265,114,94,91,67,48,74,49,30,35
+1400000US54099020300,"Census Tract 203, Wayne County, West Virginia",299,116,10,17,176,84,113,78,0,11
+1400000US54099020400,"Census Tract 204, Wayne County, West Virginia",508,177,35,43,227,99,226,126,20,36
+1400000US54099020500,"Census Tract 205, Wayne County, West Virginia",397,178,152,111,204,150,41,41,0,11
+1400000US54099020600,"Census Tract 206, Wayne County, West Virginia",371,141,9,13,65,50,297,130,0,16
+1400000US54099020700,"Census Tract 207, Wayne County, West Virginia",208,109,9,15,154,100,45,43,0,11
+1400000US54099020800,"Census Tract 208, Wayne County, West Virginia",205,107,61,52,58,42,86,92,0,11
+1400000US54099020900,"Census Tract 209, Wayne County, West Virginia",212,107,36,31,152,93,24,28,0,11
+1400000US54099021000,"Census Tract 210, Wayne County, West Virginia",248,144,33,42,69,57,146,110,0,11
+1400000US54101970100,"Census Tract 9701, Webster County, West Virginia",233,110,38,40,128,70,67,60,0,11
+1400000US54101970200,"Census Tract 9702, Webster County, West Virginia",149,80,11,14,42,33,84,75,12,12
+1400000US54101970300,"Census Tract 9703, Webster County, West Virginia",200,72,40,31,91,53,69,38,0,11
+1400000US54103004900,"Census Tract 49, Wetzel County, West Virginia",233,83,4,10,96,48,113,69,20,30
+1400000US54103030400,"Census Tract 304, Wetzel County, West Virginia",184,85,0,11,153,78,31,28,0,11
+1400000US54103030500,"Census Tract 305, Wetzel County, West Virginia",261,87,72,49,130,64,42,40,17,19
+1400000US54103030700,"Census Tract 307, Wetzel County, West Virginia",389,86,20,22,189,81,180,81,0,11
+1400000US54103030800,"Census Tract 308, Wetzel County, West Virginia",123,50,0,11,57,39,33,26,33,22
+1400000US54105030101,"Census Tract 301.01, Wirt County, West Virginia",218,65,59,41,65,53,56,46,38,36
+1400000US54105030102,"Census Tract 301.02, Wirt County, West Virginia",171,61,35,33,21,33,105,55,10,15
+1400000US54107000100,"Census Tract 1, Wood County, West Virginia",230,89,21,28,40,41,119,68,50,49
+1400000US54107000300,"Census Tract 3, Wood County, West Virginia",154,64,9,13,102,63,43,42,0,11
+1400000US54107000400,"Census Tract 4, Wood County, West Virginia",233,101,75,66,136,64,22,23,0,11
+1400000US54107000500,"Census Tract 5, Wood County, West Virginia",463,126,128,82,201,93,123,82,11,16
+1400000US54107000701,"Census Tract 7.01, Wood County, West Virginia",401,158,114,106,199,99,81,65,7,11
+1400000US54107000702,"Census Tract 7.02, Wood County, West Virginia",160,65,37,29,70,51,53,43,0,11
+1400000US54107000801,"Census Tract 8.01, Wood County, West Virginia",105,65,10,11,63,42,32,28,0,11
+1400000US54107000802,"Census Tract 8.02, Wood County, West Virginia",351,135,41,54,125,63,185,80,0,11
+1400000US54107000901,"Census Tract 9.01, Wood County, West Virginia",177,68,49,42,82,41,46,29,0,11
+1400000US54107000902,"Census Tract 9.02, Wood County, West Virginia",102,77,22,35,51,42,29,24,0,11
+1400000US54107000903,"Census Tract 9.03, Wood County, West Virginia",263,106,41,38,102,74,120,77,0,11
+1400000US54107010101,"Census Tract 101.01, Wood County, West Virginia",140,56,42,36,61,43,21,22,16,16
+1400000US54107010102,"Census Tract 101.02, Wood County, West Virginia",133,46,41,30,62,35,21,15,9,9
+1400000US54107010200,"Census Tract 102, Wood County, West Virginia",90,53,9,11,69,51,12,18,0,11
+1400000US54107010300,"Census Tract 103, Wood County, West Virginia",312,119,12,17,88,76,132,59,80,57
+1400000US54107010400,"Census Tract 104, Wood County, West Virginia",101,63,5,8,26,34,21,17,49,44
+1400000US54107010501,"Census Tract 105.01, Wood County, West Virginia",119,61,16,18,19,20,84,60,0,11
+1400000US54107010502,"Census Tract 105.02, Wood County, West Virginia",461,180,0,11,192,122,269,144,0,11
+1400000US54107010601,"Census Tract 106.01, Wood County, West Virginia",246,120,19,19,141,109,78,52,8,13
+1400000US54107010602,"Census Tract 106.02, Wood County, West Virginia",514,219,7,14,102,58,405,209,0,11
+1400000US54107010701,"Census Tract 107.01, Wood County, West Virginia",354,152,77,71,161,113,104,74,12,19
+1400000US54107010702,"Census Tract 107.02, Wood County, West Virginia",430,143,80,70,116,75,234,114,0,16
+1400000US54107010800,"Census Tract 108, Wood County, West Virginia",137,69,0,11,66,40,71,52,0,11
+1400000US54107010901,"Census Tract 109.01, Wood County, West Virginia",383,142,29,46,89,71,265,133,0,11
+1400000US54107010902,"Census Tract 109.02, Wood County, West Virginia",406,143,46,37,156,91,157,92,47,55
+1400000US54107011000,"Census Tract 110, Wood County, West Virginia",155,64,15,21,53,40,56,47,31,30
+1400000US54109002800,"Census Tract 28, Wyoming County, West Virginia",244,95,110,54,93,69,41,51,0,11
+1400000US54109002901,"Census Tract 29.01, Wyoming County, West Virginia",347,117,81,51,167,90,99,74,0,11
+1400000US54109002902,"Census Tract 29.02, Wyoming County, West Virginia",156,88,28,30,46,41,82,63,0,11
+1400000US54109003000,"Census Tract 30, Wyoming County, West Virginia",168,86,30,37,66,50,55,45,17,26
+1400000US54109003100,"Census Tract 31, Wyoming County, West Virginia",192,116,51,45,99,77,38,37,4,9
+1400000US54109003200,"Census Tract 32, Wyoming County, West Virginia",425,142,63,59,276,128,52,39,34,38

@@ -1,10 +1,10 @@
 library(tidyverse)
 library(dplyr)
 library(readr)
-aps_educon <- read_csv("aps_educon.csv")
+income_data<- read_csv("income.csv")
 
-aps_educon <- aps_educon %>%
-  filter(YEAR > 2015)%>%
-  select(-HIGRADE, -HIGRADED, -COUNTYICP, -REGION, -STATEFIP)
+census_data <- read.csv("census_data.csv")
 
+ed_data <- read.csv("ed_data.csv")
 
+urban_institute_data <- read.csv("urban_institute_data.csv")
