@@ -19,15 +19,15 @@ ed_census_inc <- ed_census_inc %>%
   select(-Area_Name.y)
 
 ed_census_inc_percent_tract <- ed_census_inc %>%
-  mutate(percent_broadband = Broadband.of.any.type..estimate / Pop_18.24)%>%
-  select(starts_with(Geographic.Area.Name, "Census Tract"))
-  
-?starts_with
+  mutate(percent_broadband = Broadband.of.any.type..estimate / Pop_18.24)
+
+ed_census_inc_percent_tract <- ed_census_inc_percent_tract %>%
+  filter(startsWith(Geographic.Area.Name, "Census Tract"))
 
 
-plot1 <- ggplot(data = ed_census_inc_percent,
-  aes(x =  income, y= percent_broadband),
-  theme_minimal(),
-)
+plot1 <- ggplot(data = ed_census_inc_percent_tract,
+  aes(x =  income, y= percent_broadband))+
+  geom_point()+
+  theme_minimal()
 
 plot1
