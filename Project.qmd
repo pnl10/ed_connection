@@ -8,17 +8,144 @@ format:
   html:
     embed-resources: true
 ---
-
 ```{r}
 library(tidyverse)
+library(dplyr)
+library(readr)
+library(sf)
+library(recipes)
+library(tidymodels)
+library(broom)
+library(patchwork)
+library(ggplot2)
+library(tidyclust)
+library(Rfast)
+library(workflows)
+```
+
+
+```{r}
+
+income_data<- read_csv("income.csv")
+
+census_data <- read.csv("census_data.csv")
+
+ed_data <- read.csv("ed_data.csv")
+
+urban_institute_data <- read.csv("urban_institute_data.csv")
+
+
+ed_census_inc <- left_join(income_data, census_data, by = "GEO_ID")
+ed_census_inc <- left_join(ed_census_inc, ed_data, by = "GEO_ID")
+
+
+ed_census_inc <- ed_census_inc %>%
+  select(-Area_Name.x)%>%
+  select(-Area_Name.y)
+
+ed_census_inc_percent_tract <- ed_census_inc %>%
+  mutate(percent_broadband = Broadband.of.any.type..estimate / Pop_18.24)
+
+ed_census_inc_percent_tract <- ed_census_inc_percent_tract %>%
+  filter(startsWith(Geographic.Area.Name, "Census Tract"))
+
+ed_census_inc_percent_tract <- ed_census_inc_percent_tract %>%
+  mutate(GEOID = GEO_ID)%>%
+  select(-GEO_ID)
+
+ed_census_inc_percent_tract <- ed_census_inc_percent_tract %>%
+  mutate(less_than_hs_percent = less_than_hs / Pop_18.24)
+
 
 ```
 
 
-# Exercise 01
-
 ```{r}
 
+
+geospatial_data <- st_read("cb_2022_54_tract_500k", quiet = TRUE)
+
+geospatial_data<- geospatial_data %>%
+  select(GEOID, geometry)
+
+broadband_tract <- ed_census_inc_percent_tract %>%
+  select(percent_broadband, GEOID)%>%
+  mutate(GEOID = sub("1400000US","",GEOID))
+
+join_data <- left_join(x= geospatial_data, broadband_tract, by = "GEOID")
+
+
+hs_tract <- ed_census_inc_percent_tract %>%
+  select(less_than_hs_percent, GEOID)%>%
+  mutate(GEOID = sub("1400000US","",GEOID))
+
+join_data2 <- left_join(x= geospatial_data, hs_tract, by = "GEOID")
+
+
+plot1 <- ggplot(data = ed_census_inc_percent_tract,
+  aes(x =  income, y= percent_broadband))+
+  geom_point()+
+  theme_minimal()
+
+plot1
+
+broadband_plot <- ggplot(st_as_sf(join_data)) + 
+  geom_sf(aes(fill = percent_broadband)) +
+  scale_fill_gradient(high = "blue", low = "orange") +
+  coord_sf()
+
+ed_plot <- ggplot(st_as_sf(join_data2)) + 
+  geom_sf(aes(fill = less_than_hs_percent)) +
+  scale_fill_gradient(high = "red", low = "green") +
+  coord_sf()
+
+library(patchwork)
+plot_together = broadband_plot + ed_plot
+
+plot_together
+
+```
+
+
+#Machine Learning
+
+```{r}
+#MACHINE LEARNING
+
+set.seed(20201007)
+
+# create a split object
+data_split <- initial_split(data = ed_census_inc_percent_tract, prop = 0.75)
+
+# create the training and testing data
+data_train1 <- training(x = data_split)
+data_test1 <- testing(x = data_split)
+
+ed_percent_rec <- recipe(percent_broadband ~ .,
+                         data = data_train1) %>%
+  step_normalize(percent_broadband, less_than_hs_percent)
+
+ed_percent_data <- ed_percent_rec %>%
+  prep()%>%
+  bake(new_data = NULL)
+
+ed_model <- linear_reg() %>%
+  set_engine("glm")%>%
+  set_mode(mode = "regression")
+
+ed_wf <- workflow() %>%
+  add_recipe(ed_percent_rec) %>%
+  add_model(ed_model)
+
+ed_fit <- ed_wf %>%
+  fit(data = data_train1)
+
+predictions <- predict(ed_fit, new_data = data_test1)
+
+predictions <- bind_cols(
+  data_test,
+  predict(object = ed_fit, new_data = data_test1, type = "prob")
+  )
 
 ```
 
