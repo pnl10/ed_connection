@@ -178,6 +178,19 @@ predictions <- predict(ed_fit, new_data = data_test_processed)
 
 ```{r}
 
+# Unsupervised Machine Learning: categorizing West Virginia census tracts
+
+set.seed(20201007)
+
+# Remove NA values from income
+ml1 <- ed_census_inc_percent_tract%>%
+  filter(!(is.na(as.numeric(income))))
+
+# Convert numerical values that are stored as characters
+ml1 <-ml1 %>%
+  mutate(income = as.numeric(income))%>%
+  mutate(income_moe = as.numeric(income_moe))%>%
+  mutate(Pop_18.24_MoE = as.numeric(Pop_18.24_MoE))%>%
 
 ```
 
