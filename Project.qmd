@@ -114,8 +114,22 @@ plot_together
 
 set.seed(20201007)
 
+# Remove NA values from income
+ml1 <- ed_census_inc_percent_tract%>%
+  filter(!(is.na(as.numeric(income))))
+
+# Convert numerical values that are stored as characters
+ml1 <-ml1 %>%
+  mutate(income = as.numeric(income))%>%
+  mutate(income_moe = as.numeric(income_moe))%>%
+  mutate(Pop_18.24_MoE = as.numeric(Pop_18.24_MoE))%>%
+  select(-GEOID) %>%
+  select(-Geographic.Area.Name)
+  
+
 # create a split object
-data_split <- initial_split(data = ed_census_inc_percent_tract, prop = 0.75)
+data_split <- initial_split(data = ml1, prop = 0.75)
+
 
 # create the training and testing data
 data_train1 <- training(x = data_split)
@@ -123,12 +137,22 @@ data_test1 <- testing(x = data_split)
 
 ed_percent_rec <- recipe(percent_broadband ~ .,
                          data = data_train1) %>%
-  step_select(all_numeric())%>%
+  step_select(all_numeric()) %>%
   step_normalize(less_than_hs_percent)
 
-ed_percent_data <- ed_percent_rec %>%
-  prep()%>%
-  bake(new_data = NULL)
+prep_rec <-prep(ed_percent_rec)
+
+data_train_processed <- bake(prep_rec, new_data = data_train1)
+data_test_processed <- bake(prep_rec, new_data = data_test1)
+
+# data_frame_processed <- bake(prep(ed_percent_rec, training = data_train1), new_data = data_train1)
+# data_frame_processed_test <- bake(prep(ed_percent_rec, training = data_test1), new_data = data_test1)
+
+#bake(prep(ed_percent_rec, training = data_train1), new_data = data_train1)
+
+ # ed_percent_data <- ed_percent_rec %>%
+ #   prep()%>%
+ #   bake(new_data = data_train1)
 
 ed_model <- linear_reg() %>%
   set_engine("glm")%>%
@@ -138,10 +162,13 @@ ed_wf <- workflow() %>%
   add_recipe(ed_percent_rec) %>%
   add_model(ed_model)
 
-ed_fit <- ed_wf %>%
-  fit(data = data_train1)
+# ed_fit <- ed_wf %>%
+#   fit(data = data_train1)
 
-predictions <- predict(ed_fit, new_data = data_test1)
+ed_fit <- ed_wf %>%
+  fit(data = data_train_processed)
+
+predictions <- predict(ed_fit, new_data = data_test_processed)
 
 #Create new dataframe that is only numeric values
 
