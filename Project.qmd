@@ -123,7 +123,8 @@ data_test1 <- testing(x = data_split)
 
 ed_percent_rec <- recipe(percent_broadband ~ .,
                          data = data_train1) %>%
-  step_normalize(percent_broadband, less_than_hs_percent)
+  step_select(all_numeric())%>%
+  step_normalize(less_than_hs_percent)
 
 ed_percent_data <- ed_percent_rec %>%
   prep()%>%
@@ -142,10 +143,7 @@ ed_fit <- ed_wf %>%
 
 predictions <- predict(ed_fit, new_data = data_test1)
 
-predictions <- bind_cols(
-  data_test,
-  predict(object = ed_fit, new_data = data_test1, type = "prob")
-  )
+#Create new dataframe that is only numeric values
 
 ```
 
