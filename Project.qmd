@@ -193,4 +193,52 @@ ml1 <-ml1 %>%
   mutate(Pop_18.24_MoE = as.numeric(Pop_18.24_MoE))%>%
 
 ```
+#my code for assignment08 q1
 
+
+```{r}
+votes_103 <- read.csv("votes_time_series.csv") %>%
+  mutate_all(~replace(., is.na(.), 0)) %>%
+  filter(session == 103)
+
+library(recipes)
+
+votes_pca_rec <- recipe(~ ., data = votes_103) %>%
+  step_pca(starts_with("v"), id = "pca") %>%
+  prep()
+
+variance_explained <- votes_pca_rec %>%
+  tidy(id = "pca", type = "variance") %>%
+  mutate(pct_var = value/sum(value))
+
+first_component_variance <- variance_explained$pct_var[1]
+cumulative_variance_first_5 <- sum(variance_explained$pct_var[1:5])
+#the first component explained 0.38% of variance and the first 5 together explained 0.66%
+
+library(patchwork)
+
+
+votes_pcs <- bake(votes_pca_rec, new_data = NULL)
+
+states_regions <- read.csv("states_regions.csv")
+joined <- left_join(votes_pcs, states_regions, by = c("state" = "State.Code" ) ) %>%
+  select(!State)
+ 
+library(ggplot2)
+library(patchwork)
+
+
+plot_party <- ggplot(joined, aes(x = PC1, y = PC2, color = party)) +
+  geom_point() +
+  labs(title = "Scatterplot of PCA by Party", x = "PC1", y = "PC2") +
+  theme_minimal()
+
+plot_region <- ggplot(joined, aes(x = PC1, y = PC2, color = Region)) +
+  geom_point() +
+  labs(title = "Scatterplot of PCA by Region", x = "PC1", y = "PC2") +
+  theme_minimal()
+
+combined_plot <- plot_party + plot_region
+
+print(combined_plot)
+```
