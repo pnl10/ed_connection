@@ -197,46 +197,61 @@ ml1 <-ml1 %>%
 
 
 ```{r}
-votes_103 <- read.csv("votes_time_series.csv") %>%
-  mutate_all(~replace(., is.na(.), 0)) %>%
-  filter(session == 103)
-
+library(tidymodels)
 library(recipes)
+library(broom)
+library(tidyclust)
+library(patchwork)
+library(workflows)
+library(sf)
+library(ggplot2)
+library(Rfast)
 
-votes_pca_rec <- recipe(~ ., data = votes_103) %>%
-  step_pca(starts_with("v"), id = "pca") %>%
+set.seed(20201007)
+
+# Remove NA values from income
+ml1 <- ed_census_inc_percent_tract%>%
+  filter(!(is.na(as.numeric(income))))
+
+# Convert numerical values that are stored as characters
+ml1 <-ml1 %>%
+  mutate(income = as.numeric(income))%>%
+  mutate(income_moe = as.numeric(income_moe))%>%
+  mutate(Pop_18.24_MoE = as.numeric(Pop_18.24_MoE))
+  
+  
+ed_pca_rec <- recipe(~ ., data = ml1) %>%
+  step_pca(all_numeric(), id = "pca") %>%
   prep()
 
-variance_explained <- votes_pca_rec %>%
+variance_explained <- ed_pca_rec %>%
   tidy(id = "pca", type = "variance") %>%
   mutate(pct_var = value/sum(value))
 
 first_component_variance <- variance_explained$pct_var[1]
 cumulative_variance_first_5 <- sum(variance_explained$pct_var[1:5])
-#the first component explained 0.38% of variance and the first 5 together explained 0.66%
-
-library(patchwork)
 
 
-votes_pcs <- bake(votes_pca_rec, new_data = NULL)
+votes_pcs <- bake(ed_pca_rec, new_data = NULL)
 
 states_regions <- read.csv("states_regions.csv")
 joined <- left_join(votes_pcs, states_regions, by = c("state" = "State.Code" ) ) %>%
   select(!State)
- 
-library(ggplot2)
-library(patchwork)
 
 
-plot_party <- ggplot(joined, aes(x = PC1, y = PC2, color = party)) +
+plot_party <- ggplot(votes_pcs, aes(x = PC1, y = PC2)) +
   geom_point() +
-  labs(title = "Scatterplot of PCA by Party", x = "PC1", y = "PC2") +
+  labs(title = "Scatterplot of PCA by Census Tract", x = "PC1", y = "PC2") +
   theme_minimal()
 
-plot_region <- ggplot(joined, aes(x = PC1, y = PC2, color = Region)) +
+print(plot_party)
+
+plot_region <- ggplot(ed_pcs, aes(x = PC1, y = PC2, color = GEOID)) +
   geom_point() +
   labs(title = "Scatterplot of PCA by Region", x = "PC1", y = "PC2") +
   theme_minimal()
+
+# Color and size the census tracts based on values like income, population, education
 
 combined_plot <- plot_party + plot_region
 
