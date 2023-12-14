@@ -88,14 +88,34 @@ hs_tract <- ed_census_inc_percent_tract %>%
 
 join_data2 <- left_join(x= geospatial_data, hs_tract, by = "GEOID")
 
-
+ed_census_inc_percent_tract$income <- as.numeric(ed_census_inc_percent_tract$income)
+ed_census_inc_percent_tract$percent_broadband <- as.numeric(ed_census_inc_percent_tract$percent_broadband)
 plot1 <- ggplot(data = ed_census_inc_percent_tract,
   aes(x =  income, y= percent_broadband))+
   geom_point()+
-  theme_minimal()
+  labs(title = "Lacking Broadband", x ="income", y = "lack broadband")+
+  geom_smooth(aes(color = "red"), method = "lm",se = FALSE)+
+  theme_minimal()+
+  theme(legend.position = "none")
 
 plot1
 
+ed_with_income_lvl <- ed_census_inc_percent_tract %>%
+  mutate(income_level = ifelse(income<=33000, "low", ifelse(income > 33000 & income<= 60000,"medium","high") )) %>%
+  filter(!is.na(income_level))
+# assign each census tract an income level based on the definition taht income lower than 33000 is low-income, between 33000 and 60000 is medium-income and higher than 60000 is high-income
+plot2 <- ggplot(data = ed_with_income_lvl,
+  aes(x =  less_than_hs_percent, y= percent_broadband, color  = income_level))+
+  geom_point()+
+  labs(title = "percentage with broadband by education", x ="population with less than high school degree", y = "lack broadband")+
+  theme_minimal()
+
+plot2 
+
+hist(ed_census_inc_percent_tract$less_than_hs_percent, xlab = "Percentage of population less high school", ylab = "Number of census tracts", main = "Histogram of percentage of population with less than high school degree,\n by census tract")
+
+
+#abline(lm(percent_broadband ~ income,data=ed_census_inc_percent_tract),col='red')
 broadband_plot <- ggplot(st_as_sf(join_data)) + 
   geom_sf(aes(fill = percent_broadband)) +
   scale_fill_gradient(high = "red", low = "green") +
@@ -103,6 +123,7 @@ broadband_plot <- ggplot(st_as_sf(join_data)) +
   labs(title = "Lacking Broadband")+
   labs(fill = "% of Population")+
   theme_void()
+
 
 ed_plot <- ggplot(st_as_sf(join_data2)) + 
   geom_sf(aes(fill = hs_percent)) +
@@ -116,6 +137,8 @@ ed_plot <- ggplot(st_as_sf(join_data2)) +
 plot_together = broadband_plot + ed_plot
 
 plot_together
+
+
 ```
 
 ```{r}
@@ -200,8 +223,8 @@ data_train1 <- training(x = data_split)
 data_test1 <- testing(x = data_split)
 
 ed_percent_rec <- recipe(percent_broadband ~ .,
-                         data = data_train1)
-  #step_normalize(less_than_hs_percent)
+                         data = data_train1) %>%
+  step_normalize(less_than_hs_percent)
 
 prep_rec <-prep(ed_percent_rec)
 
@@ -237,12 +260,12 @@ predictions <- bind_cols(
 )
 
 predictions1<- predictions %>%
-  select(percent_broadband, .pred)
+  select(percent_broadband, .pred_res)
 
 predictions_map <- left_join(predictions1, ed_census_inc_percent_tract, by = "percent_broadband")
 
 predictions_map <- predictions_map %>%
-  select(percent_broadband, .pred, GEOID)%>%
+  select(percent_broadband, .pred_res, GEOID)%>%
   mutate(GEOID = sub("1400000US","",GEOID))
 
 
@@ -258,7 +281,7 @@ true_values <- ggplot(st_as_sf(predictions_joined)) +
   theme_void()
 
 predicted_values <- ggplot(st_as_sf(predictions_joined)) + 
-  geom_sf(aes(fill = .pred)) +
+  geom_sf(aes(fill = .pred_res)) +
   scale_fill_gradient(high = "red", low = "green") +
   coord_sf()+
   labs(title = "Lacking Broadband Predicted (testing)")+
@@ -278,12 +301,12 @@ predictions_whole <- bind_cols(
 )
 
 predictions2<- predictions_whole %>%
-  select(percent_broadband, .pred)
+  select(percent_broadband, .pred_res)
 
 predictions_map_whole <- left_join(predictions2, ed_census_inc_percent_tract, by = "percent_broadband")
 
 predictions_map_whole <- predictions_map_whole %>%
-  select(percent_broadband, .pred, GEOID)%>%
+  select(percent_broadband, .pred_res, GEOID)%>%
   mutate(GEOID = sub("1400000US","",GEOID))
 
 
@@ -301,7 +324,7 @@ true_values_all <- ggplot(st_as_sf(predictions_joined2)) +
   theme_void()
 
 predicted_values_all <- ggplot(st_as_sf(predictions_joined2)) + 
-  geom_sf(aes(fill = .pred)) +
+  geom_sf(aes(fill = .pred_res)) +
   scale_fill_gradient(high = "red", low = "green",
                       breaks = c(10,20, 30, 40, 50, 60),
                       limits = c(10, 60)) +
@@ -314,86 +337,4 @@ true_v_pred2 <- true_values_all + predicted_values_all
 true_v_pred2
 ```
 
-#Unsupervized Machine Learning
 
-```{r}
-
-# Unsupervised Machine Learning: categorizing West Virginia census tracts
-
-set.seed(20201007)
-
-# Remove NA values from income
-ml1 <- ed_census_inc_percent_tract%>%
-  filter(!(is.na(as.numeric(income))))
-
-# Convert numerical values that are stored as characters
-ml1 <-ml1 %>%
-  mutate(income = as.numeric(income))%>%
-  mutate(income_moe = as.numeric(income_moe))%>%
-  mutate(Pop_18.24_MoE = as.numeric(Pop_18.24_MoE)
-
-```
-#my code for assignment08 q1
-
-
-```{r}
-library(tidymodels)
-library(recipes)
-library(broom)
-library(tidyclust)
-library(patchwork)
-library(workflows)
-library(sf)
-library(ggplot2)
-library(Rfast)
-
-set.seed(20201007)
-
-# Remove NA values from income
-#ml1 <- ed_census_inc_percent_tract%>%
- # filter(!(is.na(as.numeric(income))))
-
-# Convert numerical values that are stored as characters
-#ml1 <-ml1 %>%
-  #mutate(income = as.numeric(income))%>%
-  #mutate(income_moe = as.numeric(income_moe))%>%
- # mutate(Pop_18.24_MoE = as.numeric(Pop_18.24_MoE))
-  
-  
-#ed_pca_rec <- recipe(~ ., data = ml1) %>%
-  #step_pca(all_numeric(), id = "pca") %>%
-  #prep()
-
-#variance_explained <- ed_pca_rec %>%
- # tidy(id = "pca", type = "variance") %>%
-  #mutate(pct_var = value/sum(value))
-
-#first_component_variance <- variance_explained$pct_var[1]
-#cumulative_variance_first_5 <- sum(variance_explained$pct_var[1:5])
-
-
-#votes_pcs <- bake(ed_pca_rec, new_data = NULL)
-
-#states_regions <- read.csv("states_regions.csv")
-#joined <- left_join(votes_pcs, states_regions, by = c("state" = "State.Code" ) ) %>%
- # select(!State)
-
-
-#plot_party <- ggplot(votes_pcs, aes(x = PC1, y = PC2)) +
-  #geom_point() +
-  #labs(title = "Scatterplot of PCA by Census Tract", x = "PC1", y = "PC2") +
- # theme_minimal()
-
-#print(plot_party)
-
-#plot_region <- ggplot(ed_pcs, aes(x = PC1, y = PC2, color = GEOID)) +
-  #geom_point() +
-  #labs(title = "Scatterplot of PCA by Region", x = "PC1", y = "PC2") +
- # theme_minimal()
-
-# Color and size the census tracts based on values like income, population, education
-
-#combined_plot <- plot_party + plot_region
-
-#print(combined_plot)
-```
