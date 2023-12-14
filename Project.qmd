@@ -23,6 +23,7 @@ library(Rfast)
 library(workflows)
 library(sf)
 library(gganimate)
+library(patchwork)
 ```
 
 
@@ -111,7 +112,7 @@ ed_plot <- ggplot(st_as_sf(join_data2)) +
   labs(fill = "% of Population")+
   theme_void()
 
-library(patchwork)
+
 plot_together = broadband_plot + ed_plot
 
 plot_together
@@ -131,7 +132,6 @@ hs_tract_long <- hs_tract_long %>%
     mutate(percentage = as.numeric(percentage))
 
 join_data3 <- left_join(x= hs_tract_long, geospatial_data, by = "GEOID")
-
 
 dropped_data <- anti_join(geospatial_data, join_data3, by = "GEOID")
 
