@@ -24,6 +24,7 @@ library(workflows)
 library(sf)
 library(gganimate)
 library(patchwork)
+library(yardstick)
 ```
 
 
@@ -261,6 +262,14 @@ predictions <- bind_cols(
 
 predictions1<- predictions %>%
   select(percent_broadband, .pred_res)
+
+
+rmse <- predictions %>%
+  yardstick::rmse(truth = percent_broadband, estimate = .pred_res)
+print(rmse)
+mae <- predictions %>%
+  yardstick::mae(truth = percent_broadband, estimate = .pred_res)
+print(mae)
 
 predictions_map <- left_join(predictions1, ed_census_inc_percent_tract, by = "percent_broadband")
 
