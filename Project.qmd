@@ -47,7 +47,7 @@ ed_census_inc <- ed_census_inc %>%
   select(-Area_Name.y)
 
 ed_census_inc_percent_tract <- ed_census_inc %>%
-  mutate(percent_broadband = 100*Broadband.of.any.type..estimate / Total.Housholds.Estimate)
+  mutate(percent_broadband = (100*(1-(Broadband.of.any.type..estimate / Total.Housholds.Estimate))))
 
 ed_census_inc_percent_tract <- ed_census_inc_percent_tract %>%
   filter(startsWith(Geographic.Area.Name, "Census Tract"))
@@ -98,17 +98,17 @@ plot1
 
 broadband_plot <- ggplot(st_as_sf(join_data)) + 
   geom_sf(aes(fill = percent_broadband)) +
-  scale_fill_gradient(high = "green", low = "red") +
+  scale_fill_gradient(high = "red", low = "green") +
   coord_sf()+
-  labs(title = "Access to Broadband")+
+  labs(title = "Lacking Broadband")+
   labs(fill = "% of Population")+
   theme_void()
 
 ed_plot <- ggplot(st_as_sf(join_data2)) + 
-  geom_sf(aes(fill = less_than_hs_percent)) +
+  geom_sf(aes(fill = hs_percent)) +
   scale_fill_gradient(high = "red", low = "green") +
   coord_sf()+
-  labs(title = "Less Than a High School Diploma")+
+  labs(title = "High School Diploma")+
   labs(fill = "% of Population")+
   theme_void()
 
@@ -186,7 +186,7 @@ ml1 <-ml1 %>%
   mutate(income = as.numeric(income))%>%
   mutate(income_moe = as.numeric(income_moe))%>%
   mutate(Pop_18.24_MoE = as.numeric(Pop_18.24_MoE))%>%
-  select(-GEOID) %>%
+  select(-GEOID)%>%
   select(-Geographic.Area.Name) %>%
   select(where(is.numeric))
   
@@ -200,22 +200,22 @@ data_train1 <- training(x = data_split)
 data_test1 <- testing(x = data_split)
 
 ed_percent_rec <- recipe(percent_broadband ~ .,
-                         data = data_train1) %>%
-  step_normalize(less_than_hs_percent)
+                         data = data_train1)
+  #step_normalize(less_than_hs_percent)
 
 prep_rec <-prep(ed_percent_rec)
 
 data_train_processed <- bake(prep_rec, new_data = data_train1)
 data_test_processed <- bake(prep_rec, new_data = data_test1)
 
-# data_frame_processed <- bake(prep(ed_percent_rec, training = data_train1), new_data = data_train1)
-# data_frame_processed_test <- bake(prep(ed_percent_rec, training = data_test1), new_data = data_test1)
+data_frame_processed <- bake(prep(ed_percent_rec, training = data_train1), new_data = data_train1)
+data_frame_processed_test <- bake(prep(ed_percent_rec, training = data_test1), new_data = data_test1)
 
-#bake(prep(ed_percent_rec, training = data_train1), new_data = data_train1)
+bake(prep(ed_percent_rec, training = data_train1), new_data = data_train1)
 
- # ed_percent_data <- ed_percent_rec %>%
- #   prep()%>%
- #   bake(new_data = data_train1)
+ed_percent_data <- ed_percent_rec %>%
+ prep()%>%
+ bake(new_data = data_train1)
 
 ed_model <- linear_reg() %>%
   set_engine("glm")%>%
@@ -225,19 +225,96 @@ ed_wf <- workflow() %>%
   add_recipe(ed_percent_rec) %>%
   add_model(ed_model)
 
-# ed_fit <- ed_wf %>%
-#   fit(data = data_train1)
+ed_fit <- ed_wf %>%
+  fit(data = data_train1)
 
 ed_fit <- ed_wf %>%
   fit(data = data_train_processed)
 
-predictions <- predict(ed_fit, new_data = data_test_processed)
+predictions <- bind_cols(
+  data_test1,
+  predict(object = ed_fit, new_data = data_test1)
+)
 
+predictions1<- predictions %>%
+  select(percent_broadband, .pred)
+
+predictions_map <- left_join(predictions1, ed_census_inc_percent_tract, by = "percent_broadband")
+
+predictions_map <- predictions_map %>%
+  select(percent_broadband, .pred, GEOID)%>%
+  mutate(GEOID = sub("1400000US","",GEOID))
+
+
+predictions_joined <- left_join(x= geospatial_data, predictions_map, by = "GEOID")
+
+
+true_values <- ggplot(st_as_sf(predictions_joined)) + 
+  geom_sf(aes(fill = percent_broadband)) +
+  scale_fill_gradient(high = "red", low = "green") +
+  coord_sf()+
+  labs(title = "Lacking Broadband TRUE (testing)")+
+  labs(fill = "% of Population")+
+  theme_void()
+
+predicted_values <- ggplot(st_as_sf(predictions_joined)) + 
+  geom_sf(aes(fill = .pred)) +
+  scale_fill_gradient(high = "red", low = "green") +
+  coord_sf()+
+  labs(title = "Lacking Broadband Predicted (testing)")+
+  labs(fill = "% of Population")+
+  theme_void()
+
+true_v_pred <- true_values + predicted_values
+true_v_pred
 #Create new dataframe that is only numeric values
 
 ```
+```{r}
 
-# Exercise 02
+predictions_whole <- bind_cols(
+  ml1,
+  predict(object = ed_fit, new_data = ml1)
+)
+
+predictions2<- predictions_whole %>%
+  select(percent_broadband, .pred)
+
+predictions_map_whole <- left_join(predictions2, ed_census_inc_percent_tract, by = "percent_broadband")
+
+predictions_map_whole <- predictions_map_whole %>%
+  select(percent_broadband, .pred, GEOID)%>%
+  mutate(GEOID = sub("1400000US","",GEOID))
+
+
+predictions_joined2 <- left_join(x= geospatial_data, predictions_map_whole, by = "GEOID")
+
+
+true_values_all <- ggplot(st_as_sf(predictions_joined2)) + 
+  geom_sf(aes(fill = percent_broadband)) +
+  scale_fill_gradient(high = "red", low = "green", 
+                      breaks = c(10,20, 30, 40, 50, 60),
+                      limits = c(10, 60)) +
+  coord_sf()+
+  labs(title = "Lacking Broadband TRUE (all data)")+
+  labs(fill = "% of Population")+
+  theme_void()
+
+predicted_values_all <- ggplot(st_as_sf(predictions_joined2)) + 
+  geom_sf(aes(fill = .pred)) +
+  scale_fill_gradient(high = "red", low = "green",
+                      breaks = c(10,20, 30, 40, 50, 60),
+                      limits = c(10, 60)) +
+  coord_sf()+
+  labs(title = "Lacking Broadband Predicted (all data)")+
+  labs(fill = "% of Population")+
+  theme_void()
+
+true_v_pred2 <- true_values_all + predicted_values_all
+true_v_pred2
+```
+
+#Unsupervized Machine Learning
 
 ```{r}
 
@@ -250,10 +327,10 @@ ml1 <- ed_census_inc_percent_tract%>%
   filter(!(is.na(as.numeric(income))))
 
 # Convert numerical values that are stored as characters
-#ml1 <-ml1 %>%
- # mutate(income = as.numeric(income))%>%
-  #mutate(income_moe = as.numeric(income_moe))%>%
-  #mutate(Pop_18.24_MoE = as.numeric(Pop_18.24_MoE))%>%
+ml1 <-ml1 %>%
+  mutate(income = as.numeric(income))%>%
+  mutate(income_moe = as.numeric(income_moe))%>%
+  mutate(Pop_18.24_MoE = as.numeric(Pop_18.24_MoE)
 
 ```
 #my code for assignment08 q1
