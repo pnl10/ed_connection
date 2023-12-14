@@ -21,6 +21,8 @@ library(ggplot2)
 library(tidyclust)
 library(Rfast)
 library(workflows)
+library(sf)
+library(gganimate)
 ```
 
 
@@ -44,7 +46,7 @@ ed_census_inc <- ed_census_inc %>%
   select(-Area_Name.y)
 
 ed_census_inc_percent_tract <- ed_census_inc %>%
-  mutate(percent_broadband = Broadband.of.any.type..estimate / Pop_18.24)
+  mutate(percent_broadband = 100*Broadband.of.any.type..estimate / Total.Housholds.Estimate)
 
 ed_census_inc_percent_tract <- ed_census_inc_percent_tract %>%
   filter(startsWith(Geographic.Area.Name, "Census Tract"))
@@ -54,7 +56,11 @@ ed_census_inc_percent_tract <- ed_census_inc_percent_tract %>%
   select(-GEO_ID)
 
 ed_census_inc_percent_tract <- ed_census_inc_percent_tract %>%
-  mutate(less_than_hs_percent = less_than_hs / Pop_18.24)
+  mutate(less_than_hs_percent = 100*less_than_hs / Pop_18.24) %>%
+  mutate(some_college_percent = 100* some_college / Pop_18.24) %>%
+  mutate(hs_percent = 100* hs / Pop_18.24) %>%
+  mutate(bachelors_percent = 100 * bachelors/ Pop_18.24) %>%
+  select(-less_than_hs_moe, -hs_moe, -some_college_moe, -bachelors_moe)
 
 
 ```
@@ -76,7 +82,7 @@ join_data <- left_join(x= geospatial_data, broadband_tract, by = "GEOID")
 
 
 hs_tract <- ed_census_inc_percent_tract %>%
-  select(less_than_hs_percent, GEOID)%>%
+  select(less_than_hs_percent, GEOID, hs_percent, some_college_percent, bachelors_percent)%>%
   mutate(GEOID = sub("1400000US","",GEOID))
 
 join_data2 <- left_join(x= geospatial_data, hs_tract, by = "GEOID")
@@ -91,18 +97,75 @@ plot1
 
 broadband_plot <- ggplot(st_as_sf(join_data)) + 
   geom_sf(aes(fill = percent_broadband)) +
-  scale_fill_gradient(high = "blue", low = "orange") +
-  coord_sf()
+  scale_fill_gradient(high = "green", low = "red") +
+  coord_sf()+
+  labs(title = "Access to Broadband")+
+  labs(fill = "% of Population")+
+  theme_void()
 
 ed_plot <- ggplot(st_as_sf(join_data2)) + 
   geom_sf(aes(fill = less_than_hs_percent)) +
   scale_fill_gradient(high = "red", low = "green") +
-  coord_sf()
+  coord_sf()+
+  labs(title = "Less Than a High School Diploma")+
+  labs(fill = "% of Population")+
+  theme_void()
 
 library(patchwork)
 plot_together = broadband_plot + ed_plot
 
 plot_together
+```
+
+```{r}
+
+
+hs_tract_long <- tidyr::pivot_longer(
+  hs_tract,
+  cols = c("less_than_hs_percent", "hs_percent", "some_college_percent", "bachelors_percent"),
+  names_to = "education_level",
+  values_to = "percentage"
+)
+
+hs_tract_long <- hs_tract_long %>%
+    mutate(percentage = as.numeric(percentage))
+
+join_data3 <- left_join(x= hs_tract_long, geospatial_data, by = "GEOID")
+
+
+dropped_data <- anti_join(geospatial_data, join_data3, by = "GEOID")
+
+join_data3$education_level <- as.factor(join_data3$education_level)
+
+base_plot <- ggplot(st_as_sf(join_data3)) + 
+  geom_sf(data = st_as_sf(dropped_data), fill = "darkgrey")+
+  geom_sf(aes(fill = percentage)) + 
+  scale_fill_gradient(high = "red", low = "green") +
+  coord_sf()+
+  labs(title = "Education Levels by Census Tract")+
+  labs(fill = "% of Population")+
+  theme_void()
+
+level_plot <- base_plot +
+  transition_manual(
+    education_level,
+    states = unique(join_data3$education_level),
+    transition_length = 1,
+    state_length = 1
+    ) +
+  labs(subtitle = "Current state is {current_frame}")+
+  enter_fade() +
+  exit_fade()
+
+animate(
+  level_plot,
+  duration = 10,
+  fps = 20,
+  width = 400,
+  height = 400,
+  renderer = gifski_renderer()
+)
+
 
 ```
 
@@ -124,7 +187,8 @@ ml1 <-ml1 %>%
   mutate(income_moe = as.numeric(income_moe))%>%
   mutate(Pop_18.24_MoE = as.numeric(Pop_18.24_MoE))%>%
   select(-GEOID) %>%
-  select(-Geographic.Area.Name)
+  select(-Geographic.Area.Name) %>%
+  select(where(is.numeric))
   
 
 # create a split object
@@ -137,7 +201,6 @@ data_test1 <- testing(x = data_split)
 
 ed_percent_rec <- recipe(percent_broadband ~ .,
                          data = data_train1) %>%
-  step_select(all_numeric()) %>%
   step_normalize(less_than_hs_percent)
 
 prep_rec <-prep(ed_percent_rec)
@@ -187,10 +250,10 @@ ml1 <- ed_census_inc_percent_tract%>%
   filter(!(is.na(as.numeric(income))))
 
 # Convert numerical values that are stored as characters
-ml1 <-ml1 %>%
-  mutate(income = as.numeric(income))%>%
-  mutate(income_moe = as.numeric(income_moe))%>%
-  mutate(Pop_18.24_MoE = as.numeric(Pop_18.24_MoE))%>%
+#ml1 <-ml1 %>%
+ # mutate(income = as.numeric(income))%>%
+  #mutate(income_moe = as.numeric(income_moe))%>%
+  #mutate(Pop_18.24_MoE = as.numeric(Pop_18.24_MoE))%>%
 
 ```
 #my code for assignment08 q1
@@ -210,50 +273,50 @@ library(Rfast)
 set.seed(20201007)
 
 # Remove NA values from income
-ml1 <- ed_census_inc_percent_tract%>%
-  filter(!(is.na(as.numeric(income))))
+#ml1 <- ed_census_inc_percent_tract%>%
+ # filter(!(is.na(as.numeric(income))))
 
 # Convert numerical values that are stored as characters
-ml1 <-ml1 %>%
-  mutate(income = as.numeric(income))%>%
-  mutate(income_moe = as.numeric(income_moe))%>%
-  mutate(Pop_18.24_MoE = as.numeric(Pop_18.24_MoE))
+#ml1 <-ml1 %>%
+  #mutate(income = as.numeric(income))%>%
+  #mutate(income_moe = as.numeric(income_moe))%>%
+ # mutate(Pop_18.24_MoE = as.numeric(Pop_18.24_MoE))
   
   
-ed_pca_rec <- recipe(~ ., data = ml1) %>%
-  step_pca(all_numeric(), id = "pca") %>%
-  prep()
+#ed_pca_rec <- recipe(~ ., data = ml1) %>%
+  #step_pca(all_numeric(), id = "pca") %>%
+  #prep()
 
-variance_explained <- ed_pca_rec %>%
-  tidy(id = "pca", type = "variance") %>%
-  mutate(pct_var = value/sum(value))
+#variance_explained <- ed_pca_rec %>%
+ # tidy(id = "pca", type = "variance") %>%
+  #mutate(pct_var = value/sum(value))
 
-first_component_variance <- variance_explained$pct_var[1]
-cumulative_variance_first_5 <- sum(variance_explained$pct_var[1:5])
-
-
-votes_pcs <- bake(ed_pca_rec, new_data = NULL)
-
-states_regions <- read.csv("states_regions.csv")
-joined <- left_join(votes_pcs, states_regions, by = c("state" = "State.Code" ) ) %>%
-  select(!State)
+#first_component_variance <- variance_explained$pct_var[1]
+#cumulative_variance_first_5 <- sum(variance_explained$pct_var[1:5])
 
 
-plot_party <- ggplot(votes_pcs, aes(x = PC1, y = PC2)) +
-  geom_point() +
-  labs(title = "Scatterplot of PCA by Census Tract", x = "PC1", y = "PC2") +
-  theme_minimal()
+#votes_pcs <- bake(ed_pca_rec, new_data = NULL)
 
-print(plot_party)
+#states_regions <- read.csv("states_regions.csv")
+#joined <- left_join(votes_pcs, states_regions, by = c("state" = "State.Code" ) ) %>%
+ # select(!State)
 
-plot_region <- ggplot(ed_pcs, aes(x = PC1, y = PC2, color = GEOID)) +
-  geom_point() +
-  labs(title = "Scatterplot of PCA by Region", x = "PC1", y = "PC2") +
-  theme_minimal()
+
+#plot_party <- ggplot(votes_pcs, aes(x = PC1, y = PC2)) +
+  #geom_point() +
+  #labs(title = "Scatterplot of PCA by Census Tract", x = "PC1", y = "PC2") +
+ # theme_minimal()
+
+#print(plot_party)
+
+#plot_region <- ggplot(ed_pcs, aes(x = PC1, y = PC2, color = GEOID)) +
+  #geom_point() +
+  #labs(title = "Scatterplot of PCA by Region", x = "PC1", y = "PC2") +
+ # theme_minimal()
 
 # Color and size the census tracts based on values like income, population, education
 
-combined_plot <- plot_party + plot_region
+#combined_plot <- plot_party + plot_region
 
-print(combined_plot)
+#print(combined_plot)
 ```
