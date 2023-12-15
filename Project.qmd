@@ -8,6 +8,13 @@ format:
   html:
     embed-resources: true
 ---
+
+# Education and Broadband Connectivity in West Virginia
+
+## Background and Literature Review
+
+## Library of Packages
+
 ```{r}
 library(tidyverse)
 library(dplyr)
@@ -27,38 +34,41 @@ library(patchwork)
 library(yardstick)
 ```
 
+## Data Wrangling
 
 ```{r}
-
+# Read in all data sources, which have been filtered to West Virginia 
 income_data<- read_csv("income.csv")
-
 census_data <- read.csv("census_data.csv")
-
 ed_data <- read.csv("ed_data.csv")
 
-urban_institute_data <- read.csv("urban_institute_data.csv")
-
-
+# Join all three data sources, using census tracts as the key 
 ed_census_inc <- left_join(income_data, census_data, by = "GEO_ID")
 ed_census_inc <- left_join(ed_census_inc, ed_data, by = "GEO_ID")
 
-
+# Remove duplicated name columns
 ed_census_inc <- ed_census_inc %>%
   select(-Area_Name.x)%>%
   select(-Area_Name.y)
 
+# Create estimate of percentage of households lacking broadband: 
+# Note that percentage is of households, rather than individuals
+# Also note that we choose to focus on those lacking broadband rather than those possessing it
 ed_census_inc_percent_tract <- ed_census_inc %>%
   mutate(percent_broadband = (100*(1-(Broadband.of.any.type..estimate / Total.Housholds.Estimate))))
 
+# Filter by census tract 
 ed_census_inc_percent_tract <- ed_census_inc_percent_tract %>%
   filter(startsWith(Geographic.Area.Name, "Census Tract"))
 
+# Modify name for census tract column 
 ed_census_inc_percent_tract <- ed_census_inc_percent_tract %>%
   mutate(GEOID = GEO_ID)%>%
   select(-GEO_ID)
 
+# Creating values for percentage of individuals per census tract who have less than a high school education, high school degree, some college, or bachelor's degree
 ed_census_inc_percent_tract <- ed_census_inc_percent_tract %>%
-  mutate(less_than_hs_percent = 100*less_than_hs / Pop_18.24) %>%
+  mutate(less_than_hs_percent = 100 * less_than_hs / Pop_18.24) %>%
   mutate(some_college_percent = 100* some_college / Pop_18.24) %>%
   mutate(hs_percent = 100* hs / Pop_18.24) %>%
   mutate(bachelors_percent = 100 * bachelors/ Pop_18.24) %>%
@@ -67,56 +77,84 @@ ed_census_inc_percent_tract <- ed_census_inc_percent_tract %>%
 
 ```
 
+## Data Visualization
 
 ```{r}
-
-
+# Read in shapefile of West Virginia census tracts 
 geospatial_data <- st_read("cb_2022_54_tract_500k", quiet = TRUE)
 
+# Create and display a histogram showing the number of census tracts that have different percentages of population with less than high school education 
+
+hist(ed_census_inc_percent_tract$less_than_hs_percent, 
+     xlab = "% of population with less than high school degree", 
+     ylab = "Number of census tracts", 
+     main = "Figure 1: Percent of population with less than high school degree,\n by census tract")
+
+
+# Create object filtered to census tract names and borders
 geospatial_data<- geospatial_data %>%
   select(GEOID, geometry)
 
+# Create data object that only contains the broadband percentage and the census tract identifiers with the "1400000US" (West Virginia) prefix removed
 broadband_tract <- ed_census_inc_percent_tract %>%
   select(percent_broadband, GEOID)%>%
   mutate(GEOID = sub("1400000US","",GEOID))
 
+# Join that object to the geometry file and save the result to join_data
 join_data <- left_join(x= geospatial_data, broadband_tract, by = "GEOID")
 
-
+# Filter main data object down to the target values, and remove the West Virginia prefix from the census tract identifiers, and assign to hs_tract 
 hs_tract <- ed_census_inc_percent_tract %>%
   select(less_than_hs_percent, GEOID, hs_percent, some_college_percent, bachelors_percent)%>%
   mutate(GEOID = sub("1400000US","",GEOID))
 
+# Join hs_tract with the geometry file
 join_data2 <- left_join(x= geospatial_data, hs_tract, by = "GEOID")
 
+# Convert income values from characters to numeric values
 ed_census_inc_percent_tract$income <- as.numeric(ed_census_inc_percent_tract$income)
+
+# Convert percent broadband values from characters to numeric values
 ed_census_inc_percent_tract$percent_broadband <- as.numeric(ed_census_inc_percent_tract$percent_broadband)
+
+# Generate ggplot scatterplot of percent broadband against income 
 plot1 <- ggplot(data = ed_census_inc_percent_tract,
   aes(x =  income, y= percent_broadband))+
   geom_point()+
-  labs(title = "Lacking Broadband", x ="income", y = "lack broadband")+
+  labs(title = "Figure 2: Percent of Households Lacking Broadband, by Income", x ="Average Household Income", y = "Households without broadband")+
   geom_smooth(aes(color = "red"), method = "lm",se = FALSE)+
   theme_minimal()+
   theme(legend.position = "none")
 
+# Display plot
 plot1
 
+# Assign each census tract an income level of "low," "medium," or "high" 
+# Low:    < $30,000
+# Medium: $30,000 - $60,000
+# High:   > $60,000
+# Note: Category cutoffs are chosen based on rough distribution of values by census tract in the "income" scatterplot; divides into rough thirds 
 ed_with_income_lvl <- ed_census_inc_percent_tract %>%
-  mutate(income_level = ifelse(income<=33000, "low", ifelse(income > 33000 & income<= 60000,"medium","high") )) %>%
+  mutate(income_level = ifelse(income < 33000, "low", ifelse(income >= 33000 & income < 60000,"medium","high"))) %>%
   filter(!is.na(income_level))
-# assign each census tract an income level based on the definition taht income lower than 33000 is low-income, between 33000 and 60000 is medium-income and higher than 60000 is high-income
+
+# Generate a ggplot scatterplot of percent broadband against percent of residents with less than high school education, with dots colored by income level  
 plot2 <- ggplot(data = ed_with_income_lvl,
-  aes(x =  less_than_hs_percent, y= percent_broadband, color  = income_level))+
-  geom_point()+
-  labs(title = "percentage with broadband by education", x ="population with less than high school degree", y = "lack broadband")+
+  aes(x =  less_than_hs_percent, y = percent_broadband, color = income_level)) +
+  geom_point() +
+  labs(title = "Figure 3: Percentage with Broadband, by Education Level", x ="% Population with less than high school degree", y = "Households without broadband")+
   theme_minimal()
 
+# Display plot
 plot2 
 
-hist(ed_census_inc_percent_tract$less_than_hs_percent, xlab = "Percentage of population less high school", ylab = "Number of census tracts", main = "Histogram of percentage of population with less than high school degree,\n by census tract")
 
+```
 
-#abline(lm(percent_broadband ~ income,data=ed_census_inc_percent_tract),col='red')
+## Geospatial Analysis
+
+```{r}
+# Create a plot of West Virginia census tracts, using a red-green choropleth to indicate the percentage of population lacking broadband
 broadband_plot <- ggplot(st_as_sf(join_data)) + 
   geom_sf(aes(fill = percent_broadband)) +
   scale_fill_gradient(high = "red", low = "green") +
@@ -125,7 +163,7 @@ broadband_plot <- ggplot(st_as_sf(join_data)) +
   labs(fill = "% of Population")+
   theme_void()
 
-
+# Create a plot of West Virginia census tracts, using a red-green choropleth to indicate the percentage of population with a high school diploma
 ed_plot <- ggplot(st_as_sf(join_data2)) + 
   geom_sf(aes(fill = hs_percent)) +
   scale_fill_gradient(high = "red", low = "green") +
@@ -134,17 +172,13 @@ ed_plot <- ggplot(st_as_sf(join_data2)) +
   labs(fill = "% of Population")+
   theme_void()
 
-
+# Create an object that combines the two plots 
 plot_together = broadband_plot + ed_plot
 
+# Display combined plot
 plot_together
 
-
-```
-
-```{r}
-
-
+# Pivot dataset into a "long" table, containing the various education values as labels in a column titled "education_level"
 hs_tract_long <- tidyr::pivot_longer(
   hs_tract,
   cols = c("less_than_hs_percent", "hs_percent", "some_college_percent", "bachelors_percent"),
@@ -152,15 +186,20 @@ hs_tract_long <- tidyr::pivot_longer(
   values_to = "percentage"
 )
 
+# Convert percentages from characters to numeric values
 hs_tract_long <- hs_tract_long %>%
     mutate(percentage = as.numeric(percentage))
 
+# Join long table with geometry data by census tract
 join_data3 <- left_join(x= hs_tract_long, geospatial_data, by = "GEOID")
 
+# Create an object with geometry and census tract ID  
 dropped_data <- anti_join(geospatial_data, join_data3, by = "GEOID")
 
+# Create factor from the education_level column 
 join_data3$education_level <- as.factor(join_data3$education_level)
 
+# Create a "base" plot that can be used to generate multiple visualizations 
 base_plot <- ggplot(st_as_sf(join_data3)) + 
   geom_sf(data = st_as_sf(dropped_data), fill = "darkgrey")+
   geom_sf(aes(fill = percentage)) + 
@@ -170,6 +209,7 @@ base_plot <- ggplot(st_as_sf(join_data3)) +
   labs(fill = "% of Population")+
   theme_void()
 
+# Create code to create separate visualizations for each kind of education, using the base_plot code 
 level_plot <- base_plot +
   transition_manual(
     education_level,
@@ -177,10 +217,11 @@ level_plot <- base_plot +
     transition_length = 1,
     state_length = 1
     ) +
-  labs(subtitle = "Current state is {current_frame}")+
+  labs(subtitle = "Now displaying {current_frame}")+
   enter_fade() +
   exit_fade()
 
+# Use gifski to create a looping animation of the various education visualizations 
 animate(
   level_plot,
   duration = 30,
@@ -189,16 +230,12 @@ animate(
   height = 400,
   renderer = gifski_renderer()
 )
-
-
 ```
 
-
-#Machine Learning
+## Supervised Machine Learning Model
 
 ```{r}
-#MACHINE LEARNING
-
+# Set a seed for the random number generator to make use of
 set.seed(20201007)
 
 # Remove NA values from income
@@ -214,73 +251,83 @@ ml1 <-ml1 %>%
   select(-Geographic.Area.Name) %>%
   select(where(is.numeric))
   
-
 # create a split object
 data_split <- initial_split(data = ml1, prop = 0.75)
-
 
 # create the training and testing data
 data_train1 <- training(x = data_split)
 data_test1 <- testing(x = data_split)
 
+#Create recipe and use step_normalize on the data
 ed_percent_rec <- recipe(percent_broadband ~ .,
                          data = data_train1) %>%
   step_normalize(less_than_hs_percent)
 
+# Prep the recipe
 prep_rec <-prep(ed_percent_rec)
 
+# Use "bake" on test and train data to create "processed" test and training objects 
 data_train_processed <- bake(prep_rec, new_data = data_train1)
 data_test_processed <- bake(prep_rec, new_data = data_test1)
 
-data_frame_processed <- bake(prep(ed_percent_rec, training = data_train1), new_data = data_train1)
-data_frame_processed_test <- bake(prep(ed_percent_rec, training = data_test1), new_data = data_test1)
-
-bake(prep(ed_percent_rec, training = data_train1), new_data = data_train1)
-
-ed_percent_data <- ed_percent_rec %>%
- prep()%>%
- bake(new_data = data_train1)
-
+# Specify generalized linear model and regression 
 ed_model <- linear_reg() %>%
   set_engine("glm")%>%
   set_mode(mode = "regression")
 
+# Create workflow
 ed_wf <- workflow() %>%
   add_recipe(ed_percent_rec) %>%
   add_model(ed_model)
 
+# Fit the data, using the training data
 ed_fit <- ed_wf %>%
   fit(data = data_train1)
 
+# Fit the data, using the processed training data
 ed_fit <- ed_wf %>%
   fit(data = data_train_processed)
 
+# Predict the outcomes using the test data and bind the resulting predicted values to the test data  
 predictions <- bind_cols(
   data_test1,
   predict(object = ed_fit, new_data = data_test1)
 )
 
-predictions1<- predictions %>%
+# Renaming .pred for Windows computers (appears to show as .pred for Windows and .pred_res for Mac computers)
+predictions <- predictions %>%
+  mutate(.pred_res = .pred)
+
+# Create predictions1 object
+predictions1 <- predictions %>%
   select(percent_broadband, .pred_res)
 
-
+# Calculate root mean square error
 rmse <- predictions %>%
   yardstick::rmse(truth = percent_broadband, estimate = .pred_res)
+
+# Display RMSE
 print(rmse)
+
+# Calculate mean absolute error
 mae <- predictions %>%
   yardstick::mae(truth = percent_broadband, estimate = .pred_res)
+
+#Print MAE
 print(mae)
 
+# Join predicted values for percent_broadband from model back into the original dataframe, using the actual value for percent_broadband as the key  
 predictions_map <- left_join(predictions1, ed_census_inc_percent_tract, by = "percent_broadband")
 
+# Create new predictions_map dataframe with predicted and actual values for percent_broadband, as well as modifying census tract values to drop the prefix
 predictions_map <- predictions_map %>%
   select(percent_broadband, .pred_res, GEOID)%>%
   mutate(GEOID = sub("1400000US","",GEOID))
 
-
+# Join predictions_map dataframe with the geometry dataframe, using census tract as the key
 predictions_joined <- left_join(x= geospatial_data, predictions_map, by = "GEOID")
 
-
+# Create choropleth of actual values of percent of households with broadband 
 true_values <- ggplot(st_as_sf(predictions_joined)) + 
   geom_sf(aes(fill = percent_broadband)) +
   scale_fill_gradient(high = "red", low = "green") +
@@ -289,6 +336,7 @@ true_values <- ggplot(st_as_sf(predictions_joined)) +
   labs(fill = "% of Population")+
   theme_void()
 
+# Create choropleth of predicted values of percent of households with broadband 
 predicted_values <- ggplot(st_as_sf(predictions_joined)) + 
   geom_sf(aes(fill = .pred_res)) +
   scale_fill_gradient(high = "red", low = "green") +
@@ -297,31 +345,43 @@ predicted_values <- ggplot(st_as_sf(predictions_joined)) +
   labs(fill = "% of Population")+
   theme_void()
 
+# Create side-by-side display of the two choropleths 
 true_v_pred <- true_values + predicted_values
+
+# Display graphics together
 true_v_pred
-#Create new dataframe that is only numeric values
 
 ```
-```{r}
 
+## Apply Supervised Machine Learning Results
+
+```{r}
+# Create new prediction
 predictions_whole <- bind_cols(
   ml1,
   predict(object = ed_fit, new_data = ml1)
 )
 
+# Renaming .pred for Windows computers (appears to show as .pred for Windows and .pred_res for Mac computers)
+predictions_whole <- predictions_whole %>%
+  mutate(.pred_res = .pred)
+
+# From prediction output, create predictions2, keeping only the predicted and actual percent broadband
 predictions2<- predictions_whole %>%
   select(percent_broadband, .pred_res)
 
+# Join predictions2 back to the original dataset, using the real percent broadband as the key 
 predictions_map_whole <- left_join(predictions2, ed_census_inc_percent_tract, by = "percent_broadband")
 
+# Modify census tract values to drop the prefix
 predictions_map_whole <- predictions_map_whole %>%
   select(percent_broadband, .pred_res, GEOID)%>%
   mutate(GEOID = sub("1400000US","",GEOID))
 
-
+# Join predictions_map dataframe with the geometry dataframe, using census tract as the key
 predictions_joined2 <- left_join(x= geospatial_data, predictions_map_whole, by = "GEOID")
 
-
+# Create choropleth of true values of percent of households with broadband 
 true_values_all <- ggplot(st_as_sf(predictions_joined2)) + 
   geom_sf(aes(fill = percent_broadband)) +
   scale_fill_gradient(high = "red", low = "green", 
@@ -332,6 +392,7 @@ true_values_all <- ggplot(st_as_sf(predictions_joined2)) +
   labs(fill = "% of Population")+
   theme_void()
 
+# Create choropleth of predicted values of percent of households with broadband 
 predicted_values_all <- ggplot(st_as_sf(predictions_joined2)) + 
   geom_sf(aes(fill = .pred_res)) +
   scale_fill_gradient(high = "red", low = "green",
@@ -342,8 +403,23 @@ predicted_values_all <- ggplot(st_as_sf(predictions_joined2)) +
   labs(fill = "% of Population")+
   theme_void()
 
+# Create side-by-side display of the two choropleths 
 true_v_pred2 <- true_values_all + predicted_values_all
+
+# Display graphics together
 true_v_pred2
 ```
 
+## Discussion of Results
 
+Our analysis of the intersection of broadband access and educational outcomes in West Virginia is naturally limited by many factors, but we can draw some preliminary conclusions from our results.
+
+Income and broadband access appear to be associated with each other (see **Figure 1**), though as **Figure 2** demonstrates, there is a decent amount of crossover between the high, medium, and low income census tracts---while higher-income census tracts generally have fewer households without broadband access, and lower-income tracts generally have higher income, there are plenty of outliers. **Figure 2** also demonstrates that there does not seem to be a strong association between the percentage of the population with a high school education and the level of broadband access; areas with low levels of high school completion generally had middling levels of broadband access.
+
+As the rotating education graphic demonstrates, there is considerable consistency in terms of education by census tract, i.e. that places with higher levels of one kind of education tend to have higher levels of other kinds of education. This is reasonable when we consider that geographic measures of income are often strongly correlated with education levels.
+
+For machine learning discussion:
+
+"Capture incomplete data"
+
+All numeric data work to predict broadband connectivity; acknowledge that this is not ideal
