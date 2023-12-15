@@ -27,6 +27,61 @@ library(patchwork)
 library(yardstick)
 ```
 
+##Data Source
+Data source: 
+
+### I)	Income.csv
+https://data.census.gov/table/ACSST1Y2018.S1903?q=West%20Virginia%20income&g=040XX00US54$0500000,54$1400000&y=2018
+The dataset was obtained from data.census.gov, which provides detailed survey information at the census tract level from the American Community Survey. Specifically, the variable of interest is income in the past 12 months, designated by the code S1903, and is sourced from the ACS 5-Year data for 2018 in West Virginia.
+To extract this dataset, five specific filters were applied:
+1)Under the "Geography" filter, "West Virginia" was selected.
+2)All counties within West Virginia were included.
+3)All census tracts within West Virginia were chosen.
+4)The year 2018 was specified.
+5)Under the "Topics" filter, the focus was set on "Income and Poverty," specifically targeting the subcategory "Income (Households, Families, Individuals)."
+After applying the initial filters, we selected the "2018: ACS 5-Year Estimate Subject Tables" from the view All 2 Products options. This was followed by clicking on the “Download Table” button to retrieve the data. The specific table vintage that was chosen corresponds to the column labeled "2018" and the row titled "ACS 5-Year Estimate Subject Tables."
+Upon completing the download of the dataset from the "2018: ACS 5-Year Estimate Subject Tables," we proceeded to modify the data for analysis. The first step in the modification process was to remove the initial row, which contained only the codes corresponding to each variable.
+Following this, we refined the dataset to include only six specific columns, which are critical for our analysis:
+
+1)Geoid (Geography): This column provides the geographic identifier for each area.
+2)Area_Name (Geographic Area Name): This column contains the names of the geographic areas.
+3)Households (Estimate!!Number!!HOUSEHOLD INCOME BY RACE AND HISPANIC OR LATINO ORIGIN OF HOUSEHOLDER!!Households): This column includes estimates of the number of households.
+4)Household MOE (Margin of Error!!Number MOE!!HOUSEHOLD INCOME BY RACE AND HISPANIC OR LATINO ORIGIN OF HOUSEHOLDER!!Households): This column provides the margin of error associated with the household estimates.
+5)Income (Estimate!!Median income (dollars)!!HOUSEHOLD INCOME BY RACE AND HISPANIC OR LATINO ORIGIN OF HOUSEHOLDER!!Households): This column shows the median household income estimates.
+6)Income MOE (Margin of Error!!Median income (dollars) MOE!!HOUSEHOLD INCOME BY RACE AND HISPANIC OR LATINO ORIGIN OF HOUSEHOLDER!!Households): This column presents the margin of error for the median income estimates.
+
+### II)	Census_data.csv 
+https://data.census.gov/table?q=West%20Virginia%20internet&g=040XX00US54$0500000,54$1400000
+The dataset, also sourced from data.census.gov, focuses on the variable "Types of Computers and Internet Subscription," coded as S2801. The process for obtaining this dataset mirrors the earlier approach in terms of applying filters for geography and years. 
+After applying the initial filters, we selected the "2018: ACS 5-Year Estimate Subject Tables" from the view All 2 Products options. This was followed by clicking on the “Download Table” button to retrieve the data. The specific table vintage that was chosen corresponds to the column labeled "2018" and the row titled "ACS 5-Year Estimate Subject Tables."
+
+Upon completing the download of the dataset from the "2018: ACS 5-Year Estimate Subject Tables," we proceeded to modify the data for analysis. The first step in the modification process was to remove the initial row, which contained only the codes corresponding to each variable.
+Following this, we refined the dataset to include only five specific columns, which are critical for our analysis:
+
+1)Geoid (Geography)
+2) Geographic Area Name
+3) Total Housholds Estimate (Estimate!!Total!!Total households)
+4) Broadband of any type, estimate (Estimate!!Total!!TYPE OF INTERNET SUBSCRIPTIONS!!With an Internet subscription!!Broadband of any type)
+5) Broadband of any type, margin of error (Margin of Error!!Total MOE!!TYPE OF INTERNET SUBSCRIPTIONS!!With an Internet subscription!!Broadband of any type)
+
+### III)	ed_data.csv
+https://data.census.gov/table?q=West%20Virginia%20education&g=040XX00US54$0500000,54$1400000&y=2018
+For the third dataset from data.census.gov, the focus is on the variable "Education Attainment" coded S1501. While the filters for geography and years remain consistent with the previous datasets, the topic filter used for this dataset specifically targets Education.
+After applying the initial filters, we selected the "2018: ACS 5-Year Estimate Subject Tables" from the view All 2 Products options. This was followed by clicking on the “Download Table” button to retrieve the data. The specific table vintage that was chosen corresponds to the column labeled "2018" and the row titled "ACS 5-Year Estimate Subject Tables."
+After removing the first row of codes, we select the following 12 columns:
+1)	GEO_ID
+2)	Area_Name
+3)	Pop_18-24(Estimate!!Total!!Population 18 to 24 years)
+4)	And its MOE
+5)	Less_than_hs(Estimate!!Total!!Population 18 to 24 years!!Less than high school graduate)
+6)	And its MOE
+7)	Hs(Estimate!!Total!!Population 18 to 24 years!!High school graduate (includes equivalency))
+8)	And its MOE
+9)	Some_college(Estimate!!Total!!Population 18 to 24 years!!Some college or associate's degree)
+10)	And its MOE
+11)	Bachelors (Estimate!!Total!!Population 18 to 24 years!!Bachelor's degree or higher)
+12)	And its MOE
+
 
 ```{r}
 
