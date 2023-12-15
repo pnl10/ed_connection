@@ -13,9 +13,12 @@ format:
 
 ## Background and Literature Review
 
-	Many purport that education is the “great equalizer” and through education, students will be able to overcome socio-economic barriers within society. Even if true equity could be found for students inside the classroom, the idea that the world around the student does not impact the school day is at best naive. When the COVID-19 pandemic hit, schools moved to remote learning, the world outside the classroom had a greater impact and many realized how far from equity we were. Internet accessibility shone through as a huge divide for students. As the country becomes more digitized, students without reliable strong internet in their homes are put at an extremely unfair disadvantage when it comes to access to education.
-As such, our main motivating question was whether we could discern patterns that could indicate the impact of internet access on educational attainment. To produce the least confounding results, we have chosen to specify West Virginia as our area of interest. We chose this state for its lack of broadband access paired with its high percentage of rural areas and lower geographic mobility. While other states also suffer from a lack of broadband, it is often a result of economic status, which also impacts educational attainment and success. To begin to answer this question, we first did an exploratory data analysis to generally understand the patterns in the data. We then use Geospatial analysis to map broadband and different educational levels in West Virginia. Then, we created a linear regression supervised machine learning model that takes into account income as well as educational attainment and population size of a census tract to predict broadband. We then provided geospatial maps of the testing data predictions as well as predictions for if the model was used on all of the data in West Virginia.
-While there is a large push for research in this area currently, so much of the impacts are new and the data is relatively incomplete. In the 2023 recommendations from the FCC on digital learning, nearly all of the data provided is from qualitative interviews and leaves room for large errors and differences in experiences (Digital Empowerment and Inclusion Working Group of the Communications Equity and Diversity Council. Federal Communications Commission, 2023). Most of the quantitative research that has been done on this was done before the pandemic, and not only has internet connectivity and internet learning changed vastly since then, but we have also learned, importantly, that asking “Do you have internet in your home?” does not capture differences in broadband connectivity versus unreliable dial-up. This causes large errors in earlier data, like a report done by the Milken Institute that tries to find the exact models we are trying to show. Beyond that, the Milken report uses incomplete data with high degrees of missingness (Lee, 2017). A series of studies at Rutgers found that of the 84 percent of low-income families who do have wifi access, 56 percent have extremely slow internet and 18 percent have unreliable internet (Sullivan, 2021). Our report helps begin to fill a gap in the education policy space being able to come closer to an actual answer to the question of how internet connectivity impacts education. 
+  Many purport that education is the “great equalizer” and through education, students will be able to overcome socio-economic barriers within society.
+  Even if true equity could be found for students inside the classroom, the idea that the world around the student does not impact the school day is at best naive. When the COVID-19 pandemic hit, schools moved to remote learning, the world outside the classroom had a greater impact and many realized how far from equity we were. Internet accessibility shone through as a huge divide for students. As the country becomes more digitized, students without reliable strong internet in their homes are put at an extremely unfair disadvantage when it comes to access to education.
+
+  As such, our main motivating question was whether we could discern patterns that could indicate the impact of internet access on educational attainment. To produce the least confounding results, we have chosen to specify West Virginia as our area of interest. We chose this state for its lack of broadband access paired with its high percentage of rural areas and lower geographic mobility. While other states also suffer from a lack of broadband, it is often a result of economic status, which also impacts educational attainment and success. To begin to answer this question, we first did an exploratory data analysis to generally understand the patterns in the data. We then use Geospatial analysis to map broadband and different educational levels in West Virginia. Then, we created a linear regression supervised machine learning model that takes into account income as well as educational attainment and population size of a census tract to predict broadband. We then provided geospatial maps of the testing data predictions as well as predictions for if the model was used on all of the data in West Virginia.
+
+  While there is a large push for research in this area currently, so much of the impacts are new and the data is relatively incomplete. In the 2023 recommendations from the FCC on digital learning, nearly all of the data provided is from qualitative interviews and leaves room for large errors and differences in experiences (Digital Empowerment and Inclusion Working Group of the Communications Equity and Diversity Council. Federal Communications Commission, 2023). Most of the quantitative research that has been done on this was done before the pandemic, and not only has internet connectivity and internet learning changed vastly since then, but we have also learned, importantly, that asking “Do you have internet in your home?” does not capture differences in broadband connectivity versus unreliable dial-up. This causes large errors in earlier data, like a report done by the Milken Institute that tries to find the exact models we are trying to show. Beyond that, the Milken report uses incomplete data with high degrees of missingness (Lee, 2017). A series of studies at Rutgers found that of the 84 percent of low-income families who do have wifi access, 56 percent have extremely slow internet and 18 percent have unreliable internet (Sullivan, 2021). Our report helps begin to fill a gap in the education policy space being able to come closer to an actual answer to the question of how internet connectivity impacts education. 
 
 Sources Cited
 
@@ -367,8 +370,13 @@ predictions <- bind_cols(
 )
 
 # Renaming .pred for Windows computers (appears to show as .pred for Windows and .pred_res for Mac computers)
-predictions <- predictions %>%
-  mutate(.pred_res = .pred)
+
+if (".pred" %in% colnames(predictions)) {
+  predictions <- predictions %>%
+    mutate(.pred_res = .pred)
+}
+
+
 
 # Create predictions1 object
 predictions1 <- predictions %>%
@@ -435,8 +443,12 @@ predictions_whole <- bind_cols(
 )
 
 # Renaming .pred for Windows computers (appears to show as .pred for Windows and .pred_res for Mac computers)
-predictions_whole <- predictions_whole %>%
-  mutate(.pred_res = .pred)
+
+if (".pred" %in% colnames(predictions_whole)) {
+  predictions_whole <- predictions_whole %>%
+    mutate(.pred_res = .pred)
+}
+
 
 # From prediction output, create predictions2, keeping only the predicted and actual percent broadband
 predictions2<- predictions_whole %>%
